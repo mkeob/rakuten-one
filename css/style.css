@@ -553,6 +553,270 @@ body{
     background: #dedfe0;
     padding: 2px;
 }
+/* Product Page Styles */
+.product-details-section {
+    background: #FFFFFF;
+    padding: 40px 20px;
+}
+.product-image-container {
+    text-align: center;
+}
+.main-product-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+.product-thumbnails {
+    max-width: 300px;
+    margin: 0 auto;
+}
+.thumbnail-image {
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+}
+.thumbnail-image:hover,
+.thumbnail-image.active {
+    border-color: #925C10;
+    transform: scale(1.05);
+}
+.product-info {
+    padding: 0 20px;
+}
+.product-title {
+    font-size: 24px;
+    font-weight: 600;
+    color: #2E2E2E;
+    line-height: 1.4;
+    margin-bottom: 20px;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+.product-price-section {
+    border-bottom: 1px solid #e0e0e0;
+    padding-bottom: 20px;
+}
+.price-container {
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+.current-price {
+    font-size: 32px;
+    font-weight: bold;
+    color: #2E2E2E;
+}
+.shipping-info {
+    font-size: 14px;
+    color: #666;
+}
+.points-info {
+    font-size: 14px;
+    color: #925C10;
+    font-weight: 500;
+}
+.product-code {
+    font-size: 12px;
+    color: #666;
+}
+.quantity-section {
+    border-bottom: 1px solid #e0e0e0;
+    padding-bottom: 20px;
+}
+.quantity-label {
+    font-size: 16px;
+    font-weight: 500;
+    color: #2E2E2E;
+}
+.quantity-input-group {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    overflow: hidden;
+}
+.quantity-btn {
+    background: #f8f9fa;
+    border: none;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 18px;
+    color: #666;
+}
+.quantity-btn:hover {
+    background: #e9ecef;
+}
+.quantity-input {
+    border: none;
+    width: 60px;
+    height: 40px;
+    text-align: center;
+    font-size: 16px;
+    outline: none;
+}
+.stock-info {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 14px;
+    color: #666;
+}
+.stock-indicator {
+    color: #28a745;
+    font-weight: bold;
+}
+.action-buttons {
+    margin-bottom: 30px;
+}
+.add-to-cart-btn {
+    border: 1px solid #6c757d;
+    color: #6c757d;
+    background: white;
+    padding: 12px 20px;
+    font-size: 16px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+.add-to-cart-btn:hover {
+    background: #6c757d;
+    color: white;
+}
+.buy-now-btn {
+    background: #2E2E2E;
+    border: 1px solid #2E2E2E;
+    color: white;
+    padding: 12px 20px;
+    font-size: 16px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+.buy-now-btn:hover {
+    background: #925C10;
+    border-color: #925C10;
+}
+.product-accordion .accordion-button {
+    background: #f8f9fa;
+    color: #2E2E2E;
+    font-weight: 500;
+    border: none;
+    padding: 15px 20px;
+}
+.product-accordion .accordion-button:not(.collapsed) {
+    background: #925C10;
+    color: white;
+    box-shadow: none;
+}
+.product-accordion .accordion-button:focus {
+    box-shadow: none;
+    border: none;
+}
+.product-accordion .accordion-item {
+    border: 1px solid #e0e0e0;
+    margin-bottom: 5px;
+    border-radius: 4px;
+}
+.product-accordion .accordion-body {
+    padding: 20px;
+    font-size: 14px;
+    line-height: 1.6;
+}
+/* Product Details Table Styles */
+.product-specifications-section {
+    background: #f8f9fa;
+    border-top: 1px solid #e0e0e0;
+    border-bottom: 1px solid #e0e0e0;
+}
+.details-title {
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    color: #2E2E2E;
+    border-bottom: 2px solid #925C10;
+    padding-bottom: 8px;
+    margin-bottom: 20px;
+}
+.product-info-table {
+    background: white;
+    border: 1px solid #dee2e6;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+.product-info-table td {
+    border: 1px solid #e9ecef;
+    padding: 12px 16px;
+    vertical-align: middle;
+}
+.detail-label {
+    background-color: #f1f3f4;
+    font-weight: 500;
+    color: #495057;
+    width: 35%;
+    font-size: 14px;
+}
+.detail-value {
+    background-color: white;
+    color: #2E2E2E;
+    font-size: 14px;
+    font-weight: 400;
+}
+/* Wine Information Sections Styles */
+.product-details-title {
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    color: #2E2E2E;
+}
+.winery-info-section, .grape-variety-section, .winemaker-philosophy-section {
+    background: #fff;
+}
+.winery-title,
+.grape-title,
+.philosophy-title {
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    color: #2E2E2E;
+    margin-bottom: 20px;
+    line-height: 1.4;
+    border-bottom: 1px solid #925C10;
+    padding-bottom: 8px;
+
+}
+.winery-description,
+.grape-description,
+.philosophy-description {
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 16px;
+    line-height: 1.8;
+    color: #4a4a4a;
+    text-align: justify;
+}
+
+.winery-image-container img,
+.vineyard-image-container img,
+.philosophy-image-container img {
+    width: 90%;
+    height: auto;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.winery-image-container img:hover,
+.vineyard-image-container img:hover,
+.philosophy-image-container img:hover {
+    transform: scale(1.02);
+}
+
+
+
 
 
 
@@ -569,55 +833,6 @@ body{
 
 
 /* Responsive adjustments for filter section */
-@media (max-width: 768px) {
-    .category-filter-section {
-        padding: 25px 20px;
-        margin: 20px 0;
-    }
-    .filter-title {
-        font-size: 20px;
-    }
-    .filter-subtitle {
-        font-size: 14px;
-    }
-    .filter-btn {
-        font-size: 12px;
-        padding: 10px 6px;
-        min-height: 40px;
-    }
-}
-@media (max-width: 576px) {
-    .category-filter-section {
-        padding: 20px 15px;
-    }
-    
-    .filter-title {
-        font-size: 18px;
-        margin-bottom: 15px;
-    }
-    .filter-subtitle {
-        font-size: 12px;
-        display: block;
-        margin-left: 0;
-        margin-top: 5px;
-    }
-    .filter-btn {
-        font-size: 11px;
-        padding: 8px 4px;
-        min-height: 35px;
-    }
-}
-
-@media (max-width: 480px) {
-    .filter-title {
-        font-size: 16px;
-    }
-    .filter-btn {
-        font-size: 10px;
-        padding: 6px 3px;
-        min-height: 32px;
-    }
-}
 @media all and (max-width: 1200px) {
     .vintage_brands_featured h2 {
         font-size: 30px;
@@ -694,6 +909,38 @@ body{
     .cat_products .card-title {
         font-size: 15px;
     }
+    .product-details-section {
+        padding: 30px 15px;
+    }
+    .product-title {
+        font-size: 22px;
+    }
+    .current-price {
+        font-size: 28px;
+    }
+        .winery-title,
+    .grape-title,
+    .philosophy-title {
+        font-size: 22px;
+        text-align: center;
+        margin-bottom: 15px;
+    }
+    .winery-description,
+    .grape-description,
+    .philosophy-description {
+        font-size: 15px;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .producer-wines-btn-container {
+        text-align: center;
+    }
+    
+    .winery-info-section,
+    .grape-variety-section,
+    .winemaker-philosophy-section {
+        padding: 40px 0;
+    }
 }
 @media all and (max-width: 768px) {
     .hero_section{
@@ -755,6 +1002,21 @@ body{
     .special_product_title {
         font-size: 16px;
     }
+    .category-filter-section {
+        padding: 25px 20px;
+        margin: 20px 0;
+    }
+    .filter-title {
+        font-size: 20px;
+    }
+    .filter-subtitle {
+        font-size: 14px;
+    }
+    .filter-btn {
+        font-size: 12px;
+        padding: 10px 6px;
+        min-height: 40px;
+    }
     .cat_page_part_one, .cat_page_part_two, .cat_page_part_three, 
     .cat_page_part_four, .cat_page_part_five, .cat_page_part_six {
         padding: 30px 20px;
@@ -782,6 +1044,78 @@ body{
     .cat_button, .cat_button_six {
         font-size: 14px;
         padding: 10px 25px !important;
+    }
+    .product-details-section {
+        padding: 20px 10px;
+    }
+    .product-info {
+        padding: 0 10px;
+        margin-top: 20px;
+    }
+    .product-title {
+        font-size: 20px;
+        text-align: center;
+    }
+    .current-price {
+        font-size: 24px;
+    }
+    .price-container {
+        justify-content: center;
+        text-align: center;
+    }
+    .points-info,
+    .product-code {
+        text-align: center;
+    }
+    .quantity-controls {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+    .stock-info {
+        justify-content: center;
+    }
+    .product-specifications-section {
+        padding: 20px 10px;
+    }
+    .details-title {
+        font-size: 16px;
+        text-align: center;
+    }
+    .product-info-table {
+        font-size: 13px;
+    }
+    .detail-label {
+        width: 40%;
+        font-size: 12px;
+        padding: 10px 12px;
+    }
+    .detail-value {
+        font-size: 12px;
+        padding: 10px 12px;
+    }
+    .winery-title,
+    .grape-title,
+    .philosophy-title {
+        font-size: 20px;
+        margin-bottom: 12px;
+    }
+    .winery-description,
+    .grape-description,
+    .philosophy-description {
+        font-size: 14px;
+        line-height: 1.6;
+    }
+    .producer-wines-btn {
+        padding: 10px 25px;
+        font-size: 14px;
+        width: 100%;
+        max-width: 280px;
+    }
+    .winery-info-section,
+    .grape-variety-section,
+    .winemaker-philosophy-section {
+        padding: 30px 0;
     }
 }
 @media all and (max-width: 576px) {
@@ -871,6 +1205,129 @@ body{
         font-size: 14px;
         margin-top: 15px !important;
     }
+    .category-filter-section {
+        padding: 20px 15px;
+    }
+    .filter-title {
+        font-size: 18px;
+        margin-bottom: 15px;
+    }
+    .filter-subtitle {
+        font-size: 12px;
+        display: block;
+        margin-left: 0;
+        margin-top: 5px;
+    }
+    .filter-btn {
+        font-size: 11px;
+        padding: 8px 4px;
+        min-height: 35px;
+    }
+    .product-title {
+        font-size: 18px;
+        line-height: 1.3;
+    }
+    .current-price {
+        font-size: 22px;
+    }
+    .shipping-info {
+        font-size: 12px;
+    }
+    .points-info {
+        font-size: 12px;
+    }
+    .product-code {
+        font-size: 11px;
+    }
+    .quantity-btn {
+        width: 35px;
+        height: 35px;
+        font-size: 16px;
+    }
+    .quantity-input {
+        width: 50px;
+        height: 35px;
+        font-size: 14px;
+    }
+    .add-to-cart-btn,
+    .buy-now-btn {
+        padding: 10px 15px;
+        font-size: 14px;
+    }
+    .product-accordion .accordion-button {
+        padding: 12px 15px;
+        font-size: 14px;
+    }
+    .product-accordion .accordion-body {
+        padding: 15px;
+        font-size: 13px;
+    }
+    .product-specifications-section {
+        padding: 15px 5px;
+    }
+    .details-title {
+        font-size: 14px;
+        margin-bottom: 15px;
+    }
+    .product-info-table {
+        font-size: 12px;
+        margin: 0;
+    }
+    .detail-label {
+        width: 45%;
+        font-size: 11px;
+        padding: 8px 10px;
+        word-break: break-word;
+    }
+    .detail-value {
+        font-size: 11px;
+        padding: 8px 10px;
+        word-break: break-word;
+    }
+    .product-info-table tr {
+        display: block;
+        border: 1px solid #dee2e6;
+        margin-bottom: 10px;
+        border-radius: 6px;
+        overflow: hidden;
+    }
+    .product-info-table td {
+        display: block;
+        width: 100% !important;
+        border: none;
+        border-bottom: 1px solid #e9ecef;
+    }
+    .detail-label {
+        background-color: #925C10;
+        color: white;
+        font-weight: 600;
+        text-align: center;
+        border-bottom: 1px solid #7a4c0d !important;
+    }
+    .detail-value {
+        text-align: center;
+        border-bottom: none !important;
+    }
+    .winery-title,
+    .grape-title,
+    .philosophy-title {
+        font-size: 18px;
+    }
+    .winery-description,
+    .grape-description,
+    .philosophy-description {
+        font-size: 13px;
+        padding: 0 10px;
+    }
+    .producer-wines-btn {
+        font-size: 13px;
+        padding: 8px 20px;
+    }
+    .winery-info-section,
+    .grape-variety-section,
+    .winemaker-philosophy-section {
+        padding: 25px 0;
+    }
 }
 @media all and (max-width: 480px) {
     .main_logo_img{
@@ -913,6 +1370,14 @@ body{
     }
     .common_subtitle {
         font-size: 12px;
+    }
+    .filter-title {
+        font-size: 16px;
+    }
+    .filter-btn {
+        font-size: 10px;
+        padding: 6px 3px;
+        min-height: 32px;
     }
     #scrollTopBtn, #scrollDownBtn {
         width: 40px;
@@ -1009,6 +1474,41 @@ body{
         font-size: 12px;
         padding: 6px 15px !important;
     }
+    .product-details-section {
+        padding: 15px 5px;
+    }
+    .product-title {
+        font-size: 16px;
+    }
+    .current-price {
+        font-size: 20px;
+    }
+    .quantity-controls {
+        flex-direction: column;
+        align-items: center;
+    }
+    .action-buttons .row {
+        --bs-gutter-x: 0.5rem;
+    }
+    .add-to-cart-btn,
+    .buy-now-btn {
+        padding: 8px 12px;
+        font-size: 13px;
+    }
+    .product-specifications-section {
+        padding: 10px 0;
+    }
+    .container {
+        padding: 0 10px;
+    }
+    .details-title {
+        font-size: 13px;
+        margin-bottom: 12px;
+    }
+     .product-details-section{
+        margin-top: -15px;
+    
+    }
 }
 @media all and (max-width: 320px) {
     .main_content_wrapper{
@@ -1100,5 +1600,9 @@ body{
     .cat_button, .cat_button_six {
         font-size: 11px;
         padding: 5px 12px !important;
+    }
+    .product-details-section{
+        margin-top: -15px;
+    
     }
 }
