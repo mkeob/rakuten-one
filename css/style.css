@@ -2,38 +2,45 @@
 /* Google Font Import */
 @import url('https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Cursive:wght@400..700&family=Edu+SA+Hand:wght@400..700&family=Fira+Code:wght@300..700&family=Marcellus&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Cursive:wght@400..700&family=Edu+SA+Hand:wght@400..700&family=Fira+Code:wght@300..700&family=Marcellus&family=Noto+Sans+JP:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 /* Default CSS */
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-body{
+
+body {
     background-color: #F5F5F3 !important;
     width: 100%;
     overflow-x: hidden;
     font-family: 'Noto Sans JP', 'Poppins', sans-serif;
 }
+
 /* Project CSS */
-.hero_section img{
+.hero_section img {
     min-height: 256px;
 }
-.main_logo_img{
+
+.main_logo_img {
     width: 138px;
     max-width: 138px;
 }
+
 /* Common Styles */
 /* Do not repeat the same class for same styles */
-.common_title{
+.common_title {
     font-family: 'Marcellus', serif;
     color: #925C10;
     font-size: 38px;
     font-weight: normal;
     margin-top: 40px;
 }
-.common_subtitle{
+
+.common_subtitle {
     font-size: 16px;
 }
+
 .common_item {
     border-bottom: 1px solid #e0e0e0;
     transition: all 0.3s ease;
@@ -41,64 +48,80 @@ body{
     align-items: center;
     justify-content: center;
     height: 100%;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
 }
-.common_item:hover{
+
+.common_item:hover {
     transform: translateY(-5px);
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
     border-color: #925C10;
 }
+
 .common_item a {
     display: flex;
     width: 100%;
     justify-content: space-between;
     align-items: center;
 }
+
 .common_name {
     font-size: 18px;
     font-weight: 500;
 }
+
 .common_arrow_icon {
     color: #bab9b8;
 }
-.best_sell_cat_item, .recommendation_cat_item{
+
+.best_sell_cat_item,
+.recommendation_cat_item {
     transition: transform 0.3s ease;
 }
-.best_sell_cat_item:hover, .recommendation_cat_item:hover {
+
+.best_sell_cat_item:hover,
+.recommendation_cat_item:hover {
     transform: scale(1.05);
 }
+
 /* Info Styles */
 .shop_info {
     padding: 15px 0;
 }
+
 .shop_title {
     font-size: 24px;
     font-weight: 600;
     margin-bottom: 10px;
 }
-.list-group a{
+
+.list-group a {
     font-size: 15px;
 }
+
 .rating-container {
     display: flex;
     align-items: center;
     gap: 15px;
 }
+
 .stars {
     display: flex;
     align-items: center;
     gap: 2px;
 }
+
 .rating-score {
     margin-left: 8px;
     font-weight: 600;
     color: #333;
 }
+
 .rating-count {
     color: #666;
     font-size: 0.9em;
     margin-left: 4px;
 }
+
 .favorite-btn {
     display: flex;
     align-items: center;
@@ -106,49 +129,60 @@ body{
     padding: 6px 12px;
     font-size: 0.9em;
 }
+
 .search-container {
     max-width: 400px;
     margin-left: auto;
 }
+
 .search-container .input-group {
     border-radius: 4px;
     overflow: hidden;
 }
+
 .search-container .form-control {
     border-right: none;
 }
+
 .search-container .btn {
     border-left: none;
 }
+
 .search-container .form-control:focus {
     box-shadow: none;
     border-color: #ced4da;
 }
+
 .search-container .btn:hover {
     background-color: #f8f9fa;
 }
+
 /* Slider Styles */
-.special_feature_title{
+.special_feature_title {
     font-family: 'Marcellus', serif;
     color: #925C10;
     font-size: 38px;
     font-weight: normal;
     margin-top: 40px;
 }
+
 .slider-container {
     position: relative;
     width: 100%;
     overflow: hidden;
     margin: 20px 0;
 }
+
 .slider-wrapper {
     display: flex;
     transition: transform 0.5s ease-in-out;
 }
+
 .slider-slide {
     min-width: 100%;
     padding: 0 15px;
 }
+
 .slider-button {
     position: absolute;
     top: 50%;
@@ -164,19 +198,24 @@ body{
     cursor: pointer;
     z-index: 10;
 }
+
 .slider-button:hover {
     background: rgba(255, 255, 255, 0.9);
 }
+
 .prev-button {
     left: 10px;
 }
+
 .next-button {
     right: 10px;
 }
+
 .slider-button i {
     font-size: 1.5rem;
     color: #333;
 }
+
 /* Slider Dots Styles */
 .slider-dots {
     display: flex;
@@ -184,6 +223,7 @@ body{
     gap: 10px;
     margin-top: 15px;
 }
+
 .slider-dot {
     width: 10px;
     height: 10px;
@@ -192,40 +232,49 @@ body{
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
+
 .slider-dot.active {
     background-color: #333;
 }
+
 /* Category Grid Styles */
 .category-item {
     overflow: hidden;
     cursor: pointer;
     transition: all 0.3s ease;
 }
+
 .category-item img {
     width: 100%;
     filter: brightness(0.7);
     opacity: 0.5;
 }
+
 .category-item:hover img {
     transform: scale(1.0);
     filter: brightness(0.5);
 }
+
 /* Best Seller Styles */
-.best_sell_cat_title{
+.best_sell_cat_title {
     font-size: 20px;
     font-weight: bold;
     margin-bottom: 30px;
 }
+
 /* Small screen specific styles */
 .common_item.small-screen {
     padding: 4px !important;
 }
+
 .common_item.small-screen .common_name {
     font-size: 10px;
 }
+
 .common_item.small-screen .common_arrow i {
     font-size: 10px;
 }
+
 /* Scroll Buttons Styles */
 .scroll-buttons {
     position: fixed;
@@ -236,7 +285,9 @@ body{
     flex-direction: column;
     gap: 10px;
 }
-#scrollTopBtn, #scrollDownBtn {
+
+#scrollTopBtn,
+#scrollDownBtn {
     width: 50px;
     height: 50px;
     background-color: #925C10;
@@ -251,29 +302,36 @@ body{
     opacity: 0;
     visibility: hidden;
     transition: all 0.3s ease;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
 }
-#scrollTopBtn:hover, #scrollDownBtn:hover {
+
+#scrollTopBtn:hover,
+#scrollDownBtn:hover {
     background-color: #7a4c0d;
     transform: translateY(-3px);
-    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
 }
-#scrollTopBtn.show, #scrollDownBtn.show {
+
+#scrollTopBtn.show,
+#scrollDownBtn.show {
     opacity: 1;
     visibility: visible;
 }
+
 /* Custom CSS Feature Page */
 /* Vintage Styles */
-.vintage_brands_featured{
+.vintage_brands_featured {
     background: #E6E2DC;
 }
-.vintage_brands_featured h2{
+
+.vintage_brands_featured h2 {
     font-size: 35px;
     color: #925C10;
     font-weight: normal;
     margin-bottom: 30px;
 }
-.vintage_brands_featured p{
+
+.vintage_brands_featured p {
     font-size: 16px;
     font-weight: normal;
     width: 100%;
@@ -282,39 +340,51 @@ body{
     text-align: center;
     line-height: 1.6;
 }
+
 /* Combine & Common Styles */
-.bourogne{
+.bourogne {
     background: #EBDBCB;
     padding: 5%;
     border-top: 2px solid #cfb38d;
     border-bottom: 2px solid #cfb38d;
 }
-.bourogne_border_top{
+
+.bourogne_border_top {
     border-top: 1px solid #cfb38d !important;
 }
-.bourogne_bg{
+
+.bourogne_bg {
     background: #EBEBEB !important;
 }
-.bordeaux{
+
+.bordeaux {
     background: #EBEBEB;
     padding: 5%;
     border-bottom: 2px solid #cfb38d;
 }
-.bordeaux_banner_img, .bourogne_banner_img{
+
+.bordeaux_banner_img,
+.bourogne_banner_img {
     width: 85%;
 }
-.bourogne h2, .bordeaux h2 {
+
+.bourogne h2,
+.bordeaux h2 {
     font-family: 'Marcellus', serif;
     color: #925C10;
     font-weight: normal;
     font-size: 45px;
 }
-.bourogne span, .bordeaux span {
+
+.bourogne span,
+.bordeaux span {
     font-family: 'Marcellus', serif;
     font-weight: normal;
     font-size: 20px;
 }
-.bourogne p, .bordeaux p {
+
+.bourogne p,
+.bordeaux p {
     font-size: 15px;
     color: #323334;
     width: 100%;
@@ -323,36 +393,60 @@ body{
     padding: 0 15px;
     line-height: 1.6;
 }
-.bourgogne_products .card, .bordeaux_products .card, .cat_products .card {
+
+.bourgogne_products .card,
+.bordeaux_products .card,
+.cat_products .card {
     transition: transform 0.3s ease;
 }
-.bourgogne_products .card:hover, .bordeaux_products .card:hover, .cat_products .card:hover {
+
+.bourgogne_products .card:hover,
+.bordeaux_products .card:hover,
+.cat_products .card:hover {
     transform: translateY(-10px);
 }
-.bourgogne_products .card-title, .bordeaux_products .card-title, .cat_products .card-title {
+
+.bourgogne_products .card-title,
+.bordeaux_products .card-title,
+.cat_products .card-title {
     font-size: 16px;
     font-weight: 500;
     margin-bottom: 10px;
     color: #2E2E2E;
 }
-.bourgogne_products span, .bordeaux_products span, .cat_products span{
+
+.bourgogne_products span,
+.bordeaux_products span,
+.cat_products span {
     font-size: 12px;
     font-weight: 500;
     color: #6F7071;
 }
-.bourgogne_products .card-text, .bordeaux_products .card-text, .cat_products .card-text {
+
+.bourgogne_products .card-text,
+.bordeaux_products .card-text,
+.cat_products .card-text {
     font-size: 15px;
 }
-.bourgogne_quantity, .bordeaux_quantity, .cat_quantity{
+
+.bourgogne_quantity,
+.bordeaux_quantity,
+.cat_quantity {
     font-size: 15px !important;
     margin-top: 7px;
     margin-right: 10px;
 }
-.bourgogne_products .price, .bordeaux_products .price, .cat_products .price {
+
+.bourgogne_products .price,
+.bordeaux_products .price,
+.cat_products .price {
     font-size: 23px;
     color: #2E2E2E;
 }
-.bourgogne_button, .bordeaux_button, .cat_button {
+
+.bourgogne_button,
+.bordeaux_button,
+.cat_button {
     color: #262626;
     border: 1px solid #262626;
     background: #D5B588;
@@ -361,81 +455,97 @@ body{
     text-decoration: none;
     font-size: 16px;
 }
-.bourgogne_button:hover, .bordeaux_button:hover, .cat_button:hover {
+
+.bourgogne_button:hover,
+.bordeaux_button:hover,
+.cat_button:hover {
     background-color: #925C10;
     color: white;
 }
+
 /* Special Feature Styles */
-.special_feature{
+.special_feature {
     background: #E6E2DC;
     padding: 5%;
 }
-.special_title{
+
+.special_title {
     color: #6F7071;
     font-size: 45px;
     font-family: 'Marcellus', serif;
     font-weight: normal;
 }
-.special_title_span{
+
+.special_title_span {
     color: #6F7071;
     font-size: 20px;
     font-family: 'Marcellus', serif;
     font-weight: normal;
 }
-.special_product_title{
+
+.special_product_title {
     color: #2E2E2E;
     font-size: 18px;
     font-family: 'Marcellus', serif;
     font-weight: normal;
 }
+
 /* Feature Page Shop Info */
-.fp_shop_info{
+.fp_shop_info {
     background: #C2C2C2;
 }
-.fp_shop_info img{
+
+.fp_shop_info img {
     height: auto;
     max-height: 532px;
     width: 100%;
     object-fit: cover;
 }
+
 /* Category Page Styles */
-.cat_page_part_one{
+.cat_page_part_one {
     background: #EBDBCB;
     border-bottom: 2px solid #cfb38d;
     margin-top: -48px;
     padding: 60px;
 }
-.cat_page_part_two{
+
+.cat_page_part_two {
     background: #EBEBEB;
     border-top: 2px solid #cfb38d;
     margin-top: -48px;
     padding: 60px;
 }
-.cat_page_part_three{
+
+.cat_page_part_three {
     background: #EBDBCB;
     border-top: 2px solid #cfb38d;
     margin-top: -48px;
     padding: 60px;
 }
-.cat_page_part_four{
+
+.cat_page_part_four {
     background: #EBEBEB;
     border-top: 2px solid #cfb38d;
     margin-top: -48px;
     padding: 60px;
 }
-.cat_page_part_five{
+
+.cat_page_part_five {
     background: #EBDBCB;
     border-top: 2px solid #cfb38d;
     margin-top: -48px;
     padding: 60px;
 }
-.cat_page_part_six{
+
+.cat_page_part_six {
     background: #E6E2DC;
     border-top: 2px solid #cfb38d;
     margin-top: -48px;
     padding: 60px;
 }
-.cat_title{
+
+.cat_title {
     color: #925C10;
     font-weight: normal;
     margin-bottom: 5px;
@@ -443,27 +553,32 @@ body{
     border-bottom: 1px solid #925C10;
     font-family: 'Marcellus', serif;
 }
-.cat_title h2{
+
+.cat_title h2 {
     font-size: 35px;
 }
-.cat_six_title{
+
+.cat_six_title {
     font-size: 45px;
     color: #925C10;
     font-weight: normal;
     font-family: 'Marcellus', serif;
 }
-.cat_subtitle{
+
+.cat_subtitle {
     font-size: 20px;
     font-weight: normal;
     color: #2E2E2E;
 }
-.cat_desc{
+
+.cat_desc {
     font-size: 16px;
     font-weight: normal;
     width: 100%;
     line-height: 1.6;
 }
-.cat_button_six{
+
+.cat_button_six {
     color: #e0dbdb;
     border: 1px solid #262626;
     background: #2E2E2E;
@@ -472,18 +587,21 @@ body{
     text-decoration: none;
     font-size: 16px;
 }
+
 .cat_button_six:hover {
     background-color: #925C10;
     color: white;
 }
+
 /* Category Details Page Styles */
 .category-filter-section {
     background: #f2e2d1;
     border-radius: 8px;
     padding: 40px 30px;
     margin: 0 0;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
 }
+
 .filter-title {
     font-family: 'Marcellus', serif;
     color: #925C10;
@@ -491,12 +609,14 @@ body{
     font-weight: normal;
     margin-bottom: 20px;
 }
+
 .filter-subtitle {
     font-size: 16px;
     color: #6F7071;
     font-weight: normal;
     margin-left: 10px;
 }
+
 .filter-btn {
     background: #FFFFFF;
     border: 1px solid #D5B588;
@@ -514,6 +634,7 @@ body{
     align-items: center;
     justify-content: center;
 }
+
 .filter-btn:hover {
     background: #D5B588;
     border-color: #925C10;
@@ -521,70 +642,85 @@ body{
     transform: translateY(-2px);
     box-shadow: 0 4px 12px rgba(146, 92, 16, 0.2);
 }
+
 .filter-btn.active {
     background: #925C10;
     border-color: #925C10;
     color: #FFFFFF;
 }
+
 .filter-buttons {
     margin-top: 15px;
 }
-.cat_page_details{
+
+.cat_page_details {
     background: #FFFFFF;
     border-bottom: 2px solid #cfb38d;
     border-top: 2px solid #cfb38d;
     margin-top: -48px;
     padding: 60px;
 }
-.cat_page_details h2{
+
+.cat_page_details h2 {
     font-size: 28px;
     font-weight: normal;
     font-family: 'Marcellus', serif;
 }
-.cat-details-breadcrumb{
+
+.cat-details-breadcrumb {
     margin-left: 60px;
 }
-.cat-details-breadcrumb a{
+
+.cat-details-breadcrumb a {
     font-size: 11px;
     color: #6F7071;
 }
-.cat-details-breadcrumb a:hover{
+
+.cat-details-breadcrumb a:hover {
     color: #5a5959;
     background: #dedfe0;
     padding: 2px;
 }
+
 /* Product Page Styles */
 .product-details-section {
     background: #FFFFFF;
     padding: 40px 20px;
 }
+
 .product-image-container {
     text-align: center;
 }
+
 .main-product-image {
     max-width: 100%;
     height: auto;
     border-radius: 8px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
+
 .product-thumbnails {
     max-width: 300px;
     margin: 0 auto;
 }
+
 .thumbnail-image {
     border-radius: 4px;
     cursor: pointer;
     transition: all 0.3s ease;
     border: 2px solid transparent;
 }
+
 .thumbnail-image:hover,
 .thumbnail-image.active {
     border-color: #925C10;
     transform: scale(1.05);
 }
+
 .product-info {
     padding: 0 20px;
 }
+
 .product-title {
     font-size: 24px;
     font-weight: 600;
@@ -593,43 +729,52 @@ body{
     margin-bottom: 20px;
     font-family: 'Noto Sans JP', sans-serif;
 }
+
 .product-price-section {
     border-bottom: 1px solid #e0e0e0;
     padding-bottom: 20px;
 }
+
 .price-container {
     display: flex;
     align-items: baseline;
     gap: 10px;
     flex-wrap: wrap;
 }
+
 .current-price {
     font-size: 32px;
     font-weight: bold;
     color: #2E2E2E;
 }
+
 .shipping-info {
     font-size: 14px;
     color: #666;
 }
+
 .points-info {
     font-size: 14px;
     color: #925C10;
     font-weight: 500;
 }
+
 .product-code {
     font-size: 12px;
     color: #666;
 }
+
 .quantity-section {
     border-bottom: 1px solid #e0e0e0;
     padding-bottom: 20px;
 }
+
 .quantity-label {
     font-size: 16px;
     font-weight: 500;
     color: #2E2E2E;
 }
+
 .quantity-input-group {
     display: flex;
     align-items: center;
@@ -637,6 +782,7 @@ body{
     border-radius: 4px;
     overflow: hidden;
 }
+
 .quantity-btn {
     background: #f8f9fa;
     border: none;
@@ -650,9 +796,11 @@ body{
     font-size: 18px;
     color: #666;
 }
+
 .quantity-btn:hover {
     background: #e9ecef;
 }
+
 .quantity-input {
     border: none;
     width: 60px;
@@ -661,6 +809,7 @@ body{
     font-size: 16px;
     outline: none;
 }
+
 .stock-info {
     display: flex;
     align-items: center;
@@ -668,13 +817,16 @@ body{
     font-size: 14px;
     color: #666;
 }
+
 .stock-indicator {
     color: #28a745;
     font-weight: bold;
 }
+
 .action-buttons {
     margin-bottom: 30px;
 }
+
 .add-to-cart-btn {
     border: 1px solid #6c757d;
     color: #6c757d;
@@ -684,10 +836,12 @@ body{
     font-weight: 500;
     transition: all 0.3s ease;
 }
+
 .add-to-cart-btn:hover {
     background: #6c757d;
     color: white;
 }
+
 .buy-now-btn {
     background: #2E2E2E;
     border: 1px solid #2E2E2E;
@@ -697,10 +851,12 @@ body{
     font-weight: 500;
     transition: all 0.3s ease;
 }
+
 .buy-now-btn:hover {
     background: #925C10;
     border-color: #925C10;
 }
+
 .product-accordion .accordion-button {
     background: #f8f9fa;
     color: #2E2E2E;
@@ -708,31 +864,37 @@ body{
     border: none;
     padding: 15px 20px;
 }
+
 .product-accordion .accordion-button:not(.collapsed) {
     background: #925C10;
     color: white;
     box-shadow: none;
 }
+
 .product-accordion .accordion-button:focus {
     box-shadow: none;
     border: none;
 }
+
 .product-accordion .accordion-item {
     border: 1px solid #e0e0e0;
     margin-bottom: 5px;
     border-radius: 4px;
 }
+
 .product-accordion .accordion-body {
     padding: 20px;
     font-size: 14px;
     line-height: 1.6;
 }
+
 /* Product Details Table Styles */
 .product-specifications-section {
     background: #f8f9fa;
     border-top: 1px solid #e0e0e0;
     border-bottom: 1px solid #e0e0e0;
 }
+
 .details-title {
     font-family: 'Noto Sans JP', sans-serif;
     font-size: 18px;
@@ -742,18 +904,21 @@ body{
     padding-bottom: 8px;
     margin-bottom: 20px;
 }
+
 .product-info-table {
     background: white;
     border: 1px solid #dee2e6;
     border-radius: 8px;
     overflow: hidden;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
 }
+
 .product-info-table td {
     border: 1px solid #e9ecef;
     padding: 12px 16px;
     vertical-align: middle;
 }
+
 .detail-label {
     background-color: #f1f3f4;
     font-weight: 500;
@@ -761,12 +926,14 @@ body{
     width: 35%;
     font-size: 14px;
 }
+
 .detail-value {
     background-color: white;
     color: #2E2E2E;
     font-size: 14px;
     font-weight: 400;
 }
+
 /* Wine Information Sections Styles */
 .product-details-title {
     font-family: 'Noto Sans JP', sans-serif;
@@ -774,9 +941,13 @@ body{
     font-weight: 600;
     color: #2E2E2E;
 }
-.winery-info-section, .grape-variety-section, .winemaker-philosophy-section {
+
+.winery-info-section,
+.grape-variety-section,
+.winemaker-philosophy-section {
     background: #fff;
 }
+
 .winery-title,
 .grape-title,
 .philosophy-title {
@@ -788,8 +959,8 @@ body{
     line-height: 1.4;
     border-bottom: 1px solid #925C10;
     padding-bottom: 8px;
-
 }
+
 .winery-description,
 .grape-description,
 .philosophy-description {
@@ -805,7 +976,7 @@ body{
 .philosophy-image-container img {
     width: 90%;
     height: auto;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
 }
 
@@ -815,6 +986,156 @@ body{
     transform: scale(1.02);
 }
 
+/* Brand Page */
+.brand-page p {
+    font-size: 16px;
+    font-weight: normal;
+    padding: 100px;
+}
+
+.field-structure {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.showcase-title {
+    font-family: 'Marcellus', serif;
+    color: #925C10;
+    font-size: 45px;
+    font-weight: normal;
+    margin-bottom: 5px;
+}
+
+.showcase-subtitle {
+    font-size: 20px;
+    color: #666;
+    margin-bottom: 25px;
+}
+
+.wine-bottles-img {
+    width: 100%;
+    transition: transform 0.3s ease;
+}
+
+.wine-bottles-img:hover {
+    transform: scale(1.02);
+}
+
+.commitment-section {
+    padding: 20px 0;
+}
+
+.commitment-text {
+    font-size: 14px;
+    line-height: 1.8;
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 30px;
+    color: #333;
+}
+
+.feature-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.feature-image img {
+    height: 300px;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.feature-item:hover .feature-image img {
+    transform: scale(1.05);
+}
+
+.feature-title {
+    text-align: center;
+    font-size: 25px;
+    font-weight: 600;
+    color: #2E2E2E;
+    padding: 15px 15px 5px;
+    margin: 0 0 10px;
+}
+
+.feature-description {
+    font-size: 15px;
+    color: #323334;
+    padding: 0 15px 15px;
+    margin: 0;
+    line-height: 1.6;
+}
+.wine-showcase {
+        background: #EBDBCB;
+        padding: 30px;
+        margin-top: -16px;
+        border-top: 2px solid #cfb38d;
+        border-bottom: 2px solid #cfb38d;
+    }
+.wine-features {
+    margin-top: 30px;
+}
+.philosophy-text {
+    width: 400px;
+    font-size: 24px;
+    font-weight: 600;
+    color: #2E2E2E;
+    line-height: 1.6;
+}
+
+.philosophy-detail {
+    width: 500px;
+    font-size: 15px;
+    color: #323334;
+    line-height: 1.8;
+}
+.taste-section {
+    padding: 40px 0;
+    background-color: #F5F5F3;
+    margin-bottom: 30px;
+}
+
+.taste-image-container {
+    width: 100%;
+    margin: 30px 0;
+    overflow: hidden;
+}
+
+.taste-banner-img {
+    width: 100%;
+    transition: transform 0.5s ease;
+}
+
+.taste-banner-img:hover {
+    transform: scale(1.02);
+}
+
+.taste-content {
+    padding: 0 15px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.taste-heading {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.6;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.taste-description {
+    font-size: 15px;
+    line-height: 1.8;
+    color: #555;
+}
+.features-section{
+    background: #EBDBCB;
+    padding: 30px;
+    margin-top: -30px;
+    border-top: 2px solid #cfb38d;
+;
+}
 
 
 
@@ -837,94 +1158,133 @@ body{
     .vintage_brands_featured h2 {
         font-size: 30px;
     }
-    .bourogne h2, .bordeaux h2 {
+
+    .bourogne h2,
+    .bordeaux h2 {
         font-size: 40px;
     }
-    .cat_page_part_one, .cat_page_part_two, .cat_page_part_three, 
-    .cat_page_part_four, .cat_page_part_five, .cat_page_part_six {
+
+    .cat_page_part_one,
+    .cat_page_part_two,
+    .cat_page_part_three,
+    .cat_page_part_four,
+    .cat_page_part_five,
+    .cat_page_part_six {
         padding: 50px 40px;
     }
+
     .cat_title h2 {
         font-size: 30px;
     }
+
     .cat_six_title {
         font-size: 40px;
     }
 }
+
 @media all and (max-width: 1024px) {
     .common_name {
         font-size: 14px;
     }
+
     .vintage_brands_featured h2 {
         font-size: 28px;
     }
-    .bourogne h2, .bordeaux h2 {
+
+    .bourogne h2,
+    .bordeaux h2 {
         font-size: 35px;
     }
-    .cat_page_part_one, .cat_page_part_two, .cat_page_part_three, 
-    .cat_page_part_four, .cat_page_part_five, .cat_page_part_six {
+
+    .cat_page_part_one,
+    .cat_page_part_two,
+    .cat_page_part_three,
+    .cat_page_part_four,
+    .cat_page_part_five,
+    .cat_page_part_six {
         padding: 40px 30px;
     }
+
     .cat_title h2 {
         font-size: 28px;
     }
+
     .cat_six_title {
         font-size: 35px;
     }
+
     .cat_subtitle {
         font-size: 18px;
     }
 }
+
 @media all and (max-width: 992px) {
     .bourogne p {
         max-width: 90%;
         font-size: 15px;
-    } 
+    }
+
     .bourgogne_products .card-title {
         font-size: 15px;
     }
-    .cat_page_part_one, .cat_page_part_two, .cat_page_part_three, 
-    .cat_page_part_four, .cat_page_part_five, .cat_page_part_six {
+
+    .cat_page_part_one,
+    .cat_page_part_two,
+    .cat_page_part_three,
+    .cat_page_part_four,
+    .cat_page_part_five,
+    .cat_page_part_six {
         padding: 35px 25px;
     }
+
     .cat_title {
         flex-direction: column;
         align-items: flex-start !important;
         text-align: left;
     }
+
     .cat_title h2 {
         font-size: 26px;
         margin-bottom: 5px;
     }
+
     .cat_six_title {
         font-size: 32px;
     }
+
     .cat_subtitle {
         font-size: 16px;
         margin-left: 0 !important;
     }
+
     .cat_desc {
         font-size: 15px;
     }
+
     .cat_products .card-title {
         font-size: 15px;
     }
+
     .product-details-section {
         padding: 30px 15px;
     }
+
     .product-title {
         font-size: 22px;
     }
+
     .current-price {
         font-size: 28px;
     }
-        .winery-title,
+
+    .winery-title,
     .grape-title,
     .philosophy-title {
         font-size: 22px;
         text-align: center;
         margin-bottom: 15px;
     }
+
     .winery-description,
     .grape-description,
     .philosophy-description {
@@ -932,358 +1292,544 @@ body{
         text-align: center;
         margin-bottom: 20px;
     }
+
     .producer-wines-btn-container {
         text-align: center;
     }
-    
+
     .winery-info-section,
     .grape-variety-section,
     .winemaker-philosophy-section {
         padding: 40px 0;
     }
+
+    .showcase-title {
+        font-size: 28px;
+    }
+
+    .commitment-text {
+        font-size: 15px;
+        padding: 0 15px;
+    }
+
+    .feature-title {
+        font-size: 16px;
+    }
+
+    .feature-description {
+        font-size: 13px;
+    }
+
+    .philosophy-text {
+        font-size: 18px;
+    }
 }
+
 @media all and (max-width: 768px) {
-    .hero_section{
+    .hero_section {
         min-height: 30vh;
     }
+
     .rating-container {
         flex-direction: column;
         align-items: flex-start;
         gap: 10px;
     }
+
     .search-container {
         margin: 20px auto 0;
     }
+
     .category-title {
         font-size: 1.8rem;
     }
+
     .category-subtitle {
         font-size: 0.9rem;
     }
+
     .category-item img {
         height: 200px;
     }
+
     .common_item {
         padding: 10px !important;
     }
+
     .common_name {
         font-size: 14px;
     }
-    .common_title{
+
+    .common_title {
         font-size: 32px;
     }
+
     .vintage_brands_featured h2 {
         font-size: 24px;
         margin-bottom: 20px;
     }
+
     .vintage_brands_featured p {
         font-size: 14px;
         padding: 0 10px;
     }
-    .bourogne h2, .bordeaux h2 {
+
+    .bourogne h2,
+    .bordeaux h2 {
         font-size: 30px;
     }
-    .bourogne span, .bordeaux span {
+
+    .bourogne span,
+    .bordeaux span {
         font-size: 18px;
     }
-    .bourogne p, .bordeaux p {
+
+    .bourogne p,
+    .bordeaux p {
         font-size: 14px;
         padding: 0 10px;
     }
-    .bourgogne_products .card-title, .bordeaux_products .card-title {
+
+    .bourgogne_products .card-title,
+    .bordeaux_products .card-title {
         font-size: 14px;
     }
-    .bourgogne_products .price, .bordeaux_products .price {
+
+    .bourgogne_products .price,
+    .bordeaux_products .price {
         font-size: 18px;
     }
+
     .special_title {
         font-size: 35px;
     }
+
     .special_product_title {
         font-size: 16px;
     }
+
     .category-filter-section {
         padding: 25px 20px;
         margin: 20px 0;
     }
+
     .filter-title {
         font-size: 20px;
     }
+
     .filter-subtitle {
         font-size: 14px;
     }
+
     .filter-btn {
         font-size: 12px;
         padding: 10px 6px;
         min-height: 40px;
     }
-    .cat_page_part_one, .cat_page_part_two, .cat_page_part_three, 
-    .cat_page_part_four, .cat_page_part_five, .cat_page_part_six {
+
+    .cat_page_part_one,
+    .cat_page_part_two,
+    .cat_page_part_three,
+    .cat_page_part_four,
+    .cat_page_part_five,
+    .cat_page_part_six {
         padding: 30px 20px;
     }
+
     .cat_title h2 {
         font-size: 24px;
     }
+
     .cat_six_title {
         font-size: 28px;
     }
+
     .cat_subtitle {
         font-size: 14px;
     }
+
     .cat_desc {
         font-size: 14px;
         text-align: center !important;
     }
+
     .cat_products .card-title {
         font-size: 14px;
         line-height: 1.3;
     }
+
     .cat_products .price {
         font-size: 18px;
     }
-    .cat_button, .cat_button_six {
+
+    .cat_button,
+    .cat_button_six {
         font-size: 14px;
         padding: 10px 25px !important;
     }
+
     .product-details-section {
         padding: 20px 10px;
     }
+
     .product-info {
         padding: 0 10px;
         margin-top: 20px;
     }
+
     .product-title {
         font-size: 20px;
         text-align: center;
     }
+
     .current-price {
         font-size: 24px;
     }
+
     .price-container {
         justify-content: center;
         text-align: center;
     }
+
     .points-info,
     .product-code {
         text-align: center;
     }
+
     .quantity-controls {
         justify-content: center;
         flex-wrap: wrap;
         gap: 15px;
     }
+
     .stock-info {
         justify-content: center;
     }
+
     .product-specifications-section {
         padding: 20px 10px;
     }
+
     .details-title {
         font-size: 16px;
         text-align: center;
     }
+
     .product-info-table {
         font-size: 13px;
     }
+
     .detail-label {
         width: 40%;
         font-size: 12px;
         padding: 10px 12px;
     }
+
     .detail-value {
         font-size: 12px;
         padding: 10px 12px;
     }
+
     .winery-title,
     .grape-title,
     .philosophy-title {
         font-size: 20px;
         margin-bottom: 12px;
     }
+
     .winery-description,
     .grape-description,
     .philosophy-description {
         font-size: 14px;
         line-height: 1.6;
     }
+
     .producer-wines-btn {
         padding: 10px 25px;
         font-size: 14px;
         width: 100%;
         max-width: 280px;
     }
+
     .winery-info-section,
     .grape-variety-section,
     .winemaker-philosophy-section {
         padding: 30px 0;
     }
+
+    .wine-showcase {
+        padding: 20px 10px;
+    }
+
+    .showcase-title {
+        font-size: 24px;
+    }
+
+    .showcase-subtitle {
+        font-size: 14px;
+    }
+    .brand-page p {
+        font-size: 12px;
+        padding: 10px;
+    }
+
+    .commitment-text {
+        font-size: 14px;
+    }
+
+    .feature-image img {
+        height: 180px;
+    }
+
+    .philosophy-text {
+        font-size: 16px;
+    }
+
+    .philosophy-detail {
+        font-size: 13px;
+    }
+     .taste-heading {
+        font-size: 18px;
+        margin-bottom: 15px;
+    }
+    
+    .taste-description {
+        font-size: 14px;
+    }
+    
+    .taste-content .row {
+        flex-direction: column;
+    }
+    
+    .taste-content .col-md-5,
+    .taste-content .col-md-7 {
+        width: 100%;
+    }
 }
+
 @media all and (max-width: 576px) {
     .common_name {
         font-size: 12px;
     }
+
     .common_item {
         padding: 8px !important;
     }
-    .common_title{
+
+    .common_title {
         font-size: 28px;
     }
+
     .vintage_brands_featured {
         padding: 3%;
     }
+
     .vintage_brands_featured h2 {
         font-size: 20px;
         margin-bottom: 15px;
     }
+
     .vintage_brands_featured p {
         font-size: 13px;
         padding: 0 5px;
     }
-    .cat_page_part_one, .cat_page_part_two, .cat_page_part_three, 
-    .cat_page_part_four, .cat_page_part_five, .cat_page_part_six {
+
+    .cat_page_part_one,
+    .cat_page_part_two,
+    .cat_page_part_three,
+    .cat_page_part_four,
+    .cat_page_part_five,
+    .cat_page_part_six {
         padding: 25px 15px;
     }
+
     .cat_title h2 {
         font-size: 20px;
     }
+
     .cat_six_title {
         font-size: 24px;
     }
+
     .cat_subtitle {
         font-size: 12px;
     }
+
     .cat_desc {
         font-size: 13px;
     }
+
     .cat_products .card-title {
         font-size: 13px;
         line-height: 1.2;
     }
+
     .cat_products span {
         font-size: 11px;
     }
+
     .cat_quantity {
         font-size: 13px !important;
     }
+
     .cat_products .price {
         font-size: 16px;
     }
-    .cat_button, .cat_button_six {
+
+    .cat_button,
+    .cat_button_six {
         font-size: 13px;
         padding: 8px 20px !important;
     }
-    .bourogne, .bordeaux {
+
+    .bourogne,
+    .bordeaux {
         padding: 3%;
     }
-    .bourogne h2, .bordeaux h2 {
+
+    .bourogne h2,
+    .bordeaux h2 {
         font-size: 24px;
     }
-    .bourogne span, .bordeaux span {
+
+    .bourogne span,
+    .bordeaux span {
         font-size: 16px;
     }
-    .bourogne p, .bordeaux p {
+
+    .bourogne p,
+    .bordeaux p {
         font-size: 13px;
         padding: 0 5px;
         line-height: 1.6;
     }
-    .bourgogne_products .card-title, .bordeaux_products .card-title {
+
+    .bourgogne_products .card-title,
+    .bordeaux_products .card-title {
         font-size: 13px;
     }
-    .bourgogne_products .card-text, .bordeaux_products .card-text {
+
+    .bourgogne_products .card-text,
+    .bordeaux_products .card-text {
         font-size: 12px;
     }
-    .bourgogne_products .price, .bordeaux_products .price {
+
+    .bourgogne_products .price,
+    .bordeaux_products .price {
         font-size: 16px;
     }
+
     .special_feature {
         padding: 3%;
     }
+
     .special_title {
         font-size: 28px;
     }
+
     .special_product_title {
         font-size: 14px;
         margin-top: 15px !important;
     }
+
     .category-filter-section {
         padding: 20px 15px;
     }
+
     .filter-title {
         font-size: 18px;
         margin-bottom: 15px;
     }
+
     .filter-subtitle {
         font-size: 12px;
         display: block;
         margin-left: 0;
         margin-top: 5px;
     }
+
     .filter-btn {
         font-size: 11px;
         padding: 8px 4px;
         min-height: 35px;
     }
+
     .product-title {
         font-size: 18px;
         line-height: 1.3;
     }
+
     .current-price {
         font-size: 22px;
     }
+
     .shipping-info {
         font-size: 12px;
     }
+
     .points-info {
         font-size: 12px;
     }
+
     .product-code {
         font-size: 11px;
     }
+
     .quantity-btn {
         width: 35px;
         height: 35px;
         font-size: 16px;
     }
+
     .quantity-input {
         width: 50px;
         height: 35px;
         font-size: 14px;
     }
+
     .add-to-cart-btn,
     .buy-now-btn {
         padding: 10px 15px;
         font-size: 14px;
     }
+
     .product-accordion .accordion-button {
         padding: 12px 15px;
         font-size: 14px;
     }
+
     .product-accordion .accordion-body {
         padding: 15px;
         font-size: 13px;
     }
+
     .product-specifications-section {
         padding: 15px 5px;
     }
+
     .details-title {
         font-size: 14px;
         margin-bottom: 15px;
     }
+
     .product-info-table {
         font-size: 12px;
         margin: 0;
     }
+
     .detail-label {
         width: 45%;
         font-size: 11px;
         padding: 8px 10px;
         word-break: break-word;
     }
+
     .detail-value {
         font-size: 11px;
         padding: 8px 10px;
         word-break: break-word;
     }
+
     .product-info-table tr {
         display: block;
         border: 1px solid #dee2e6;
@@ -1291,12 +1837,14 @@ body{
         border-radius: 6px;
         overflow: hidden;
     }
+
     .product-info-table td {
         display: block;
         width: 100% !important;
         border: none;
         border-bottom: 1px solid #e9ecef;
     }
+
     .detail-label {
         background-color: #925C10;
         color: white;
@@ -1304,33 +1852,106 @@ body{
         text-align: center;
         border-bottom: 1px solid #7a4c0d !important;
     }
+
     .detail-value {
         text-align: center;
         border-bottom: none !important;
     }
+
     .winery-title,
     .grape-title,
     .philosophy-title {
         font-size: 18px;
     }
+
     .winery-description,
     .grape-description,
     .philosophy-description {
         font-size: 13px;
         padding: 0 10px;
     }
+
     .producer-wines-btn {
         font-size: 13px;
         padding: 8px 20px;
     }
+
     .winery-info-section,
     .grape-variety-section,
     .winemaker-philosophy-section {
         padding: 25px 0;
     }
+    .brand-page p {
+        font-size: 11px;
+        padding: 10px;
+    }
+
+    .showcase-title {
+        font-size: 22px;
+    }
+
+    .showcase-subtitle {
+        font-size: 13px;
+        margin-bottom: 15px;
+    }
+
+    .commitment-text {
+        font-size: 13px;
+        line-height: 1.6;
+    }
+
+    .feature-title {
+        font-size: 15px;
+        padding: 10px 10px 5px;
+    }
+
+    .feature-description {
+        font-size: 12px;
+        padding: 0 10px 10px;
+    }
+
+    .feature-image img {
+        height: 300px;
+    }
+
+    .philosophy-text {
+        font-size: 15px;
+    }
+
+    .philosophy-detail {
+        font-size: 12px;
+    }
+
+    .philosophy-text {
+        width: auto;
+    }
+
+    .philosophy-detail {
+        width: auto;
+    }
+    .taste-section {
+        padding: 30px 0;
+    }
+    
+    .showcase-title {
+        font-size: 28px;
+    }
+    
+    .showcase-subtitle {
+        font-size: 14px;
+    }
+    
+    .taste-heading {
+        font-size: 16px;
+    }
+    
+    .taste-description {
+        font-size: 13px;
+    }
 }
+
 @media all and (max-width: 480px) {
-    .main_logo_img{
+    .main_logo_img {
         width: 80px;
         max-width: 80px;
         position: absolute;
@@ -1338,271 +1959,433 @@ body{
         left: 20px;
         z-index: 100;
     }
-    .main_content_wrapper{
+
+    .main_content_wrapper {
         margin-top: -25% !important;
     }
-    .hero_section img{
+
+    .hero_section img {
         min-height: 120px;
     }
-    .shop-title{
+
+    .shop-title {
         font-size: 20px;
     }
-    .rating-container{
+
+    .rating-container {
         font-size: 15px;
     }
-    .banner_img{
+
+    .banner_img {
         height: 120px;
     }
-    .best_sell_cat_title{
+
+    .best_sell_cat_title {
         font-size: 14px;
     }
+
     .common_name {
         font-size: 11px;
     }
+
     .common_item {
         padding: 5px !important;
     }
+
     .common_arrow i {
         font-size: 12px;
     }
+
     .common_title {
         font-size: 18px;
     }
+
     .common_subtitle {
         font-size: 12px;
     }
+
     .filter-title {
         font-size: 16px;
     }
+
     .filter-btn {
         font-size: 10px;
         padding: 6px 3px;
         min-height: 32px;
     }
-    #scrollTopBtn, #scrollDownBtn {
+
+    #scrollTopBtn,
+    #scrollDownBtn {
         width: 40px;
         height: 40px;
         font-size: 16px;
     }
+
     .scroll-buttons {
         gap: 8px;
     }
-    .form-control{
+
+    .form-control {
         font-size: 10px !important;
     }
-    .list-group a{
+
+    .list-group a {
         font-size: 10px;
     }
-    .cat_list_select{
+
+    .cat_list_select {
         width: 55% !important;
     }
-    .cat_list_select selected{
+
+    .cat_list_select selected {
         font-size: 12px !important;
     }
-    .cat_list_select option{
+
+    .cat_list_select option {
         font-size: 12px !important;
     }
+
     .vintage_brands_featured h2 {
         font-size: 18px;
     }
+
     .vintage_brands_featured p {
         font-size: 12px;
     }
-    .bourogne h2, .bordeaux h2 {
+
+    .bourogne h2,
+    .bordeaux h2 {
         font-size: 20px;
     }
-    .bourogne span, .bordeaux span {
+
+    .bourogne span,
+    .bordeaux span {
         font-size: 14px;
     }
-    .bourogne p, .bordeaux p {
+
+    .bourogne p,
+    .bordeaux p {
         font-size: 12px;
     }
-    .bourgogne_products .card-title, .bordeaux_products .card-title {
+
+    .bourgogne_products .card-title,
+    .bordeaux_products .card-title {
         font-size: 12px;
     }
-    .bourgogne_quantity, .bordeaux_quantity{
+
+    .bourgogne_quantity,
+    .bordeaux_quantity {
         margin-top: -2px;
     }
-    .bourgogne_products .price, .bordeaux_products .price {
+
+    .bourgogne_products .price,
+    .bordeaux_products .price {
         font-size: 14px;
     }
-    .bourgogne_button, .bordeaux_button {
+
+    .bourgogne_button,
+    .bordeaux_button {
         font-size: 14px;
         padding: 8px 20px !important;
     }
+
     .special_title {
         font-size: 24px;
     }
+
     .special_product_title {
         font-size: 12px;
         margin-top: 10px !important;
     }
+
     .btn-outline-secondary {
         font-size: 14px;
         padding: 5px 15px !important;
     }
-    .cat_page_part_one, .cat_page_part_two, .cat_page_part_three, 
-    .cat_page_part_four, .cat_page_part_five, .cat_page_part_six {
+
+    .cat_page_part_one,
+    .cat_page_part_two,
+    .cat_page_part_three,
+    .cat_page_part_four,
+    .cat_page_part_five,
+    .cat_page_part_six {
         padding: 20px 10px;
     }
+
     .cat_title h2 {
         font-size: 18px;
     }
+
     .cat_six_title {
         font-size: 20px;
     }
+
     .cat_subtitle {
         font-size: 11px;
     }
+
     .cat_desc {
         font-size: 12px;
     }
+
     .cat_products .card-title {
         font-size: 12px;
         line-height: 1.1;
     }
+
     .cat_products span {
         font-size: 10px;
     }
+
     .cat_quantity {
         font-size: 12px !important;
     }
+
     .cat_products .price {
         font-size: 14px;
     }
-    .cat_button, .cat_button_six {
+
+    .cat_button,
+    .cat_button_six {
         font-size: 12px;
         padding: 6px 15px !important;
     }
+
     .product-details-section {
         padding: 15px 5px;
     }
+
     .product-title {
         font-size: 16px;
     }
+
     .current-price {
         font-size: 20px;
     }
+
     .quantity-controls {
         flex-direction: column;
         align-items: center;
     }
+
     .action-buttons .row {
         --bs-gutter-x: 0.5rem;
     }
+
     .add-to-cart-btn,
     .buy-now-btn {
         padding: 8px 12px;
         font-size: 13px;
     }
+
     .product-specifications-section {
         padding: 10px 0;
     }
+
     .container {
         padding: 0 10px;
     }
+
     .details-title {
         font-size: 13px;
         margin-bottom: 12px;
     }
-     .product-details-section{
+
+    .product-details-section {
         margin-top: -15px;
-    
+    }
+    .brand-page p {
+        font-size: 11px;
+        padding: 10px;
+    }
+    .feature-image img {
+        height: 200px;
+    }
+
+    .philosophy-text {
+        width: auto;
+    }
+
+    .philosophy-detail {
+        width: auto;
     }
 }
+
 @media all and (max-width: 320px) {
-    .main_content_wrapper{
+    .main_content_wrapper {
         margin-top: -35% !important;
     }
-    .add_to_fav{
+
+    .add_to_fav {
         width: 100px;
     }
-    .cat_list_select{
+
+    .cat_list_select {
         width: 55% !important;
     }
-    .cat_list_select selected{
+
+    .cat_list_select selected {
         font-size: 12px !important;
     }
-    .cat_list_select option{
+
+    .cat_list_select option {
         font-size: 12px !important;
     }
+
     .vintage_brands_featured {
         padding: 2%;
     }
+
     .vintage_brands_featured h2 {
         font-size: 16px;
     }
+
     .vintage_brands_featured p {
         font-size: 11px;
     }
-    .bourogne, .bordeaux {
+
+    .bourogne,
+    .bordeaux {
         padding: 2%;
     }
-    .bourogne h2, .bordeaux h2 {
+
+    .bourogne h2,
+    .bordeaux h2 {
         font-size: 18px;
     }
-    .bourogne span, .bordeaux span {
+
+    .bourogne span,
+    .bordeaux span {
         font-size: 12px;
     }
-    .bourogne p, .bordeaux p {
+
+    .bourogne p,
+    .bordeaux p {
         font-size: 11px;
     }
-    .bourgogne_products .card-title, .bordeaux_products .card-title {
+
+    .bourgogne_products .card-title,
+    .bordeaux_products .card-title {
         font-size: 11px;
     }
-    .bourgogne_quantity, .bordeaux_quantity{
+
+    .bourgogne_quantity,
+    .bordeaux_quantity {
         margin-top: -2px;
     }
-    .bourgogne_products .price, .bordeaux_products .price {
+
+    .bourgogne_products .price,
+    .bordeaux_products .price {
         font-size: 13px;
     }
+
     .special_feature {
         padding: 2%;
     }
+
     .special_title {
         font-size: 20px;
     }
+
     .special_product_title {
         font-size: 11px;
     }
-    .cat_page_part_one, .cat_page_part_two, .cat_page_part_three, 
-    .cat_page_part_four, .cat_page_part_five, .cat_page_part_six {
+
+    .cat_page_part_one,
+    .cat_page_part_two,
+    .cat_page_part_three,
+    .cat_page_part_four,
+    .cat_page_part_five,
+    .cat_page_part_six {
         padding: 15px 8px;
     }
-    .cat_title h2{
+
+    .cat_title h2 {
         font-size: 16px;
     }
+
     .cat_six_title {
         font-size: 18px;
     }
+
     .cat_subtitle {
         font-size: 10px;
     }
+
     .cat_desc {
         font-size: 11px;
     }
+
     .cat_products .card-title {
         font-size: 11px;
         line-height: 1.0;
     }
+
     .cat_products span {
         font-size: 9px;
     }
+
     .cat_quantity {
         font-size: 11px !important;
     }
-    .bourgogne_quantity, .bordeaux_quantity, .cat_quantity{
+
+    .bourgogne_quantity,
+    .bordeaux_quantity,
+    .cat_quantity {
         margin-top: 3px;
     }
+
     .cat_products .price {
         font-size: 13px;
     }
-    .cat_button, .cat_button_six {
+
+    .cat_button,
+    .cat_button_six {
         font-size: 11px;
         padding: 5px 12px !important;
     }
-    .product-details-section{
+
+    .product-details-section {
         margin-top: -15px;
-    
+    }
+
+    .brand-page p {
+        font-size: 11px;
+        padding: 10px;
+    }
+
+    .showcase-title {
+        font-size: 20px;
+    }
+
+    .showcase-subtitle {
+        font-size: 12px;
+        margin-bottom: 10px;
+    }
+
+    .commitment-text {
+        font-size: 12px;
+    }
+
+    .feature-title {
+        font-size: 14px;
+    }
+
+    .feature-description {
+        font-size: 11px;
+    }
+
+    .feature-image img {
+        height: 200px;
+    }
+
+    .philosophy-text {
+        width: auto;
+        font-size: 14px;
+    }
+
+    .philosophy-detail {
+        width: auto;
+        font-size: 11px;
     }
 }
