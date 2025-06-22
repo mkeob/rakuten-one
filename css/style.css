@@ -1022,16 +1022,19 @@ body {
     margin: 0;
     line-height: 1.6;
 }
+
 .wine-showcase {
-        background: #EBDBCB;
-        padding: 30px;
-        margin-top: -16px;
-        border-top: 2px solid #cfb38d;
-        border-bottom: 2px solid #cfb38d;
-    }
+    background: #EBDBCB;
+    padding: 30px;
+    margin-top: -16px;
+    border-top: 2px solid #cfb38d;
+    border-bottom: 2px solid #cfb38d;
+}
+
 .wine-features {
     margin-top: 30px;
 }
+
 .philosophy-text {
     width: 400px;
     font-size: 24px;
@@ -1046,6 +1049,7 @@ body {
     color: #323334;
     line-height: 1.8;
 }
+
 .taste-section {
     padding: 40px 0;
     background-color: #F5F5F3;
@@ -1086,20 +1090,23 @@ body {
     line-height: 1.8;
     color: #555;
 }
-.features-section{
+
+.features-section {
     background: #EBDBCB;
     padding: 30px;
     margin-top: -30px;
     border-top: 2px solid #cfb38d;
-;
+    ;
 }
+
 /* About Page */
 .shop-showcase {
-        background: #E6E2DC;
-        padding: 30px;
-        border-bottom: 2px solid #cfb38d;
-    }
-    .operating-company-section {
+    background: #E6E2DC;
+    padding: 30px;
+    border-bottom: 2px solid #cfb38d;
+}
+
+.operating-company-section {
     padding: 20px 0;
 }
 
@@ -1225,43 +1232,6 @@ body {
     opacity: 1;
     visibility: visible;
 }
-
-/* Responsive styles for scroll buttons */
-@media (max-width: 768px) {
-    .scroll-buttons {
-        bottom: 20px;
-        right: 20px;
-    }
-    
-    #scrollTopBtn,
-    #scrollDownBtn {
-        width: 40px;
-        height: 40px;
-        font-size: 16px;
-    }
-}
-
-@media (max-width: 480px) {
-    .scroll-buttons {
-        bottom: 15px;
-        right: 15px;
-    }
-    
-    #scrollTopBtn,
-    #scrollDownBtn {
-        width: 35px;
-        height: 35px;
-        font-size: 14px;
-    }
-}
-
-
-
-
-
-
-
-
 
 
 
@@ -1684,6 +1654,7 @@ body {
     .showcase-subtitle {
         font-size: 14px;
     }
+
     .brand-page p {
         font-size: 12px;
         padding: 10px;
@@ -1704,41 +1675,55 @@ body {
     .philosophy-detail {
         font-size: 13px;
     }
-     .taste-heading {
+
+    .taste-heading {
         font-size: 18px;
         margin-bottom: 15px;
     }
-    
+
     .taste-description {
         font-size: 14px;
     }
-    
+
     .taste-content .row {
         flex-direction: column;
     }
-    
+
     .taste-content .col-md-5,
     .taste-content .col-md-7 {
         width: 100%;
     }
+
     .operating-company-section .showcase-title {
         font-size: 30px;
     }
-    
+
     .company-name {
         font-size: 24px;
     }
-    
+
     .business-title {
         font-size: 20px;
     }
-    
+
     .business-category {
         padding: 12px 15px;
     }
-    
+
     .category-name {
         font-size: 14px;
+    }
+
+    .scroll-buttons {
+        bottom: 20px;
+        right: 20px;
+    }
+
+    #scrollTopBtn,
+    #scrollDownBtn {
+        width: 40px;
+        height: 40px;
+        font-size: 16px;
     }
 }
 
@@ -2016,6 +2001,7 @@ body {
     .winemaker-philosophy-section {
         padding: 25px 0;
     }
+
     .brand-page p {
         font-size: 11px;
         padding: 10px;
@@ -2064,33 +2050,35 @@ body {
     .philosophy-detail {
         width: auto;
     }
+
     .taste-section {
         padding: 30px 0;
     }
-    
+
     .showcase-title {
         font-size: 28px;
     }
-    
+
     .showcase-subtitle {
         font-size: 14px;
     }
-    
+
     .taste-heading {
         font-size: 16px;
     }
-    
+
     .taste-description {
         font-size: 13px;
     }
+
     .operating-company-section .showcase-title {
         font-size: 26px;
     }
-    
+
     .company-name {
         font-size: 20px;
     }
-    
+
     .company-website-btn {
         padding: 8px 30px;
         font-size: 14px;
@@ -2330,10 +2318,12 @@ body {
     .product-details-section {
         margin-top: -15px;
     }
+
     .brand-page p {
         font-size: 11px;
         padding: 10px;
     }
+
     .feature-image img {
         height: 200px;
     }
@@ -2344,6 +2334,18 @@ body {
 
     .philosophy-detail {
         width: auto;
+    }
+
+    .scroll-buttons {
+        bottom: 15px;
+        right: 15px;
+    }
+
+    #scrollTopBtn,
+    #scrollDownBtn {
+        width: 35px;
+        height: 35px;
+        font-size: 14px;
     }
 }
 
