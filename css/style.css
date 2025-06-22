@@ -25,6 +25,7 @@ body {
 .main_logo_img {
     width: 138px;
     max-width: 138px;
+    margin-top: -50px;
 }
 
 /* Common Styles */
@@ -96,6 +97,10 @@ body {
 
 .list-group a {
     font-size: 15px;
+}
+
+.list-group {
+    margin-top: -20px;
 }
 
 .rating-container {
@@ -185,13 +190,13 @@ body {
 
 .slider-button {
     position: absolute;
-    top: 50%;
+    top: 40%;
     transform: translateY(-50%);
     background: rgba(255, 255, 255, 0.7);
     border: none;
     border-radius: 50%;
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -322,7 +327,7 @@ body {
 
 .bordeaux_banner_img,
 .bourogne_banner_img {
-    width: 85%;
+    /* width: 85%; */
 }
 
 .bourogne h2,
@@ -931,7 +936,7 @@ body {
 .winery-image-container img,
 .vineyard-image-container img,
 .philosophy-image-container img {
-    width: 90%;
+    width: 100%;
     height: auto;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
@@ -1855,6 +1860,9 @@ body {
     .category-filter-section {
         padding: 20px 15px;
     }
+    .cat-details-breadcrumb{
+        margin-left: 0px;
+    }
 
     .filter-title {
         font-size: 18px;
@@ -1945,7 +1953,7 @@ body {
     }
 
     .detail-value {
-        font-size: 11px;
+        font-size: 14px;
         padding: 8px 10px;
         word-break: break-word;
     }
@@ -1970,7 +1978,7 @@ body {
         color: white;
         font-weight: 600;
         text-align: center;
-        border-bottom: 1px solid #7a4c0d !important;
+        /* border-bottom: 1px solid #7a4c0d !important; */
     }
 
     .detail-value {
@@ -2090,13 +2098,17 @@ body {
         width: 80px;
         max-width: 80px;
         position: absolute;
-        top: 17%;
+        top: 10%;
         left: 20px;
         z-index: 100;
     }
 
     .main_content_wrapper {
         margin-top: -25% !important;
+    }
+
+    .hero_section {
+        min-height: 11vh;
     }
 
     .hero_section img {
@@ -2263,6 +2275,8 @@ body {
 
     .cat_quantity {
         font-size: 12px !important;
+        margin-top: 2px;
+
     }
 
     .cat_products .price {
@@ -2273,6 +2287,10 @@ body {
     .cat_button_six {
         font-size: 12px;
         padding: 6px 15px !important;
+    }
+    .cat_page_details{
+        margin-top: -85px;
+        padding: 50px 0;
     }
 
     .product-details-section {
@@ -2428,6 +2446,9 @@ body {
     .special_product_title {
         font-size: 11px;
     }
+    .cat-details-breadcrumb{
+        margin-left: 0px;
+    }
 
     .cat_page_part_one,
     .cat_page_part_two,
@@ -2467,12 +2488,6 @@ body {
         font-size: 11px !important;
     }
 
-    .bourgogne_quantity,
-    .bordeaux_quantity,
-    .cat_quantity {
-        margin-top: 3px;
-    }
-
     .cat_products .price {
         font-size: 13px;
     }
@@ -2482,6 +2497,7 @@ body {
         font-size: 11px;
         padding: 5px 12px !important;
     }
+    
 
     .product-details-section {
         margin-top: -15px;
