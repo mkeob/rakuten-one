@@ -128,14 +128,14 @@ document.addEventListener('DOMContentLoaded', function () {
         const scrollPosition = window.scrollY;
         const windowHeight = window.innerHeight;
         const documentHeight = document.documentElement.scrollHeight;
-        
+
         // Show/hide scroll to top button
         if (scrollPosition > windowHeight / 2) {
             scrollTopBtn.classList.add('show');
         } else {
             scrollTopBtn.classList.remove('show');
         }
-        
+
         // Show/hide scroll to bottom button
         if (scrollPosition < documentHeight - windowHeight * 1.5) {
             scrollDownBtn.classList.add('show');
@@ -167,6 +167,33 @@ document.addEventListener('DOMContentLoaded', function () {
                 top: document.documentElement.scrollHeight,
                 behavior: 'smooth'
             });
+        });
+    }
+
+    // Mobile Menu Toggle Enhancement
+    const navbarToggler = document.querySelector('.navbar-toggler');
+    const navbarCollapse = document.querySelector('.navbar-collapse');
+
+    if (navbarToggler && navbarCollapse) {
+        // Add aria-controls attribute
+        navbarToggler.setAttribute('aria-controls', 'navbarScroll');
+        
+        // Handle click outside to close menu
+        document.addEventListener('click', (e) => {
+            const isClickInside = navbarToggler.contains(e.target) || navbarCollapse.contains(e.target);
+            
+            if (!isClickInside && navbarCollapse.classList.contains('show')) {
+                const bsCollapse = new bootstrap.Collapse(navbarCollapse);
+                bsCollapse.hide();
+            }
+        });
+
+        // Close menu on window resize if open
+        window.addEventListener('resize', () => {
+            if (window.innerWidth >= 992 && navbarCollapse.classList.contains('show')) {
+                const bsCollapse = new bootstrap.Collapse(navbarCollapse);
+                bsCollapse.hide();
+            }
         });
     }
 });

@@ -24,14 +24,114 @@
 <body>
     <!-- Header -->
     <header>
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <img src="img/feature-header-menu.png" alt="Rakuten Shop" class="d-block mx-auto img-fluid w-100">
+        <div class="container-fluid">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <nav class="navbar navbar-expand-lg main-navbar">
+                            <a class="navbar-brand" href="#">SELEAD SHOP</a>
+                            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarScroll">
+                                <i class="bi bi-list"></i>
+                            </button>
+                            <div class="collapse navbar-collapse" id="navbarScroll">
+                                <ul class="navbar-nav ms-auto my-2 my-lg-0" style="--bs-scroll-height: 100px;">
+                                    <li class="nav-item">
+                                        <a class="nav-link active" aria-current="page" href="#">商品を探す</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">特集</a>
+                                    </li>
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown"
+                                            role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                            ワイン
+                                        </a>
+                                        <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                                            <li><a class="dropdown-item" href="#">赤ワイン</a></li>
+                                            <li><a class="dropdown-item" href="#">白ワイン</a></li>
+                                            <li><a class="dropdown-item" href="#">ロゼワイン</a></li>
+                                            <li><a class="dropdown-item" href="#">貴腐ワイン</a></li>
+                                            <li><a class="dropdown-item" href="#">シャンパーニュ</a></li>
+                                            <li><a class="dropdown-item" href="#">その他</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown"
+                                            role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                            ウイスキー
+                                        </a>
+                                        <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                                            <li><a class="dropdown-item" href="#">スコッチウイスキー</a></li>
+                                            <li><a class="dropdown-item" href="#">アメリカンウイスキー</a></li>
+                                            <li><a class="dropdown-item" href="#">ジャパニーズウイスキー</a></li>
+                                            <li><a class="dropdown-item" href="#">その他</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown"
+                                            role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                            日本酒
+                                        </a>
+                                        <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                                            <li><a class="dropdown-item" href="#">楯野川酒造 </a></li>
+                                            <li><a class="dropdown-item" href="#">農口尚彦研究所</a></li>
+                                            <li><a class="dropdown-item" href="#">今代司酒造</a></li>
+                                            <li><a class="dropdown-item" href="#">勝山酒造</a></li>
+                                            <li><a class="dropdown-item" href="#">その他</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">テキーラ</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">酒器</a>
+                                    </li>
+                                </ul>
+                                <div class="nav-right-part">
+                                    <div>
+                                        <form class="d-flex">
+                                            <input class="me-2 nav-search-input" type="search" placeholder="Search"
+                                                aria-label="Search">
+                                            <button class="btn border-0" type="submit"><i
+                                                    class="bi bi-search"></i></button>
+                                        </form>
+                                    </div>
+                                    <div>
+                                        <form class="d-flex justify-content-between">
+                                            <button class="under-search-btn me-1" type="submit">SELEAD SHOPとは</button>
+                                            <button class="under-search-btn" type="submit">ご利用ガイド</button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
                 </div>
+
             </div>
         </div>
     </header>
+
+    <!-- Search Modal -->
+    <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="searchModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="searchModalLabel">商品を検索</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="商品名、ブランド名で検索...">
+                        <button class="btn btn-primary" type="button">
+                            <i class="bi bi-search"></i> 検索
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- Main Container section -->
     <div class="container">
         <!-- Hero Section -->
@@ -482,10 +582,10 @@
     </footer>
 
     <!-- Custom JS -->
-    <script src="js/script.js" type="text/javascript"></script>
-    <!-- Bootstrap 5 JS Bundle with Popper -->
-    <script src="js/bootstrap.min.js" type="text/javascript"></script>
+    <!-- Bootstrap Bundle with Popper -->
     <script src="js/bootstrap.bundle.min.js" type="text/javascript"></script>
+    <!-- Custom Script -->
+    <script src="js/script.js" type="text/javascript"></script>
 </body>
 
 </html>
