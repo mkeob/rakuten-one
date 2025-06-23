@@ -25,7 +25,7 @@ body {
 .main_logo_img {
     width: 138px;
     max-width: 138px;
-    margin-top: -50px;
+    /* margin-top: -50px; */
 }
 
 /* Common Styles */
@@ -1031,7 +1031,7 @@ body {
 .wine-showcase {
     background: #EBDBCB;
     padding: 30px;
-    margin-top: -16px;
+    margin-top: -20px;
     border-top: 2px solid #cfb38d;
     border-bottom: 2px solid #cfb38d;
 }
@@ -1860,7 +1860,8 @@ body {
     .category-filter-section {
         padding: 20px 15px;
     }
-    .cat-details-breadcrumb{
+
+    .cat-details-breadcrumb {
         margin-left: 0px;
     }
 
@@ -2098,13 +2099,15 @@ body {
         width: 80px;
         max-width: 80px;
         position: absolute;
-        top: 10%;
-        left: 20px;
+        top: 100px;
+        left: auto;
         z-index: 100;
+        margin-top: 0px;
+
     }
 
     .main_content_wrapper {
-        margin-top: -25% !important;
+        margin-top: -12% !important;
     }
 
     .hero_section {
@@ -2288,7 +2291,8 @@ body {
         font-size: 12px;
         padding: 6px 15px !important;
     }
-    .cat_page_details{
+
+    .cat_page_details {
         margin-top: -85px;
         padding: 50px 0;
     }
@@ -2446,7 +2450,8 @@ body {
     .special_product_title {
         font-size: 11px;
     }
-    .cat-details-breadcrumb{
+
+    .cat-details-breadcrumb {
         margin-left: 0px;
     }
 
@@ -2497,7 +2502,7 @@ body {
         font-size: 11px;
         padding: 5px 12px !important;
     }
-    
+
 
     .product-details-section {
         margin-top: -15px;
