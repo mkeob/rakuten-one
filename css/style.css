@@ -60,6 +60,7 @@ body {
 }
 
 .dropdown-item {
+    font-family: "Hina Mincho", serif;
     font-size: 14px !important;
     font-weight: 500 !important;
 
@@ -671,6 +672,7 @@ body {
 }
 
 .cat_subtitle {
+    font-family: 'Hina Mincho', serif;
     font-size: 20px;
     font-weight: normal;
     color: #2E2E2E;
@@ -717,6 +719,7 @@ body {
 }
 
 .filter-subtitle {
+    font-family: 'Hina Mincho', serif;
     font-size: 16px;
     color: #6F7071;
     font-weight: normal;
