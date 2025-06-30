@@ -1,0 +1,752 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <!-- All Browser Compatibility Meta Tags -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="format-detection" content="telephone=no" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  <meta name="apple-mobile-web-app-title" content="Rakuten Shop" />
+  <meta name="application-name" content="Rakuten Shop" />
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css" type="text/css" />
+  <!-- Bootstrap 5 CSS -->
+  <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" />
+  <!-- Title -->
+  <title>Category Details | Rakuten Shop</title>
+</head>
+
+<body>
+  <!-- Header -->
+  <header>
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <nav class="navbar navbar-expand-lg main-navbar header-main-logo">
+            <a class="navbar-brand" href="#"><img src="img/selead-shop.png" alt="SELEAD SHOP" class="img-fluid"></a>
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarScroll">
+              <i class="bi bi-list"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarScroll">
+              <ul class="navbar-nav ms-auto my-2 my-lg-0" style="--bs-scroll-height: 100px;">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">商品を探す</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">特集</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    ワイン
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                    <li><a class="dropdown-item" href="#">赤ワイン</a></li>
+                    <li><a class="dropdown-item" href="#">白ワイン</a></li>
+                    <li><a class="dropdown-item" href="#">ロゼワイン</a></li>
+                    <li><a class="dropdown-item" href="#">貴腐ワイン</a></li>
+                    <li><a class="dropdown-item" href="#">シャンパーニュ</a></li>
+                    <li><a class="dropdown-item" href="#">その他</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    ウイスキー
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                    <li><a class="dropdown-item" href="#">スコッチウイスキー</a></li>
+                    <li><a class="dropdown-item" href="#">アメリカンウイスキー</a></li>
+                    <li><a class="dropdown-item" href="#">ジャパニーズウイスキー</a></li>
+                    <li><a class="dropdown-item" href="#">その他</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    日本酒
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                    <li><a class="dropdown-item" href="#">楯野川酒造 </a></li>
+                    <li><a class="dropdown-item" href="#">農口尚彦研究所</a></li>
+                    <li><a class="dropdown-item" href="#">今代司酒造</a></li>
+                    <li><a class="dropdown-item" href="#">勝山酒造</a></li>
+                    <li><a class="dropdown-item" href="#">その他</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">テキーラ</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">酒器</a>
+                </li>
+              </ul>
+              <div class="nav-right-part">
+                <div>
+                  <form class="d-flex">
+                    <input class="me-2 nav-search-input" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn border-0" type="submit"><i class="bi bi-search"></i></button>
+                  </form>
+                </div>
+                <div>
+                  <form class="d-flex justify-content-between">
+                    <button class="under-search-btn me-1" type="submit">SELEAD SHOPとは</button>
+                    <button class="under-search-btn" type="submit">ご利用ガイド</button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- Hero Section -->
+  <div class="container ">
+    <div class="row">
+      <div class="col-12">
+        <!-- Category Banner -->
+        <img src="img/category-details-banner.png" alt="Feature Banner" class="d-block mx-auto img-fluid w-100" />
+      </div>
+    </div>
+  </div>
+  <div class="container-fluid category-filter-section ">
+    <div class="container">
+      <div class="py-5 mt-5 mb-5">
+        <div class="row">
+          <!-- Region Filter -->
+          <div class="col-12 col-md-6 mb-4">
+            <h5 class="filter-title mb-3">
+              Region <span class="filter-subtitle">- 産地から選ぶ</span>
+            </h5>
+            <div class="filter-buttons">
+              <hr />
+              <div class="row g-2">
+                <div class="col-5 col-sm-4 col-lg-3 me-3">
+                  <button class="filter-btn">ブルゴーニュ</button>
+                </div>
+                <div class="col-5 col-sm-4 col-lg-3 me-3">
+                  <button class="filter-btn">ボルドー</button>
+                </div>
+                <div class="col-5 col-sm-4 col-lg-3 me-3">
+                  <button class="filter-btn">シャンパーニュ</button>
+                </div>
+                <div class="col-5 col-sm-4 col-lg-3 me-3">
+                  <button class="filter-btn">フランス</button>
+                </div>
+                <div class="col-5 col-sm-4 col-lg-3 me-3">
+                  <button class="filter-btn">アメリカ</button>
+                </div>
+                <div class="col-5 col-sm-4 col-lg-3 me-3">
+                  <button class="filter-btn">日本</button>
+                </div>
+                <div class="col-5 col-sm-4 col-lg-3 me-3">
+                  <button class="filter-btn">イタリア</button>
+                </div>
+                <div class="col-5 col-sm-4 col-lg-3 me-3">
+                  <button class="filter-btn">スペイン</button>
+                </div>
+                <div class="col-5 col-sm-4 col-lg-3 me-3">
+                  <button class="filter-btn">その他</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Type Filter -->
+          <div class="col-12 col-md-6 mb-4">
+            <h5 class="filter-title mb-3">
+              Type <span class="filter-subtitle">- 品種から選ぶ</span>
+            </h5>
+            <hr />
+            <div class="filter-buttons">
+              <div class="row g-2">
+                <div class="col-5 col-sm-4 col-lg-3 me-3">
+                  <button class="filter-btn">シャルドネ</button>
+                </div>
+                <div class="col-5 col-sm-4 col-lg-3 me-3">
+                  <button class="filter-btn">ピノ・ノワール</button>
+                </div>
+                <div class="col-5 col-sm-4 col-lg-3 me-3">
+                  <button class="filter-btn">
+                    カベルネ・ソーヴィニヨン
+                  </button>
+                </div>
+                <div class="col-5 col-sm-4 col-lg-3 me-3">
+                  <button class="filter-btn">フランス</button>
+                </div>
+                <div class="col-5 col-sm-4 col-lg-3 me-3">
+                  <button class="filter-btn">メルロー</button>
+                </div>
+                <div class="col-5 col-sm-4 col-lg-3 me-3">
+                  <button class="filter-btn">シラー</button>
+                </div>
+                <div class="col-5 col-sm-4 col-lg-3 me-3">
+                  <button class="filter-btn">ロワール</button>
+                </div>
+                <div class="col-5 col-sm-4 col-lg-3 me-3">
+                  <button class="filter-btn">ラングドック</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <!-- Vintage Filter -->
+          <div class="col-12 col-md-6 mb-4 mt-5">
+            <h5 class="filter-title mb-3">
+              Vintage <span class="filter-subtitle">- 年代から選ぶ</span>
+            </h5>
+            <hr />
+            <div class="filter-buttons">
+              <div class="row g-2">
+                <div class="col-6 col-sm-4 col-lg-3">
+                  <button class="filter-btn">～1900</button>
+                </div>
+                <div class="col-6 col-sm-4 col-lg-3">
+                  <button class="filter-btn">1900～1950</button>
+                </div>
+                <div class="col-6 col-sm-4 col-lg-3">
+                  <button class="filter-btn">1951～1990</button>
+                </div>
+                <div class="col-6 col-sm-4 col-lg-3">
+                  <button class="filter-btn">1991～2019</button>
+                </div>
+                <div class="col-6 col-sm-4 col-lg-3">
+                  <button class="filter-btn">2020～</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Price Filter -->
+          <div class="col-12 col-md-6 mb-4 mt-5">
+            <h5 class="filter-title mb-3">
+              Price <span class="filter-subtitle">- 価格帯から選ぶ</span>
+            </h5>
+            <hr />
+            <div class="filter-buttons">
+              <div class="row g-2">
+                <div class="col-6 col-sm-4 col-lg-3">
+                  <button class="filter-btn w-100">～5万円</button>
+                </div>
+                <div class="col-6 col-sm-4 col-lg-3">
+                  <button class="filter-btn w-100">5万円～30万円</button>
+                </div>
+                <div class="col-6 col-sm-4 col-lg-3">
+                  <button class="filter-btn w-100">30万円～50万円</button>
+                </div>
+                <div class="col-6 col-sm-4 col-lg-3">
+                  <button class="filter-btn w-100">50万円～100万円</button>
+                </div>
+                <div class="col-6 col-sm-4 col-lg-3">
+                  <button class="filter-btn w-100">100万円～</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Breadcrumb -->
+  <div class="container-fluid bg-white py-3">
+    <div class="container">
+      <nav style="--bs-breadcrumb-divider: '>'" aria-label="breadcrumb">
+        <ol class="breadcrumb cat-details-breadcrumb">
+          <li class="breadcrumb-item">
+            <a href="#" class="text-decoration-none">カテゴリトップ</a>
+          </li>
+          <li class="breadcrumb-item active">
+            <a href="#" class="text-decoration-none">赤ワイン</a>
+          </li>
+          <li class="breadcrumb-item active">
+            <a href="#" class="text-decoration-none">ブルゴーニュ</a>
+          </li>
+        </ol>
+      </nav>
+    </div>
+  </div>
+  <div class="container-fluid cat_page_details">
+    <!-- Category Details -->
+    <div class="container">
+      <!-- Category Filter -->
+      <div class="row">
+        <!-- Category Title -->
+        <div class="my-4 d-flex align-items-center cat_title">
+          <h2 class="mb-0">- 赤ワイン</h2>
+        </div>
+        <!-- Red Wine Description -->
+        <div class="my-4">
+          <p class="cat_desc text-start">
+            ドメーヌ・ド・ラ・ロマネ・コンティ（DRC）のワインは、愛好家が最後にたどりつく終着点です。
+            ワインを超えた神話的な存在と言ってもいいでしょう。ヴォーヌ・ロマネ村にある1.8ヘクタールの畑の十字架の前に立てば、だれもが霊感にうたれます。
+          </p>
+        </div>
+        <!-- Category Products -->
+        <div class="cat_products row my-5">
+          <!-- Product 1 -->
+          <div class="col-12 col-sm-6 col-lg-4 mb-4">
+            <a href="#" class="text-decoration-none">
+              <div class="card h-100 border-0 bg-transparent">
+                <div class="card-body text-center">
+                  <img src="img/cat-products.png" alt="1993 アルマン ルソー シャンベルタン クロ・ド ベーズ グラン クリュ 赤ワイン 750ml"
+                    class="img-fluid mb-3" />
+                  <h5 class="card-title text-start" style="line-height: 30px;">
+                    1993 アルマン ルソー シャンベルタン クロ・ド ベーズ
+                    グラン クリュ 赤ワイン 750ml
+                  </h5>
+                  <hr />
+                  <div class="d-flex justify-content-between mt-3">
+                    <span>シャルドネ</span>
+                    <span>シャルドネ</span>
+                  </div>
+                  <hr />
+                  <div class="d-flex justify-content-end mt-3">
+                    <span class="cat_quantity">750ml - </span><span class="price fw-bold">¥28,800</span>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <!-- Product 2 -->
+          <div class="col-12 col-sm-6 col-lg-4 mb-4">
+            <a href="#" class="text-decoration-none">
+              <div class="card h-100 border-0 bg-transparent">
+                <div class="card-body text-center">
+                  <img src="img/cat-products.png" alt="1993 アルマン ルソー シャンベルタン クロ・ド ベーズ グラン クリュ 赤ワイン 750ml"
+                    class="img-fluid mb-3" />
+                  <h5 class="card-title text-start" style="line-height: 30px;">
+                    1993 アルマン ルソー シャンベルタン クロ・ド ベーズ
+                    グラン クリュ 赤ワイン 750ml
+                  </h5>
+                  <hr />
+                  <div class="d-flex justify-content-between mt-3">
+                    <span>シャルドネ</span>
+                    <span>シャルドネ</span>
+                  </div>
+                  <hr />
+                  <div class="d-flex justify-content-end mt-3">
+                    <span class="cat_quantity">750ml - </span><span class="price fw-bold">¥28,800</span>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <!-- Product 3 -->
+          <div class="col-12 col-sm-6 col-lg-4 mb-4">
+            <a href="#" class="text-decoration-none">
+              <div class="card h-100 border-0 bg-transparent">
+                <div class="card-body text-center">
+                  <img src="img/cat-products.png" alt="1993 アルマン ルソー シャンベルタン クロ・ド ベーズ グラン クリュ 赤ワイン 750ml"
+                    class="img-fluid mb-3" />
+                  <h5 class="card-title text-start" style="line-height: 30px;">
+                    1993 アルマン ルソー シャンベルタン クロ・ド ベーズ
+                    グラン クリュ 赤ワイン 750ml
+                  </h5>
+                  <hr />
+                  <div class="d-flex justify-content-between mt-3">
+                    <span>シャルドネ</span>
+                    <span>シャルドネ</span>
+                  </div>
+                  <hr />
+                  <div class="d-flex justify-content-end mt-3">
+                    <span class="cat_quantity">750ml - </span><span class="price fw-bold">¥28,800</span>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <!-- Product 4 -->
+          <div class="col-12 col-sm-6 col-lg-4 mb-4">
+            <a href="#" class="text-decoration-none">
+              <div class="card h-100 border-0 bg-transparent">
+                <div class="card-body text-center">
+                  <img src="img/cat-products.png" alt="1993 アルマン ルソー シャンベルタン クロ・ド ベーズ グラン クリュ 赤ワイン 750ml"
+                    class="img-fluid mb-3" />
+                  <h5 class="card-title text-start" style="line-height: 30px;">
+                    1993 アルマン ルソー シャンベルタン クロ・ド ベーズ
+                    グラン クリュ 赤ワイン 750ml
+                  </h5>
+                  <hr />
+                  <div class="d-flex justify-content-between mt-3">
+                    <span>シャルドネ</span>
+                    <span>シャルドネ</span>
+                  </div>
+                  <hr />
+                  <div class="d-flex justify-content-end mt-3">
+                    <span class="cat_quantity">750ml - </span><span class="price fw-bold">¥28,800</span>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <!-- Product 5 -->
+          <div class="col-12 col-sm-6 col-lg-4 mb-4">
+            <a href="#" class="text-decoration-none">
+              <div class="card h-100 border-0 bg-transparent">
+                <div class="card-body text-center">
+                  <img src="img/cat-products.png" alt="1993 アルマン ルソー シャンベルタン クロ・ド ベーズ グラン クリュ 赤ワイン 750ml"
+                    class="img-fluid mb-3" />
+                  <h5 class="card-title text-start" style="line-height: 30px;">
+                    1993 アルマン ルソー シャンベルタン クロ・ド ベーズ
+                    グラン クリュ 赤ワイン 750ml
+                  </h5>
+                  <hr />
+                  <div class="d-flex justify-content-between mt-3">
+                    <span>シャルドネ</span>
+                    <span>シャルドネ</span>
+                  </div>
+                  <hr />
+                  <div class="d-flex justify-content-end mt-3">
+                    <span class="cat_quantity">750ml - </span><span class="price fw-bold">¥28,800</span>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <!-- Product 6 -->
+          <div class="col-12 col-sm-6 col-lg-4 mb-4">
+            <a href="#" class="text-decoration-none">
+              <div class="card h-100 border-0 bg-transparent">
+                <div class="card-body text-center">
+                  <img src="img/cat-products.png" alt="1993 アルマン ルソー シャンベルタン クロ・ド ベーズ グラン クリュ 赤ワイン 750ml"
+                    class="img-fluid mb-3" />
+                  <h5 class="card-title text-start" style="line-height: 30px;">
+                    1993 アルマン ルソー シャンベルタン クロ・ド ベーズ
+                    グラン クリュ 赤ワイン 750ml
+                  </h5>
+                  <hr />
+                  <div class="d-flex justify-content-between mt-3">
+                    <span>シャルドネ</span>
+                    <span>シャルドネ</span>
+                  </div>
+                  <hr />
+                  <div class="d-flex justify-content-end mt-3">
+                    <span class="cat_quantity">750ml - </span><span class="price fw-bold">¥28,800</span>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <!-- Product 7 -->
+          <div class="col-12 col-sm-6 col-lg-4 mb-4">
+            <a href="#" class="text-decoration-none">
+              <div class="card h-100 border-0 bg-transparent">
+                <div class="card-body text-center">
+                  <img src="img/cat-products.png" alt="1993 アルマン ルソー シャンベルタン クロ・ド ベーズ グラン クリュ 赤ワイン 750ml"
+                    class="img-fluid mb-3" />
+                  <h5 class="card-title text-start" style="line-height: 30px;">
+                    1993 アルマン ルソー シャンベルタン クロ・ド ベーズ
+                    グラン クリュ 赤ワイン 750ml
+                  </h5>
+                  <hr />
+                  <div class="d-flex justify-content-between mt-3">
+                    <span>シャルドネ</span>
+                    <span>シャルドネ</span>
+                  </div>
+                  <hr />
+                  <div class="d-flex justify-content-end mt-3">
+                    <span class="cat_quantity">750ml - </span><span class="price fw-bold">¥28,800</span>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <!-- Product 8 -->
+          <div class="col-12 col-sm-6 col-lg-4 mb-4">
+            <a href="#" class="text-decoration-none">
+              <div class="card h-100 border-0 bg-transparent">
+                <div class="card-body text-center">
+                  <img src="img/cat-products.png" alt="1993 アルマン ルソー シャンベルタン クロ・ド ベーズ グラン クリュ 赤ワイン 750ml"
+                    class="img-fluid mb-3" />
+                  <h5 class="card-title text-start" style="line-height: 30px;">
+                    1993 アルマン ルソー シャンベルタン クロ・ド ベーズ
+                    グラン クリュ 赤ワイン 750ml
+                  </h5>
+                  <hr />
+                  <div class="d-flex justify-content-between mt-3">
+                    <span>シャルドネ</span>
+                    <span>シャルドネ</span>
+                  </div>
+                  <hr />
+                  <div class="d-flex justify-content-end mt-3">
+                    <span class="cat_quantity">750ml - </span><span class="price fw-bold">¥28,800</span>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <!-- Product 9 -->
+          <div class="col-12 col-sm-6 col-lg-4 mb-4">
+            <a href="#" class="text-decoration-none">
+              <div class="card h-100 border-0 bg-transparent">
+                <div class="card-body text-center">
+                  <img src="img/cat-products.png" alt="1993 アルマン ルソー シャンベルタン クロ・ド ベーズ グラン クリュ 赤ワイン 750ml"
+                    class="img-fluid mb-3" />
+                  <h5 class="card-title text-start" style="line-height: 30px;">
+                    1993 アルマン ルソー シャンベルタン クロ・ド ベーズ
+                    グラン クリュ 赤ワイン 750ml
+                  </h5>
+                  <hr />
+                  <div class="d-flex justify-content-between mt-3">
+                    <span>シャルドネ</span>
+                    <span>シャルドネ</span>
+                  </div>
+                  <hr />
+                  <div class="d-flex justify-content-end mt-3">
+                    <span class="cat_quantity">750ml - </span><span class="price fw-bold">¥28,800</span>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <!-- Product 10 -->
+          <div class="col-12 col-sm-6 col-lg-4 mb-4">
+            <a href="#" class="text-decoration-none">
+              <div class="card h-100 border-0 bg-transparent">
+                <div class="card-body text-center">
+                  <img src="img/cat-products.png" alt="1993 アルマン ルソー シャンベルタン クロ・ド ベーズ グラン クリュ 赤ワイン 750ml"
+                    class="img-fluid mb-3" />
+                  <h5 class="card-title text-start" style="line-height: 30px;">
+                    1993 アルマン ルソー シャンベルタン クロ・ド ベーズ
+                    グラン クリュ 赤ワイン 750ml
+                  </h5>
+                  <hr />
+                  <div class="d-flex justify-content-between mt-3">
+                    <span>シャルドネ</span>
+                    <span>シャルドネ</span>
+                  </div>
+                  <hr />
+                  <div class="d-flex justify-content-end mt-3">
+                    <span class="cat_quantity">750ml - </span><span class="price fw-bold">¥28,800</span>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <!-- Product 11 -->
+          <div class="col-12 col-sm-6 col-lg-4 mb-4">
+            <a href="#" class="text-decoration-none">
+              <div class="card h-100 border-0 bg-transparent">
+                <div class="card-body text-center">
+                  <img src="img/cat-products.png" alt="1993 アルマン ルソー シャンベルタン クロ・ド ベーズ グラン クリュ 赤ワイン 750ml"
+                    class="img-fluid mb-3" />
+                  <h5 class="card-title text-start" style="line-height: 30px;">
+                    1993 アルマン ルソー シャンベルタン クロ・ド ベーズ
+                    グラン クリュ 赤ワイン 750ml
+                  </h5>
+                  <hr />
+                  <div class="d-flex justify-content-between mt-3">
+                    <span>シャルドネ</span>
+                    <span>シャルドネ</span>
+                  </div>
+                  <hr />
+                  <div class="d-flex justify-content-end mt-3">
+                    <span class="cat_quantity">750ml - </span><span class="price fw-bold">¥28,800</span>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <!-- Product 12 -->
+          <div class="col-12 col-sm-6 col-lg-4 mb-4">
+            <a href="#" class="text-decoration-none">
+              <div class="card h-100 border-0 bg-transparent">
+                <div class="card-body text-center">
+                  <img src="img/cat-products.png" alt="1993 アルマン ルソー シャンベルタン クロ・ド ベーズ グラン クリュ 赤ワイン 750ml"
+                    class="img-fluid mb-3" />
+                  <h5 class="card-title text-start" style="line-height: 30px;">
+                    1993 アルマン ルソー シャンベルタン クロ・ド ベーズ
+                    グラン クリュ 赤ワイン 750ml
+                  </h5>
+                  <hr />
+                  <div class="d-flex justify-content-between mt-3">
+                    <span>シャルドネ</span>
+                    <span>シャルドネ</span>
+                  </div>
+                  <hr />
+                  <div class="d-flex justify-content-end mt-3">
+                    <span class="cat_quantity">750ml - </span><span class="price fw-bold">¥28,800</span>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+        <!-- Page Navigation -->
+        <nav aria-label="Page navigation" class="d-flex justify-content-center">
+          <ul class="pagination">
+            <li class="page-item">
+              <a class="page-link" href="#" aria-label="Previous">
+                <span aria-hidden="true">&laquo;</span>
+              </a>
+            </li>
+            <li class="page-item"><a class="page-link" href="#">1</a></li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item">
+              <a class="page-link" href="#" aria-label="Next">
+                <span aria-hidden="true">&raquo;</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <!-- Category Part Six -->
+        <div class="cat_page_part_six">
+          <!-- Category Title -->
+          <div class="my-2 cat_six_title text-center">
+            <h2 class="mb-0">Recommendation</h2>
+            <span class="cat_subtitle">- 赤ワイン</span>
+          </div>
+          <!-- Category Products -->
+          <div class="cat_products row my-5">
+            <!-- Product 1 -->
+            <div class="col-12 col-sm-6 col-lg-3 mb-4">
+              <a href="#" class="text-decoration-none">
+                <div class="card h-100 border-0 bg-transparent">
+                  <div class="card-body text-center">
+                    <img src="img/cat-products.png" alt="1993 アルマン ルソー シャンベルタン クロ・ド ベーズ グラン クリュ 赤ワイン 750ml"
+                      class="img-fluid mb-3" />
+                    <h5 class="card-title text-start" style="line-height: 30px;">
+                      1993 アルマン ルソー シャンベルタン クロ・ド ベーズ
+                      グラン クリュ 赤ワイン 750ml
+                    </h5>
+                    <hr />
+                    <div class="d-flex justify-content-between mt-3">
+                      <span>シャルドネ</span>
+                      <span>シャルドネ</span>
+                    </div>
+                    <hr />
+                    <div class="d-flex justify-content-end mt-3">
+                      <span class="cat_quantity">750ml - </span><span class="price fw-bold">¥28,800</span>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <!-- Product 2 -->
+            <div class="col-12 col-sm-6 col-lg-3 mb-4">
+              <a href="#" class="text-decoration-none">
+                <div class="card h-100 border-0 bg-transparent">
+                  <div class="card-body text-center">
+                    <img src="img/cat-products.png" alt="1993 アルマン ルソー シャンベルタン クロ・ド ベーズ グラン クリュ 赤ワイン 750ml"
+                      class="img-fluid mb-3" />
+                    <h5 class="card-title text-start" style="line-height: 30px;">
+                      1993 アルマン ルソー シャンベルタン クロ・ド ベーズ
+                      グラン クリュ 赤ワイン 750ml
+                    </h5>
+                    <hr />
+                    <div class="d-flex justify-content-between mt-3">
+                      <span>シャルドネ</span>
+                      <span>シャルドネ</span>
+                    </div>
+                    <hr />
+                    <div class="d-flex justify-content-end mt-3">
+                      <span class="cat_quantity">750ml - </span><span class="price fw-bold">¥28,800</span>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <!-- Product 3 -->
+            <div class="col-12 col-sm-6 col-lg-3 mb-4">
+              <a href="#" class="text-decoration-none">
+                <div class="card h-100 border-0 bg-transparent">
+                  <div class="card-body text-center">
+                    <img src="img/cat-products.png" alt="1993 アルマン ルソー シャンベルタン クロ・ド ベーズ グラン クリュ 赤ワイン 750ml"
+                      class="img-fluid mb-3" />
+                    <h5 class="card-title text-start" style="line-height: 30px;">
+                      1993 アルマン ルソー シャンベルタン クロ・ド ベーズ
+                      グラン クリュ 赤ワイン 750ml
+                    </h5>
+                    <hr />
+                    <div class="d-flex justify-content-between mt-3">
+                      <span>シャルドネ</span>
+                      <span>シャルドネ</span>
+                    </div>
+                    <hr />
+                    <div class="d-flex justify-content-end mt-3">
+                      <span class="cat_quantity">750ml - </span><span class="price fw-bold">¥28,800</span>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <!-- Product 4 -->
+            <div class="col-12 col-sm-6 col-lg-3 mb-4">
+              <a href="#" class="text-decoration-none">
+                <div class="card h-100 border-0 bg-transparent">
+                  <div class="card-body text-center">
+                    <img src="img/cat-products.png" alt="1993 アルマン ルソー シャンベルタン クロ・ド ベーズ グラン クリュ 赤ワイン 750ml"
+                      class="img-fluid mb-3" />
+                    <h5 class="card-title text-start" style="line-height: 30px;">
+                      1993 アルマン ルソー シャンベルタン クロ・ド ベーズ
+                      グラン クリュ 赤ワイン 750ml
+                    </h5>
+                    <hr />
+                    <div class="d-flex justify-content-between mt-3">
+                      <span>シャルドネ</span>
+                      <span>シャルドネ</span>
+                    </div>
+                    <hr />
+                    <div class="d-flex justify-content-end mt-3">
+                      <span class="cat_quantity">750ml - </span><span class="price fw-bold">¥28,800</span>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+          <!-- See More Button -->
+          <div class="text-center">
+            <a href="#"
+              class="text-decoration-none bourgogne_button d-inline-flex justify-content-center align-items-center"
+              style="color: black;">もっと見る</a>
+          </div>
+        </div>
+        <!-- Shop Info -->
+        <div class="fp_shop_info">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-12 text-center">
+                <img src="img/fp-shop-info.png" alt="fp-special-feature-3" class="img-fluid w-100" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Scroll Buttons -->
+    <div class="scroll-buttons">
+      <button id="scrollTopBtn" title="Go to top">
+        <i class="bi bi-arrow-up"></i>
+      </button>
+      <!-- 🥰 এখানে ২টা বাটন ব্যবহার করেছি। না চাইলে নিচের বাটন কমেন্টস করে অফ করে দিও 🏃 -->
+      <button id="scrollDownBtn" title="Go to bottom">
+        <i class="bi bi-arrow-down"></i>
+      </button>
+    </div>
+    <!-- Footer -->
+    <footer>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-12">
+            <img src="img/footer.png" alt="Rakuten Shop" class="d-block mx-auto img-fluid" />
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Custom JS -->
+    <script src="js/script.js" type="text/javascript"></script>
+    <!-- Bootstrap 5 JS Bundle with Popper -->
+    <script src="js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="js/bootstrap.bundle.min.js" type="text/javascript"></script>
+</body>
+
+</html>
