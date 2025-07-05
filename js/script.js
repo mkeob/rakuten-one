@@ -196,4 +196,50 @@ document.addEventListener('DOMContentLoaded', function () {
             }
         });
     }
+
+    // Filter Button Functionality
+    const filterButtons = document.querySelectorAll('.filter-btn');
+    
+    filterButtons.forEach(button => {
+        button.addEventListener('click', function() {
+            // Find the parent filter section
+            const filterSection = this.closest('.row');
+            
+            // Remove active class from all buttons in the same filter section
+            const siblingButtons = filterSection.querySelectorAll('.filter-btn');
+            siblingButtons.forEach(btn => btn.classList.remove('active'));
+            
+            // Add active class to clicked button
+            this.classList.add('active');
+            
+            // Optional: Add filter functionality here
+            // For example, you could filter products based on selected criteria
+            console.log('Filter applied:', this.textContent);
+        });
+    });
+
+    // Optional: Reset all filters function
+    function resetAllFilters() {
+        filterButtons.forEach(button => {
+            button.classList.remove('active');
+        });
+    }
+
+    // Optional: Get selected filters function
+    function getSelectedFilters() {
+        const activeFilters = document.querySelectorAll('.filter-btn.active');
+        const filters = {};
+        
+        activeFilters.forEach(button => {
+            const filterSection = button.closest('.row');
+            const filterTitle = filterSection.querySelector('.filter-title').textContent;
+            
+            if (!filters[filterTitle]) {
+                filters[filterTitle] = [];
+            }
+            filters[filterTitle].push(button.textContent);
+        });
+        
+        return filters;
+    }
 });

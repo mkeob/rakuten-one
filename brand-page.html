@@ -24,11 +24,11 @@
 <body>
     <!-- Header -->
     <header>
-        <div class="container">
+        <div class="container-fluid">
             <div class="row">
                 <div class="col-12">
                     <nav class="navbar navbar-expand-lg main-navbar header-main-logo">
-                        <a class="navbar-brand" href="#"><img src="img/selead-shop.png" alt="SELEAD SHOP"
+                        <a class="navbar-brand" href="#"><img src="img/logo.png" alt="SELEAD SHOP"
                                 class="img-fluid"></a>
                         <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarScroll">
                             <i class="bi bi-list"></i>
@@ -96,7 +96,7 @@
                                     </form>
                                 </div>
                                 <div>
-                                    <form class="d-flex justify-content-between">
+                                    <form class="d-flex justify-content-evenly menusrcbtn">
                                         <button class="under-search-btn me-1" type="submit">SELEAD SHOPとは</button>
                                         <button class="under-search-btn" type="submit">ご利用ガイド</button>
                                     </form>
@@ -108,12 +108,11 @@
             </div>
         </div>
     </header>
-    <!-- Main Container section -->
-    <div class="container">
+    <div class="container-fluid" style="padding:0;">
         <div class="row">
             <!-- Brand Page -->
             <div class="brand-page col-12">
-                <img src="img/brand-page-banner.png" alt="Brand" class="d-block mx-auto img-fluid w-100" />
+                <img src="img/brand-page-banner.png" alt="Brand" class="img-fluid w-100" />
             </div>
         </div>
     </div>
@@ -126,83 +125,75 @@
             </p>
         </div>
     </div>
-    <!-- Field and Structure -->
+    <!-- Commitment -->
     <div class="container-fluid wine-showcase">
         <div class="container">
             <div class="col-12">
-                <div class="">
-                    <div class="field-structure">
-                        <h2 class="showcase-title">Field and structure</h2>
-                        <p class="showcase-subtitle">畑と造り</p>
-                        <div class="wine-image-container">
-                            <img src="img/field-structure.png" alt="Wine bottles" class="img-fluid wine-bottles-img">
+                <div class="commitment-section">
+                    <h2 class="showcase-title text-center">Commitment</h2>
+                    <p class="showcase-subtitle text-center">selead shopのこだわり</p>
+                    <p class="commitment-text text-center w-md-50">
+                        創業以来変わらないフィロソフィー。畑から生まれる個性を大切にし<br>
+                        、ぶどう本来の味わいを引き出すワイン造り。<br>
+                        自然の恵みに感謝し、伝統と革新のバランスを大切にしています。
+                    </p>
+                    <!-- Wine Features -->
+                    <div class="row wine-features mt-5">
+                        <div class="col-md-6 col-12 mb-4">
+                            <div class="feature-item">
+                                <div class="feature-image">
+                                    <img src="img/wf-1.png" alt="Wine selection" class="img-fluid w-100">
+                                </div>
+                                <h3 class="feature-title">粒に拘れない美味い品種</h3>
+                                <p class="feature-description">ブドウの個性を活かした、こだわりのワインづくり。一粒一粒丁寧に収穫し、最高の味わいを追求しています。
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-12 mb-4">
+                            <div class="feature-item">
+                                <div class="feature-image">
+                                    <img src="img/wf-2.png" alt="Wine pouring" class="img-fluid w-100">
+                                </div>
+                                <h3 class="feature-title">輸送時まで徹底した品質管理</h3>
+                                <p class="feature-description">最適な温度と湿度を保ち、輸送時にもワインの品質を損なわないよう細心の注意を払っています。</p>
+                            </div>
                         </div>
                     </div>
-                    <!-- Commitment -->
-                    <div class="commitment-section">
-                        <h2 class="showcase-title text-center">Commitment</h2>
-                        <p class="showcase-subtitle text-center">selead shopのこだわり</p>
-                        <p class="commitment-text text-center w-md-50">
-                            創業以来変わらないフィロソフィー。畑から生まれる個性を大切にし、ぶどう本来の味わいを引き出すワイン造り。自然の恵みに感謝し、伝統と革新のバランスを大切にしています。
+                    <div class="row wine-features">
+                        <div class="col-md-6 col-12 mb-4">
+                            <div class="feature-item">
+                                <div class="feature-image">
+                                    <img src="img/wf-3.png" alt="Wine pouring" class="img-fluid w-100">
+                                </div>
+                                <h3 class="feature-title">個性豊かなスタッフによる多彩な提案</h3>
+                                <p class="feature-description">ワインの知識豊富なスタッフが、お客様の好みや料理に合わせた最適なワインをご提案いたします。</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-12 mb-4">
+                            <div class="feature-item">
+                                <div class="feature-image">
+                                    <img src="img/wf-4.png" alt="Wine selection" class="img-fluid w-100">
+                                </div>
+                                <h3 class="feature-title">輸送時まで徹底した品質管理</h3>
+                                <p class="feature-description">最適な温度と湿度を保ち、輸送時にもワインの品質を損なわないよう細心の注意を払っています。</p>
+                            </div>
+                        </div>
+                    </div>
+                    <hr class="mt-5">
+                    <!-- Wine Philosophy -->
+                    <div class="wine-philosophy mt-5 d-md-flex justify-content-between">
+                        <h4 class="philosophy-text">ワインの魅力はマジックリカー。近年はビオディナミ農法を実践する。
+                        </h4>
+                        <p class="philosophy-detail">
+                            ブルゴーニュワインは「繊細」「優美」「奥深い」といった言葉で形容されます。単一品種でありながら、テロワールやヴィンテージ、生産者の哲学によって多彩な表情を見せるのがブルゴーニュワインの最大の魅力です。赤ワインはピノ・ノワール由来のマイルドな渋みと豊かな酸味、華やかな香りが特徴です。熟成を経ることで、より丸みを帯びた複雑な風味へと変化します。白ワインはシャルドネを使用し、果実味と酸味のバランスが良く、フレッシュなものから濃厚でリッチなスタイルまで幅広い味わいが楽しめます。とくにシャブリのシャルドネは、キレのある酸味とミネラル感が際立ちます。
                         </p>
-                        <!-- Wine Features -->
-                        <div class="row wine-features mt-5">
-                            <div class="col-md-6 col-12 mb-4">
-                                <div class="feature-item">
-                                    <div class="feature-image">
-                                        <img src="img/wf-1.png" alt="Wine selection" class="img-fluid w-100">
-                                    </div>
-                                    <h3 class="feature-title">粒に拘れない美味い品種</h3>
-                                    <p class="feature-description">ブドウの個性を活かした、こだわりのワインづくり。一粒一粒丁寧に収穫し、最高の味わいを追求しています。
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="col-md-6 col-12 mb-4">
-                                <div class="feature-item">
-                                    <div class="feature-image">
-                                        <img src="img/wf-2.png" alt="Wine pouring" class="img-fluid w-100">
-                                    </div>
-                                    <h3 class="feature-title">輸送時まで徹底した品質管理</h3>
-                                    <p class="feature-description">最適な温度と湿度を保ち、輸送時にもワインの品質を損なわないよう細心の注意を払っています。</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row wine-features">
-                            <div class="col-md-6 col-12 mb-4">
-                                <div class="feature-item">
-                                    <div class="feature-image">
-                                        <img src="img/wf-3.png" alt="Wine pouring" class="img-fluid w-100">
-                                    </div>
-                                    <h3 class="feature-title">個性豊かなスタッフによる多彩な提案</h3>
-                                    <p class="feature-description">ワインの知識豊富なスタッフが、お客様の好みや料理に合わせた最適なワインをご提案いたします。</p>
-                                </div>
-                            </div>
-                            <div class="col-md-6 col-12 mb-4">
-                                <div class="feature-item">
-                                    <div class="feature-image">
-                                        <img src="img/wf-4.png" alt="Wine selection" class="img-fluid w-100">
-                                    </div>
-                                    <h3 class="feature-title">輸送時まで徹底した品質管理</h3>
-                                    <p class="feature-description">最適な温度と湿度を保ち、輸送時にもワインの品質を損なわないよう細心の注意を払っています。</p>
-                                </div>
-                            </div>
-                        </div>
-                        <hr class="mt-5">
-                        <!-- Wine Philosophy -->
-                        <div class="wine-philosophy mt-5 d-md-flex justify-content-between">
-                            <h4 class="philosophy-text">ワインの魅力はマジックリカー。近年はビオディナミ農法を実践する。
-                                <h4 />
-                                <p class="philosophy-detail mt-4">
-                                    ブルゴーニュワインは「繊細」「優美」「奥深い」といった言葉で形容されます。単一品種でありながら、テロワールやヴィンテージ、生産者の哲学によって多彩な表情を見せるのがブルゴーニュワインの最大の魅力です。赤ワインはピノ・ノワール由来のマイルドな渋みと豊かな酸味、華やかな香りが特徴です。熟成を経ることで、より丸みを帯びた複雑な風味へと変化します。白ワインはシャルドネを使用し、果実味と酸味のバランスが良く、フレッシュなものから濃厚でリッチなスタイルまで幅広い味わいが楽しめます。とくにシャブリのシャルドネは、キレのある酸味とミネラル感が際立ちます。
-                                </p>
-                        </div>
-                        <div class="wine-philosophy mt-5 d-md-flex justify-content-between">
-                            <h4 class="philosophy-text">ワインの魅力はマジックリカー。近年はビオディナミ農法を実践する。
-                                <h4 />
-                                <p class="philosophy-detail mt-4">
-                                    ブルゴーニュワインは「繊細」「優美」「奥深い」といった言葉で形容されます。単一品種でありながら、テロワールやヴィンテージ、生産者の哲学によって多彩な表情を見せるのがブルゴーニュワインの最大の魅力です。赤ワインはピノ・ノワール由来のマイルドな渋みと豊かな酸味、華やかな香りが特徴です。熟成を経ることで、より丸みを帯びた複雑な風味へと変化します。白ワインはシャルドネを使用し、果実味と酸味のバランスが良く、フレッシュなものから濃厚でリッチなスタイルまで幅広い味わいが楽しめます。とくにシャブリのシャルドネは、キレのある酸味とミネラル感が際立ちます。
-                                </p>
-                        </div>
+                    </div>
+                    <div class="wine-philosophy mt-5 d-md-flex justify-content-between">
+                        <h4 class="philosophy-text">ワインの魅力はマジックリカー。近年はビオディナミ農法を実践する。
+                        </h4>
+                        <p class="philosophy-detail">
+                            ブルゴーニュワインは「繊細」「優美」「奥深い」といった言葉で形容されます。単一品種でありながら、テロワールやヴィンテージ、生産者の哲学によって多彩な表情を見せるのがブルゴーニュワインの最大の魅力です。赤ワインはピノ・ノワール由来のマイルドな渋みと豊かな酸味、華やかな香りが特徴です。熟成を経ることで、より丸みを帯びた複雑な風味へと変化します。白ワインはシャルドネを使用し、果実味と酸味のバランスが良く、フレッシュなものから濃厚でリッチなスタイルまで幅広い味わいが楽しめます。とくにシャブリのシャルドネは、キレのある酸味とミネラル感が際立ちます。
+                        </p>
                     </div>
                 </div>
             </div>
@@ -293,7 +284,8 @@
             <div class="col-12">
                 <!-- Category Title -->
                 <div class="my-2 d-flex align-items-center cat_title">
-                    <h2 class="mb-0">Romanee Conti</h2><span class="ms-2 cat_subtitle">- ロマネ・コンティ</span>
+                    <h2 class="mb-0" style="font-family: 'Marcellus', serif;">Romanee Conti</h2><span
+                        class="ms-2 cat_subtitle">- ロマネ・コンティ</span>
                 </div>
                 <!-- Romanee Conti Wine Description -->
                 <div class="my-4">
@@ -307,15 +299,116 @@
                         <a href="#" class="text-decoration-none">
                             <div class="card h-100 border-0 bg-transparent">
                                 <div class="card-body text-center">
-                                    <img src="img/cat-products.png"
-                                        alt="1993 アルマン ルソー シャンベルタン クロ・ド ベーズ グラン クリュ 赤ワイン 750ml" class="img-fluid mb-3">
-                                    <h5 class="card-title">1993 アルマン ルソー シャンベルタン クロ・ド ベーズ グラン クリュ 赤ワイン 750ml</h5>
-                                    <hr>
-                                    <div class="d-flex justify-content-between mt-3">
-                                        <span>シャルドネ</span>
+                                    <div class="productimage mb-3">
+                                        <img src="img/cp.png" alt="1993 アルマン ルソー シャンベルタン クロ・ド ベーズ グラン クリュ 赤ワイン 750ml"
+                                            class="img-fluid mb-3" />
+                                    </div>
+                                    <h5 class="card-title text-start" style="line-height: 30px;">
+                                        1993 アルマン ルソー シャンベルタン クロ・ド ベーズ
+                                        グラン クリュ 赤ワイン 750ml
+                                    </h5>
+                                    <div class="d-flex justify-content-between mt-3 cat-border">
+                                        <span>フランス / ブルゴーニュ</span>
                                         <span>シャルドネ</span>
                                     </div>
-                                    <hr>
+                                    <div class="d-flex justify-content-end mt-3">
+                                        <span class="cat_quantity">750ml - </span><span class="price"><span
+                                                class="price-symbol">¥</span>28,800</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- Product 2 -->
+                    <div class="col-12 col-sm-6 col-lg-4 mb-4">
+                        <a href="#" class="text-decoration-none">
+                            <div class="card h-100 border-0 bg-transparent">
+                                <div class="card-body text-center">
+                                    <div class="productimage mb-3">
+                                        <img src="img/cp.png" alt="1993 アルマン ルソー シャンベルタン クロ・ド ベーズ グラン クリュ 赤ワイン 750ml"
+                                            class="img-fluid mb-3" />
+                                    </div>
+                                    <h5 class="card-title text-start" style="line-height: 30px;">
+                                        1993 アルマン ルソー シャンベルタン クロ・ド ベーズ
+                                        グラン クリュ 赤ワイン 750ml
+                                    </h5>
+                                    <div class="d-flex justify-content-between mt-3 cat-border">
+                                        <span>フランス / ブルゴーニュ</span>
+                                        <span>シャルドネ</span>
+                                    </div>
+                                    <div class="d-flex justify-content-end mt-3">
+                                        <span class="cat_quantity">750ml - </span><span class="price"><span
+                                                class="price-symbol">¥</span>28,800</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- Product 3 -->
+                    <div class="col-12 col-sm-6 col-lg-4 mb-4">
+                        <a href="#" class="text-decoration-none">
+                            <div class="card h-100 border-0 bg-transparent">
+                                <div class="card-body text-center">
+                                    <div class="productimage mb-3">
+                                        <img src="img/cp.png" alt="1993 アルマン ルソー シャンベルタン クロ・ド ベーズ グラン クリュ 赤ワイン 750ml"
+                                            class="img-fluid mb-3" />
+                                    </div>
+                                    <h5 class="card-title text-start" style="line-height: 30px;">
+                                        1993 アルマン ルソー シャンベルタン クロ・ド ベーズ
+                                        グラン クリュ 赤ワイン 750ml
+                                    </h5>
+                                    <div class="d-flex justify-content-between mt-3 cat-border">
+                                        <span>フランス / ブルゴーニュ</span>
+                                        <span>シャルドネ</span>
+                                    </div>
+                                    <div class="d-flex justify-content-end mt-3">
+                                        <span class="cat_quantity">750ml - </span><span class="price"><span
+                                                class="price-symbol">¥</span>28,800</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <!-- See More Button -->
+                <div class="text-center">
+                    <a href="#"
+                        class="text-decoration-none bourgogne_button d-inline-flex justify-content-center align-items-center"
+                        style="color: black;">もっと見る</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Montrachet Category -->
+    <div class="container-fluid cat_page_part_three">
+        <div class="container">
+            <div class="col-12">
+
+                <!-- Category Title -->
+                <div class="my-2 d-flex align-items-center cat_title">
+                    <h2 class="mb-0">Montrachet</h2><span class="ms-2 cat_subtitle">- ロマネ・コンティ</span>
+                </div>
+                <!-- Montrachet Wine Description -->
+                <div class="my-4">
+                    <p class="cat_desc text-start">ドメーヌ・ド・ラ・ロマネ・コンティ（DRC）のワインは、愛好家が最後にたどりつく終着点です。
+                        ワインを超えた神話的な存在と言ってもいいでしょう。ヴォーヌ・ロマネ村にある1.8ヘクタールの畑の十字架の前に立てば、だれもが霊感にうたれます。</p>
+                </div>
+                <!-- Category Products -->
+                <div class="cat_products row my-5">
+                    <!-- Product 1 -->
+                    <div class="col-12 col-sm-6 col-lg-4 mb-4">
+                        <a href="#" class="text-decoration-none">
+                            <div class="card h-100 border-0 bg-transparent">
+                                <div class="card-body text-center">
+                                    <div class="productimage mb-3">
+                                        <img src="img/cp.png" alt="1993 アルマン ルソー シャンベルタン クロ・ド ベーズ グラン クリュ 赤ワイン 750ml"
+                                            class="img-fluid mb-3" />
+                                    </div>
+                                    <h5 class="card-title">1993 アルマン ルソー シャンベルタン クロ・ド ベーズ グラン クリュ 赤ワイン 750ml</h5>
+                                    <div class="d-flex justify-content-between mt-3 cat-border">
+                                        <span>フランス / ブルゴーニュ</span>
+                                        <span>シャルドネ</span>
+                                    </div>
                                     <div class="d-flex justify-content-end mt-3">
                                         <span class="cat_quantity">750ml - </span><span
                                             class="price fw-bold">¥28,800</span>
@@ -329,15 +422,15 @@
                         <a href="#" class="text-decoration-none">
                             <div class="card h-100 border-0 bg-transparent">
                                 <div class="card-body text-center">
-                                    <img src="img/cat-products.png"
-                                        alt="1993 アルマン ルソー シャンベルタン クロ・ド ベーズ グラン クリュ 赤ワイン 750ml" class="img-fluid mb-3">
+                                    <div class="productimage mb-3">
+                                        <img src="img/cp.png" alt="1993 アルマン ルソー シャンベルタン クロ・ド ベーズ グラン クリュ 赤ワイン 750ml"
+                                            class="img-fluid mb-3" />
+                                    </div>
                                     <h5 class="card-title">1993 アルマン ルソー シャンベルタン クロ・ド ベーズ グラン クリュ 赤ワイン 750ml</h5>
-                                    <hr>
-                                    <div class="d-flex justify-content-between mt-3">
-                                        <span>シャルドネ</span>
+                                    <div class="d-flex justify-content-between mt-3 cat-border">
+                                        <span>フランス / ブルゴーニュ</span>
                                         <span>シャルドネ</span>
                                     </div>
-                                    <hr>
                                     <div class="d-flex justify-content-end mt-3">
                                         <span class="cat_quantity">750ml - </span><span
                                             class="price fw-bold">¥28,800</span>
@@ -351,15 +444,15 @@
                         <a href="#" class="text-decoration-none">
                             <div class="card h-100 border-0 bg-transparent">
                                 <div class="card-body text-center">
-                                    <img src="img/cat-products.png"
-                                        alt="1993 アルマン ルソー シャンベルタン クロ・ド ベーズ グラン クリュ 赤ワイン 750ml" class="img-fluid mb-3">
+                                    <div class="productimage mb-3">
+                                        <img src="img/cp.png" alt="1993 アルマン ルソー シャンベルタン クロ・ド ベーズ グラン クリュ 赤ワイン 750ml"
+                                            class="img-fluid mb-3" />
+                                    </div>
                                     <h5 class="card-title">1993 アルマン ルソー シャンベルタン クロ・ド ベーズ グラン クリュ 赤ワイン 750ml</h5>
-                                    <hr>
-                                    <div class="d-flex justify-content-between mt-3">
-                                        <span>シャルドネ</span>
+                                    <div class="d-flex justify-content-between mt-3 cat-border">
+                                        <span>フランス / ブルゴーニュ</span>
                                         <span>シャルドネ</span>
                                     </div>
-                                    <hr>
                                     <div class="d-flex justify-content-end mt-3">
                                         <span class="cat_quantity">750ml - </span><span
                                             class="price fw-bold">¥28,800</span>
@@ -379,182 +472,95 @@
             </div>
         </div>
     </div>
-    <!-- Montrachet Category -->
-    <div class="container-fluid cat_page_part_three">
-        <div class="container">
-            <div class="col-12">
-                
-                    <!-- Category Title -->
-                    <div class="my-2 d-flex align-items-center cat_title">
-                        <h2 class="mb-0">Montrachet</h2><span class="ms-2 cat_subtitle">- ロマネ・コンティ</span>
-                    </div>
-                    <!-- Montrachet Wine Description -->
-                    <div class="my-4">
-                        <p class="cat_desc text-start">ドメーヌ・ド・ラ・ロマネ・コンティ（DRC）のワインは、愛好家が最後にたどりつく終着点です。
-                            ワインを超えた神話的な存在と言ってもいいでしょう。ヴォーヌ・ロマネ村にある1.8ヘクタールの畑の十字架の前に立てば、だれもが霊感にうたれます。</p>
-                    </div>
-                    <!-- Category Products -->
-                    <div class="cat_products row my-5">
-                        <!-- Product 1 -->
-                        <div class="col-12 col-sm-6 col-lg-4 mb-4">
-                            <a href="#" class="text-decoration-none">
-                                <div class="card h-100 border-0 bg-transparent">
-                                    <div class="card-body text-center">
-                                        <img src="img/cat-products.png" alt="1993 アルマン ルソー シャンベルタン クロ・ド ベーズ グラン クリュ 赤ワイン 750ml"
-                                            class="img-fluid mb-3">
-                                        <h5 class="card-title">1993 アルマン ルソー シャンベルタン クロ・ド ベーズ グラン クリュ 赤ワイン 750ml</h5>
-                                        <hr>
-                                        <div class="d-flex justify-content-between mt-3">
-                                            <span>シャルドネ</span>
-                                            <span>シャルドネ</span>
-                                        </div>
-                                        <hr>
-                                        <div class="d-flex justify-content-end mt-3">
-                                            <span class="cat_quantity">750ml - </span><span class="price fw-bold">¥28,800</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        <!-- Product 2 -->
-                        <div class="col-12 col-sm-6 col-lg-4 mb-4">
-                            <a href="#" class="text-decoration-none">
-                                <div class="card h-100 border-0 bg-transparent">
-                                    <div class="card-body text-center">
-                                        <img src="img/cat-products.png" alt="1993 アルマン ルソー シャンベルタン クロ・ド ベーズ グラン クリュ 赤ワイン 750ml"
-                                            class="img-fluid mb-3">
-                                        <h5 class="card-title">1993 アルマン ルソー シャンベルタン クロ・ド ベーズ グラン クリュ 赤ワイン 750ml</h5>
-                                        <hr>
-                                        <div class="d-flex justify-content-between mt-3">
-                                            <span>シャルドネ</span>
-                                            <span>シャルドネ</span>
-                                        </div>
-                                        <hr>
-                                        <div class="d-flex justify-content-end mt-3">
-                                            <span class="cat_quantity">750ml - </span><span class="price fw-bold">¥28,800</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        <!-- Product 3 -->
-                        <div class="col-12 col-sm-6 col-lg-4 mb-4">
-                            <a href="#" class="text-decoration-none">
-                                <div class="card h-100 border-0 bg-transparent">
-                                    <div class="card-body text-center">
-                                        <img src="img/cat-products.png" alt="1993 アルマン ルソー シャンベルタン クロ・ド ベーズ グラン クリュ 赤ワイン 750ml"
-                                            class="img-fluid mb-3">
-                                        <h5 class="card-title">1993 アルマン ルソー シャンベルタン クロ・ド ベーズ グラン クリュ 赤ワイン 750ml</h5>
-                                        <hr>
-                                        <div class="d-flex justify-content-between mt-3">
-                                            <span>シャルドネ</span>
-                                            <span>シャルドネ</span>
-                                        </div>
-                                        <hr>
-                                        <div class="d-flex justify-content-end mt-3">
-                                            <span class="cat_quantity">750ml - </span><span class="price fw-bold">¥28,800</span>
-                                        </div>
-        
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <!-- See More Button -->
-                    <div class="text-center">
-                        <a href="#"
-                            class="text-decoration-none bourgogne_button d-inline-flex justify-content-center align-items-center"
-                            style="color: black;">もっと見る</a>
-                    </div>
-            </div>
-        </div>
-    </div>
     <!-- Romanee Conti Category -->
     <div class="container-fluid cat_page_part_two">
         <div class="container">
             <div class="col-12">
-                    <!-- Category Title -->
-                    <div class="my-2 d-flex align-items-center cat_title">
-                        <h2 class="mb-0">Romanee Conti</h2><span class="ms-2 cat_subtitle">- ロマネ・コンティ</span>
-                    </div>
-                    <!-- Romanee Conti Wine Description -->
-                    <div class="my-4">
-                        <p class="cat_desc text-start">ドメーヌ・ド・ラ・ロマネ・コンティ（DRC）のワインは、愛好家が最後にたどりつく終着点です。
-                            ワインを超えた神話的な存在と言ってもいいでしょう。ヴォーヌ・ロマネ村にある1.8ヘクタールの畑の十字架の前に立てば、だれもが霊感にうたれます。</p>
-                    </div>
-                    <!-- Category Products -->
-                    <div class="cat_products row my-5">
-                        <!-- Product 1 -->
-                        <div class="col-12 col-sm-6 col-lg-4 mb-4">
-                            <a href="#" class="text-decoration-none">
-                                <div class="card h-100 border-0 bg-transparent">
-                                    <div class="card-body text-center">
-                                        <img src="img/cat-products.png" alt="1993 アルマン ルソー シャンベルタン クロ・ド ベーズ グラン クリュ 赤ワイン 750ml"
-                                            class="img-fluid mb-3">
-                                        <h5 class="card-title">1993 アルマン ルソー シャンベルタン クロ・ド ベーズ グラン クリュ 赤ワイン 750ml</h5>
-                                        <hr>
-                                        <div class="d-flex justify-content-between mt-3">
-                                            <span>シャルドネ</span>
-                                            <span>シャルドネ</span>
-                                        </div>
-                                        <hr>
-                                        <div class="d-flex justify-content-end mt-3">
-                                            <span class="cat_quantity">750ml - </span><span class="price fw-bold">¥28,800</span>
-                                        </div>
+                <!-- Category Title -->
+                <div class="my-2 d-flex align-items-center cat_title">
+                    <h2 class="mb-0">Romanee Conti</h2><span class="ms-2 cat_subtitle">- ロマネ・コンティ</span>
+                </div>
+                <!-- Romanee Conti Wine Description -->
+                <div class="my-4">
+                    <p class="cat_desc text-start">ドメーヌ・ド・ラ・ロマネ・コンティ（DRC）のワインは、愛好家が最後にたどりつく終着点です。
+                        ワインを超えた神話的な存在と言ってもいいでしょう。ヴォーヌ・ロマネ村にある1.8ヘクタールの畑の十字架の前に立てば、だれもが霊感にうたれます。</p>
+                </div>
+                <!-- Category Products -->
+                <div class="cat_products row my-5">
+                    <!-- Product 1 -->
+                    <div class="col-12 col-sm-6 col-lg-4 mb-4">
+                        <a href="#" class="text-decoration-none">
+                            <div class="card h-100 border-0 bg-transparent">
+                                <div class="card-body text-center">
+                                    <div class="productimage mb-3">
+                                        <img src="img/cp.png" alt="1993 アルマン ルソー シャンベルタン クロ・ド ベーズ グラン クリュ 赤ワイン 750ml"
+                                            class="img-fluid mb-3" />
+                                    </div>
+                                    <h5 class="card-title">1993 アルマン ルソー シャンベルタン クロ・ド ベーズ グラン クリュ 赤ワイン 750ml</h5>
+                                    <div class="d-flex justify-content-between mt-3 cat-border">
+                                        <span>フランス / ブルゴーニュ</span>
+                                        <span>シャルドネ</span>
+                                    </div>
+                                    <div class="d-flex justify-content-end mt-3">
+                                        <span class="cat_quantity">750ml - </span><span
+                                            class="price fw-bold">¥28,800</span>
                                     </div>
                                 </div>
-                            </a>
-                        </div>
-                        <!-- Product 2 -->
-                        <div class="col-12 col-sm-6 col-lg-4 mb-4">
-                            <a href="#" class="text-decoration-none">
-                                <div class="card h-100 border-0 bg-transparent">
-                                    <div class="card-body text-center">
-                                        <img src="img/cat-products.png" alt="1993 アルマン ルソー シャンベルタン クロ・ド ベーズ グラン クリュ 赤ワイン 750ml"
-                                            class="img-fluid mb-3">
-                                        <h5 class="card-title">1993 アルマン ルソー シャンベルタン クロ・ド ベーズ グラン クリュ 赤ワイン 750ml</h5>
-                                        <hr>
-                                        <div class="d-flex justify-content-between mt-3">
-                                            <span>シャルドネ</span>
-                                            <span>シャルドネ</span>
-                                        </div>
-                                        <hr>
-                                        <div class="d-flex justify-content-end mt-3">
-                                            <span class="cat_quantity">750ml - </span><span class="price fw-bold">¥28,800</span>
-                                        </div>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- Product 2 -->
+                    <div class="col-12 col-sm-6 col-lg-4 mb-4">
+                        <a href="#" class="text-decoration-none">
+                            <div class="card h-100 border-0 bg-transparent">
+                                <div class="card-body text-center">
+                                    <div class="productimage mb-3">
+                                        <img src="img/cp.png" alt="1993 アルマン ルソー シャンベルタン クロ・ド ベーズ グラン クリュ 赤ワイン 750ml"
+                                            class="img-fluid mb-3" />
+                                    </div>
+                                    <h5 class="card-title">1993 アルマン ルソー シャンベルタン クロ・ド ベーズ グラン クリュ 赤ワイン 750ml</h5>
+                                    <div class="d-flex justify-content-between mt-3 cat-border">
+                                        <span>フランス / ブルゴーニュ</span>
+                                        <span>シャルドネ</span>
+                                    </div>
+                                    <div class="d-flex justify-content-end mt-3">
+                                        <span class="cat_quantity">750ml - </span><span
+                                            class="price fw-bold">¥28,800</span>
                                     </div>
                                 </div>
-                            </a>
-                        </div>
-                        <!-- Product 3 -->
-                        <div class="col-12 col-sm-6 col-lg-4 mb-4">
-                            <a href="#" class="text-decoration-none">
-                                <div class="card h-100 border-0 bg-transparent">
-                                    <div class="card-body text-center">
-                                        <img src="img/cat-products.png" alt="1993 アルマン ルソー シャンベルタン クロ・ド ベーズ グラン クリュ 赤ワイン 750ml"
-                                            class="img-fluid mb-3">
-                                        <h5 class="card-title">1993 アルマン ルソー シャンベルタン クロ・ド ベーズ グラン クリュ 赤ワイン 750ml</h5>
-                                        <hr>
-                                        <div class="d-flex justify-content-between mt-3">
-                                            <span>シャルドネ</span>
-                                            <span>シャルドネ</span>
-                                        </div>
-                                        <hr>
-                                        <div class="d-flex justify-content-end mt-3">
-                                            <span class="cat_quantity">750ml - </span><span class="price fw-bold">¥28,800</span>
-                                        </div>
-        
+                            </div>
+                        </a>
+                    </div>
+                    <!-- Product 3 -->
+                    <div class="col-12 col-sm-6 col-lg-4 mb-4">
+                        <a href="#" class="text-decoration-none">
+                            <div class="card h-100 border-0 bg-transparent">
+                                <div class="card-body text-center">
+                                    <div class="productimage mb-3">
+                                        <img src="img/cp.png" alt="1993 アルマン ルソー シャンベルタン クロ・ド ベーズ グラン クリュ 赤ワイン 750ml"
+                                            class="img-fluid mb-3" />
                                     </div>
+                                    <h5 class="card-title">1993 アルマン ルソー シャンベルタン クロ・ド ベーズ グラン クリュ 赤ワイン 750ml</h5>
+                                    <div class="d-flex justify-content-between mt-3 cat-border">
+                                        <span>フランス / ブルゴーニュ</span>
+                                        <span>シャルドネ</span>
+                                    </div>
+                                    <div class="d-flex justify-content-end mt-3">
+                                        <span class="cat_quantity">750ml - </span><span
+                                            class="price fw-bold">¥28,800</span>
+                                    </div>
+
                                 </div>
-                            </a>
-                        </div>
+                            </div>
+                        </a>
                     </div>
-                    <!-- See More Button -->
-                    <div class="text-center">
-                        <a href="#"
-                            class="text-decoration-none bourgogne_button d-inline-flex justify-content-center align-items-center"
-                            style="color: black;">もっと見る</a>
-                    </div>
+                </div>
+                <!-- See More Button -->
+                <div class="text-center">
+                    <a href="#"
+                        class="text-decoration-none bourgogne_button d-inline-flex justify-content-center align-items-center"
+                        style="color: black;">もっと見る</a>
+                </div>
             </div>
         </div>
     </div>

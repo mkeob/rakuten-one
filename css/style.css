@@ -1,2825 +1,2931 @@
 /* Custom CSS Home Page */
 /* Google Font Import */
-@import url('https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Cursive:wght@400..700&family=Edu+SA+Hand:wght@400..700&family=Fira+Code:wght@300..700&family=Marcellus&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Cursive:wght@400..700&family=Edu+SA+Hand:wght@400..700&family=Fira+Code:wght@300..700&family=Marcellus&family=Noto+Sans+JP:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Cursive:wght@400..700&family=Edu+SA+Hand:wght@400..700&family=Fira+Code:wght@300..700&family=Hina+Mincho&family=Marcellus&family=Noto+Sans+JP:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Marcellus&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200..900&display=swap");
 
-/* Local Gothic font Font Import */
+/* Local Font Imports */
+/* Noto Sans CJK JP Font Import */
 @font-face {
-    font-family: 'CELTG';
-    src: url('../fonts/CELTG___.TTF') format('truetype');
-    font-weight: normal;
-    font-style: normal;
+  font-family: "Noto Sans CJK JP";
+  src: url("../fonts/NotoSansCJK-wght-400-900.ttf.woff2") format("woff2"),
+    url("../fonts/NotoSansCJK-wght-400-900.ttf.ttc")
+      format("truetype-collection");
+  font-weight: 400 900;
+  font-style: normal;
+  font-display: swap;
 }
 
 /* Default CSS */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    background-color: #F5F5F3 !important;
-    width: 100%;
-    overflow-x: hidden;
-    font-family: 'Noto Sans JP', 'Poppins', sans-serif;
+  background-color: #f5f5f3 !important;
+  width: 100%;
+  overflow-x: hidden;
+  font-family: "Noto Serif JP", serif;
 }
 
 /* Project CSS */
 
 /* Main Navbar Styles */
 .main-navbar {
-    height: 80px !important;
-    background: #f3f2f2 !important;
-    padding: 50px 5px !important;
+  height: 80px !important;
+  background: #f3f2f2 !important;
+  padding: 50px 30px !important;
 }
 
 .navbar-brand {
-    color: #2E2E2E;
-    font-family: "Hina Mincho", serif;
-    font-size: 25px !important;
+  color: #2e2e2e;
+  font-family: "Marcellus", serif;
+  font-size: 25px !important;
 }
 
 .nav-link {
-    color: #2E2E2E !important;
-    font-size: 16px !important;
-    font-weight: 500 !important;
-    font-family: "Hina Mincho", serif;
-    margin-left: 5px;
+  color: #2e2e2e !important;
+  font-size: 16px !important;
+  font-family: "Noto Serif JP", serif;
+  margin-left: 5px;
 }
 
 .dropdown-menu {
-    background: #ecebeb !important;
-    width: auto;
-    height: 80px;
-    display: flex;
-    justify-items: center;
-    align-items: center;
-    padding: 10px 0;
+  background: #ecebeb !important;
+  width: auto;
+  height: 80px;
+  justify-items: center;
+  align-items: center;
+  border-radius: 0 !important;
 }
 
 .dropdown-item {
-    font-family: "Hina Mincho", serif;
-    font-size: 14px !important;
-    font-weight: 500 !important;
-
+  font-family: "Noto Serif JP", serif;
+  font-size: 16px !important;
+  font-weight: 500 !important;
 }
 
 .dropdown-item:hover {
-    background: #dcdcdc !important;
-    color: #2E2E2E !important;
+  background: #dcdcdc !important;
+  color: #2e2e2e !important;
 }
 
 .nav-item.dropdown:hover .dropdown-menu {
-    display: flex;
+  display: flex;
 }
 
 .nav-item.dropdown .dropdown-menu {
-    margin-top: 0;
+  margin-top: 0;
 }
 
 .nav-right-part {
-    margin-left: 20px !important;
-    border-left: 2px solid #c9c9c9 !important;
-    padding-left: 10px !important;
+  margin-left: 40px !important;
+  border-left: 2px solid #c9c9c9 !important;
+  padding-left: 40px !important;
 }
 
 .nav-search-input {
-    background: #ecebeb !important;
-    width: 170px;
-    border: none;
-    ;
-    border-bottom: 1px solid #adacac;
-    padding: 10px;
+  background: #f3f2f2 !important;
+  width: 230px;
+  border: none;
+  border-bottom: 1px solid #adacac;
+  padding: 10px;
+}
+
+.menusrcbtn {
+  margin-right: 45px;
 }
 
 .page-link {
-    color: #925C10 !important;
-    background-color: #f8f8f8 !important;
+  color: #925c10 !important;
+  background-color: #f8f8f8 !important;
 }
 
 .header-main-logo {
-    width: auto;
-
+  width: auto;
 }
 
 .navbar-brand img {
-    width: 250px;
-    margin-left: -5px;
+  width: 250px;
+  margin-left: -5px;
 }
 
 .under-search-btn {
-    border: none;
-    background: #d0cfcf;
-    padding: 5px 10px;
-    margin-top: 5px;
-    border-radius: 20px;
-    font-size: 12px;
+  border: none;
+  background: #d0cfcf;
+  padding: 5px 10px;
+  margin-top: 5px;
+  border-radius: 20px;
+  font-size: 12px;
 }
 
 .under-search-btn:hover {
-    background: #a69191;
+  background: #a69191;
 }
 
 .navbar-toggler {
-    padding: 0.5rem;
-    border: 1px solid rgba(0, 0, 0, .1);
-    border-radius: 4px;
-    transition: all 0.3s ease;
+  padding: 0.5rem;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  transition: all 0.3s ease;
 }
 
 .navbar-toggler:focus {
-    outline: none;
-    box-shadow: 0 0 0 3px rgba(146, 92, 16, 0.25);
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(146, 92, 16, 0.25);
 }
 
 .navbar-toggler .bi-list {
-    font-size: 1.8rem;
-    color: #2E2E2E;
+  font-size: 1.8rem;
+  color: #2e2e2e;
 }
 
 .navbar-collapse {
-    transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
-
 .hero_section img {
-    min-height: 256px;
+  min-height: 256px;
 }
 
 .main_logo_img {
-    width: 138px;
-    max-width: 138px;
-    /* margin-top: -50px; */
+  width: 138px;
+  max-width: 138px;
+  /* margin-top: -50px; */
 }
 
 /* Common Styles */
 /* Do not repeat the same class for same styles */
 .common_title {
-    font-family: 'Marcellus', serif;
-    color: #925C10;
-    font-size: 38px;
-    font-weight: normal;
-    margin-top: 40px;
+  font-family: "Marcellus", serif;
+  color: #925c10;
+  font-size: 38px;
+  font-weight: normal;
+  margin-top: 40px;
 }
 
 .common_subtitle {
-    font-size: 16px;
+  font-family: "Noto Serif JP", serif;
+  font-size: 16px;
 }
 
 .common_item {
-    border-bottom: 1px solid #e0e0e0;
-    transition: all 0.3s ease;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  border-bottom: 1px solid #e0e0e0;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
 }
 
 .common_item:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-    border-color: #925C10;
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  border-color: #925c10;
 }
 
 .common_item a {
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .common_name {
-    font-size: 18px;
-    font-weight: 500;
+  font-family: "Noto Serif JP", serif;
+  font-size: 18px;
+  font-weight: 500;
 }
 
 .common_arrow_icon {
-    color: #bab9b8;
+  color: #bab9b8;
 }
 
 .best_sell_cat_item,
 .recommendation_cat_item {
-    transition: transform 0.3s ease;
+  transition: transform 0.3s ease;
 }
 
 .best_sell_cat_item:hover,
 .recommendation_cat_item:hover {
-    transform: scale(1.05);
+  transform: scale(1.05);
 }
 
 /* Info Styles */
 .shop_info {
-    padding: 15px 0;
+  padding: 15px 0;
 }
 
 .shop_title {
-    font-size: 24px;
-    font-weight: 600;
-    margin-bottom: 10px;
+  font-family: "Marcellus", serif;
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 10px;
 }
 
 .list-group a {
-    font-size: 15px;
+  font-family: "Noto Serif JP", serif;
+  font-size: 15px;
 }
 
 .list-group {
-    margin-top: -20px;
+  margin-top: -20px;
 }
 
 .rating-container {
-    display: flex;
-    align-items: center;
-    gap: 15px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
 }
 
 .stars {
-    display: flex;
-    align-items: center;
-    gap: 2px;
+  display: flex;
+  align-items: center;
+  gap: 2px;
 }
 
 .rating-score {
-    margin-left: 8px;
-    font-weight: 600;
-    color: #333;
+  margin-left: 8px;
+  font-weight: 600;
+  color: #333;
 }
 
 .rating-count {
-    color: #666;
-    font-size: 0.9em;
-    margin-left: 4px;
+  font-family: "Noto Serif JP", serif;
+  color: #666;
+  font-size: 0.9em;
+  margin-left: 4px;
 }
 
 .favorite-btn {
-    display: flex;
-    align-items: center;
-    gap: 5px;
-    padding: 6px 12px;
-    font-size: 0.9em;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 6px 12px;
+  font-size: 0.9em;
 }
 
 .search-container {
-    max-width: 400px;
-    margin-left: auto;
+  max-width: 400px;
+  margin-left: auto;
 }
 
 .search-container .input-group {
-    border-radius: 4px;
-    overflow: hidden;
+  border-radius: 4px;
+  overflow: hidden;
 }
 
 .search-container .form-control {
-    border-right: none;
+  font-family: "Noto Serif JP", serif;
+  border-right: none;
 }
 
 .search-container .btn {
-    border-left: none;
+  border-left: none;
 }
 
 .search-container .form-control:focus {
-    box-shadow: none;
-    border-color: #ced4da;
+  box-shadow: none;
+  border-color: #ced4da;
 }
 
 .search-container .btn:hover {
-    background-color: #f8f9fa;
+  background-color: #f8f9fa;
 }
 
 /* Slider Styles */
 .special_feature_title {
-    font-family: 'Marcellus', serif;
-    color: #925C10;
-    font-size: 38px;
-    font-weight: normal;
-    margin-top: 40px;
+  font-family: "Marcellus", serif;
+  color: #925c10;
+  font-size: 38px;
+  font-weight: normal;
+  margin-top: 40px;
 }
 
 .slider-container {
-    position: relative;
-    width: 100%;
-    overflow: hidden;
-    margin: 20px 0;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  margin: 20px 0;
 }
 
 .slider-wrapper {
-    display: flex;
-    transition: transform 0.5s ease-in-out;
+  display: flex;
+  transition: transform 0.5s ease-in-out;
 }
 
 .slider-slide {
-    min-width: 100%;
-    padding: 0 15px;
+  min-width: 100%;
+  padding: 0 15px;
 }
 
 .slider-button {
-    position: absolute;
-    top: 40%;
-    transform: translateY(-50%);
-    background: rgba(255, 255, 255, 0.7);
-    border: none;
-    border-radius: 50%;
-    width: 30px;
-    height: 30px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    z-index: 10;
+  position: absolute;
+  top: 40%;
+  transform: translateY(-50%);
+  background: rgba(255, 255, 255, 0.7);
+  border: none;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 10;
 }
 
 .slider-button:hover {
-    background: rgba(255, 255, 255, 0.9);
+  background: rgba(255, 255, 255, 0.9);
 }
 
 .prev-button {
-    left: 10px;
+  left: 10px;
 }
 
 .next-button {
-    right: 10px;
+  right: 10px;
 }
 
 .slider-button i {
-    font-size: 1.5rem;
-    color: #333;
+  font-size: 1.5rem;
+  color: #333;
 }
 
 /* Slider Dots Styles */
 .slider-dots {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-    margin-top: 15px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 15px;
 }
 
 .slider-dot {
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    background-color: #ccc;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #ccc;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
 .slider-dot.active {
-    background-color: #333;
+  background-color: #333;
 }
 
 /* Category Grid Styles */
 .category-item {
-    overflow: hidden;
-    cursor: pointer;
-    transition: all 0.3s ease;
+  overflow: hidden;
+  cursor: pointer;
+  transition: all 0.3s ease;
 }
 
 .category-item img {
-    width: 100%;
-    filter: brightness(0.7);
-    opacity: 0.5;
+  width: 100%;
+  filter: brightness(0.7);
+  opacity: 0.5;
 }
 
 .category-item:hover img {
-    transform: scale(1.0);
-    filter: brightness(0.5);
+  transform: scale(1);
+  filter: brightness(0.5);
 }
 
 /* Best Seller Styles */
 .best_sell_cat_title {
-    font-size: 20px;
-    font-weight: bold;
-    margin-bottom: 30px;
+  font-family: "Noto Serif JP", serif;
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 30px;
 }
 
 /* Small screen specific styles */
 .common_item.small-screen {
-    padding: 4px !important;
+  padding: 4px !important;
 }
 
 .common_item.small-screen .common_name {
-    font-size: 10px;
+  font-size: 10px;
 }
 
 .common_item.small-screen .common_arrow i {
-    font-size: 10px;
+  font-size: 10px;
 }
 
 /* Custom CSS Feature Page */
 /* Vintage Styles */
 .vintage_brands_featured {
-    background: #E6E2DC;
-    padding-top: 120px;
-    padding-bottom: 120px;
-    border-top: 1px solid #cfb38d;
+  background: #e6e2dc;
+  padding-top: 120px;
+  padding-bottom: 120px;
+  border-top: 1px solid #cfb38d;
 }
 
 .vintage_brands_featured h2 {
-    font-size: 35px;
-    color: #925C10;
-    font-weight: normal;
-    margin-bottom: 35px;
-    font-family: "Hina Mincho", serif;
+  font-size: 35px;
+  color: #925c10;
+  font-weight: normal;
+  margin-bottom: 35px;
+  font-family: "Noto Serif JP", serif;
 }
 
 .vintage_brands_featured p {
-    font-family: "Hina Mincho", serif;
-    font-size: 16px;
-    font-weight: normal;
-    width: 100%;
-    max-width: 800px;
-    margin: 0 auto;
-    text-align: center;
-    line-height: 30px;
+  font-family: "Noto Serif JP", serif;
+  font-size: 16px;
+  font-weight: normal;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+  line-height: 30px;
 }
 
 /* Combine & Common Styles */
 .bourogne {
-    background: #EBDBCB;
-    padding: 5%;
-    border-top: 1px solid #cfb38d;
+  background: #ebdbcb;
+  padding: 5%;
+  border-top: 1px solid #6f7071;
 }
 
-.bourogne_border_top {}
+.bourogne_border_top {
+}
 
 .bourogne_bg {
-    background: #EBEBEB !important;
+  background: #ebebeb !important;
 }
 
 .bordeaux {
-    background: #EBEBEB;
-    padding: 5%;
-    border-top: 1px solid #cfb38d;
+  background: #ebebeb;
+  padding: 5%;
+  border-top: 1px solid #6f7071;
 }
-.brand-description{
-    background: #E6E2DC;
-    padding-top: 80px;
-    padding-bottom: 80px;
-    border-top: 1px solid #cfb38d;
+
+.brand-description {
+  background: #e6e2dc;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  border-top: 1px solid #6f7071;
 }
-.brand-description p{
-    font-family: "Hina Mincho", serif;
-    font-size: 16px;
-    font-weight: normal;
-    width: 100%;
-    max-width: 800px;
-    margin: 0 auto;
-    text-align: center;
-    line-height: 30px;
+
+.brand-description p {
+  font-family: "Noto Serif JP", serif;
+  font-size: 16px;
+  font-weight: normal;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+  line-height: 30px;
 }
+
 .bordeaux_banner_img,
 .bourogne_banner_img {
-    /* width: 85%; */
+  /* width: 85%; */
 }
 
 .bourogne h2,
 .bordeaux h2 {
-    font-family: "Hina Mincho", serif;
-    color: #925C10;
-    font-weight: normal;
-    font-size: 45px;
+  font-family: "Marcellus", serif;
+  color: #925c10;
+  font-weight: normal;
+  font-size: 45px;
 }
 
 .bourogne span,
 .bordeaux span {
-    font-family: 'CELTG', serif;
-    font-weight: normal;
-    font-size: 20px;
+  font-family: "Noto Serif JP", serif;
+  font-weight: normal;
+  font-size: 20px;
 }
 
 .bourogne p,
 .bordeaux p {
-    font-family: "Hina Mincho", serif;
-    font-size: 15px;
-    color: #323334;
-    width: 100%;
-    max-width: 900px;
-    margin: 0 auto;
-    padding: 0 15px;
-    line-height: 30px;
+  font-family: "Noto Serif JP", serif;
+  font-size: 15px;
+  color: #323334;
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 15px;
+  line-height: 30px;
 }
 
 .bourgogne_products .card,
 .bordeaux_products .card,
 .cat_products .card {
-    transition: transform 0.3s ease;
+  transition: transform 0.3s ease;
 }
 
 .bourgogne_products .card:hover,
 .bordeaux_products .card:hover,
 .cat_products .card:hover {
-    transform: translateY(-10px);
+  transform: translateY(-10px);
 }
 
 .bourgogne_products .card-title,
 .bordeaux_products .card-title,
 .cat_products .card-title {
-    font-family: 'Hina Mincho', serif;
-    line-height: 30px;
-    text-align: left;
-    font-size: 16px;
-    font-weight: 500;
-    margin-bottom: 10px;
-    color: #2E2E2E;
+  font-family: "Noto Serif JP", serif;
+  line-height: 30px;
+  text-align: left;
+  font-size: 15px;
+  font-weight: 500;
+  margin-bottom: 10px;
+  color: #2e2e2e;
+}
+
+.cat-border {
+  border-top: 1px solid #9a9a9a;
+  border-bottom: 1px solid #9a9a9a;
+  padding: 10px 0;
 }
 
 .bourgogne_products span,
 .bordeaux_products span,
 .cat_products span {
-    font-size: 12px;
-    font-weight: 500;
-    color: #6F7071;
+  font-family: "Noto Sans CJK JP", sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  color: #6f7071;
 }
 
 .bourgogne_products .card-text,
 .bordeaux_products .card-text,
 .cat_products .card-text {
-    font-size: 15px;
+  font-size: 15px;
 }
 
 .bourgogne_quantity,
 .bordeaux_quantity,
 .cat_quantity {
-    font-family: 'CELTG', serif;
-    font-size: 15px !important;
-    margin-top: 7px;
-    margin-right: 10px;
+  font-family: "Noto Sans CJK JP", sans-serif;
+  font-size: 15px !important;
+  margin-top: 7px;
+  margin-right: 10px;
 }
 
 .bourgogne_products .price,
 .bordeaux_products .price,
 .cat_products .price {
-    font-family: 'CELTG', serif;
-    font-size: 23px;
-    color: #2E2E2E;
+  font-family: "Noto Sans CJK JP", sans-serif;
+  font-size: 23px;
+  color: #2e2e2e;
+}
+
+.price-symbol {
+  font-family: "Noto Sans CJK JP", sans-serif !important;
+  font-size: 23px !important;
+  color: #2e2e2e !important;
+  margin-right: 3px !important;
 }
 
 .bourgogne_button,
 .bordeaux_button,
 .cat_button {
-    width: 250px;
-    height: 60px;
-    background: #D5B588;
-    font-size: 16px;
-    font-weight: 500;
-    border-radius: 0;
-    transition: all 0.3s ease;
+  font-family: "Noto Serif JP", serif;
+  width: 250px;
+  height: 60px;
+  background: #d5b588;
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: 0;
+  transition: all 0.3s ease;
+  border: 1px solid #2e2e2e;
 }
 
 .bourgogne_button:hover,
 .bordeaux_button:hover,
 .cat_button:hover {
-    background-color: #925C10;
-    color: white;
+  background-color: #925c10;
+  color: white;
+}
+
+.sproductabtn {
+  margin-top: 20px;
+  font-family: "Noto Serif JP", serif;
+  width: 250px;
+  height: 60px;
+  background: #795e38;
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: 0;
+  transition: all 0.3s ease;
+  border: 2px solid #2e2e2e;
+}
+
+.sproductabtn:hover {
+  background-color: #925c10;
+  color: white;
+}
+
+.recommendation_button {
+  font-family: "Noto Serif JP", serif;
+  width: 250px;
+  height: 60px;
+  background: #2e2e2e;
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: 0;
+  transition: all 0.3s ease;
+  border: 1px solid #2e2e2e;
+}
+
+.recommendation_button:hover {
+  background-color: #925c10;
+  color: white;
 }
 
 /* Special Feature Styles */
 .special_feature {
-    background: #E6E2DC;
-    padding: 5%;
-    border-top: 1px solid #cfb38d;
+  background: #e6e2dc;
+  padding: 5%;
+  border-top: 1px solid #6f7071;
 }
 
 .special_title {
-    color: #6F7071;
-    font-size: 45px;
-    font-family: 'Marcellus', serif;
-    font-weight: normal;
+  color: #6f7071;
+  font-size: 45px;
+  font-family: "Marcellus", serif;
+  font-weight: normal;
 }
 
 .special_title_span {
-    color: #6F7071;
-    font-size: 20px;
-    font-family: 'Marcellus', serif;
-    font-weight: normal;
+  color: #6f7071;
+  font-size: 20px;
+  font-family: "Noto Serif JP", serif;
+  font-weight: normal;
 }
 
 .special_product_title {
-    color: #2E2E2E;
-    font-size: 18px;
-    font-family: 'Marcellus', serif;
-    font-weight: normal;
+  color: #2e2e2e;
+  font-size: 18px;
+  font-family: "Marcellus", serif;
+  font-weight: normal;
 }
 
 /* Feature Page Shop Info */
 .fp_shop_info {
-    background: #C2C2C2;
+  background: #c2c2c2;
+  border-bottom: 1px solid #6f7071;
 }
 
 .fp_shop_info img {
-    height: auto;
-    max-height: 532px;
-    width: 100%;
-    object-fit: cover;
+  height: auto;
+  max-height: 532px;
+  width: 100%;
+  object-fit: cover;
 }
 
 /* Category Page Styles */
 .cat_page_part_one {
-    background: #EBDBCB;
-    border-top: 1px solid #cfb38d;
-    padding: 60px;
+  background: #ebdbcb;
+  border-top: 1px solid #6f7071;
+  padding: 60px;
 }
-
+.productimage {
+  background: #fff;
+}
 .cat_page_part_two {
-    background: #EBEBEB;
-    border-top: 1px solid #cfb38d;
-    padding: 60px;
+  background: #fff9f4;
+  border-top: 1px solid #6f7071;
+  padding: 60px;
 }
 
 .cat_page_part_three {
-    background: #EBDBCB;
-    border-top: 1px solid #cfb38d;
-    padding: 60px;
+  background: #ebdbcb;
+  border-top: 1px solid #6f7071;
+  padding: 60px;
 }
 
 .cat_page_part_four {
-    background: #EBEBEB;
-    border-top: 1px solid #cfb38d;
-    padding: 60px;
+  background: #ebebeb;
+  border-top: 1px solid #6f7071;
+  padding: 60px;
 }
 
 .cat_page_part_five {
-    background: #EBDBCB;
-    border-top: 1px solid #cfb38d;
-    padding: 60px;
+  background: #ebdbcb;
+  border-top: 1px solid #6f7071;
+  border-bottom: 1px solid #6f7071;
+  padding: 60px;
 }
 
 .cat_page_part_six {
-    background: #E6E2DC;
-    border-top: 1px solid #cfb38d;
-    padding: 60px;
+  background: #e6e2dc;
+  border-bottom: 1px solid #6f7071;
+  padding: 60px;
 }
 
 .cat_title {
-    font-family: 'Hina Mincho', serif;
-    color: #925C10;
-    font-weight: normal;
-    margin-bottom: 5px;
-    padding-bottom: 10px;
-    border-bottom: 1px solid #925C10;
+  font-family: "Marcellus", serif;
+  color: #925c10;
+  font-weight: normal;
+  margin-bottom: 5px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #000;
 }
 
 .cat_title h2 {
-    font-size: 35px;
+  font-size: 35px;
 }
 
 .cat_six_title {
-    font-size: 45px;
-    color: #925C10;
-    font-weight: normal;
-    font-family: 'Marcellus', serif;
+  font-size: 45px;
+  color: #925c10;
+  font-weight: normal;
+  font-family: "Marcellus", serif;
 }
 
 .cat_subtitle {
-    font-family: 'Hina Mincho', serif;
-    font-size: 20px;
-    font-weight: normal;
-    color: #2E2E2E;
+  font-family: "Noto Serif JP", serif;
+  font-size: 20px;
+  font-weight: normal;
+  color: #2e2e2e;
 }
 
 .cat_desc {
-    font-family: 'Hina Mincho', serif;
-    font-size: 16px;
-    font-weight: normal;
-    width: 100%;
-    line-height: 30px;
+  font-family: "Noto Serif JP", serif;
+  font-size: 15px;
+  font-weight: normal;
+  width: 100%;
+  line-height: 30px;
 }
 
 .cat_button_six {
-    color: #e0dbdb;
-    border: 1px solid #262626;
-    background: #2E2E2E;
-    border-radius: 0;
-    transition: all 0.3s ease;
-    text-decoration: none;
-    font-size: 16px;
+  color: #e0dbdb;
+  border: 1px solid #262626;
+  background: #2e2e2e;
+  border-radius: 0;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  font-size: 16px;
 }
 
 .cat_button_six:hover {
-    background-color: #925C10;
-    color: white;
+  background-color: #925c10;
+  color: white;
 }
 
 /* Category Details Page Styles */
+.category-filter-section-bg {
+  background: #e6e2dc;
+  border-top: 1px solid #6f7071;
+  border-bottom: 1px solid #6f7071;
+}
+
 .category-filter-section {
-    background: #f2e2d1;
-    border-radius: 8px;
-    padding: 40px 30px;
-    margin: 0 0;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  padding-top: 100px;
+  padding-bottom: 100px;
+  margin: 0 0;
 }
 
 .filter-title {
-    font-family: 'Marcellus', serif;
-    color: #925C10;
-    font-size: 24px;
-    font-weight: normal;
-    margin-bottom: 20px;
+  font-family: "Marcellus", serif;
+  color: #925c10;
+  font-size: 20px;
+  font-weight: normal;
+  margin-bottom: 20px;
 }
 
 .filter-subtitle {
-    font-family: 'Hina Mincho', serif;
-    font-size: 16px;
-    color: #6F7071;
-    font-weight: normal;
-    margin-left: 10px;
+  font-family: "Noto Serif JP", serif;
+  font-size: 16px;
+  color: #6f7071;
+  font-weight: normal;
+  margin-left: 10px;
 }
 
 .filter-btn {
-    background: #FFFFFF;
-    border: 1px solid #D5B588;
-    color: #C39D66;
-    font-size: 14px;
-    font-weight: 500;
-    padding: 12px 8px;
-    border-radius: 6px;
-    transition: all 0.3s ease;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    min-height: 45px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  font-family: "Noto Serif JP", serif;
+  background: #f3f3f3;
+  border: 1px solid #9a9a9a;
+  color: #9a9a9a;
+  font-size: 12px;
+  font-weight: 500;
+  padding: 12px 15px;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  min-height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .filter-btn:hover {
-    background: #D5B588;
-    border-color: #925C10;
-    color: #FFFFFF;
-    transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(146, 92, 16, 0.2);
+  background: #d5b588;
+  border-color: #925c10;
+  color: #ffffff;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(146, 92, 16, 0.2);
 }
 
 .filter-btn.active {
-    background: #925C10;
-    border-color: #925C10;
-    color: #FFFFFF;
+  background: #925c10;
+  border-color: #925c10;
+  color: #ffffff;
 }
 
 .filter-buttons {
-    margin-top: 15px;
+  margin-top: 15px;
+  border-top: 1px solid #6f7071;
+  padding-top: 15px;
 }
 
 .cat_page_details {
-    background: #FFFFFF;
-    padding-top: 100px;
+  background: #ffffff;
+  padding-top: 100px;
+  border-bottom: 1px solid #6f7071;
 }
 
 .cat_page_details h2 {
-    font-size: 30px;
-    font-weight: normal;
-    font-family: 'Hina Mincho', serif;
-}
-
-.cat-details-breadcrumb {
-    margin-left: 60px;
+  font-size: 30px;
+  font-weight: normal;
+  font-family: "Noto Serif JP", serif;
+  color: #2e2e2e;
 }
 
 .cat-details-breadcrumb a {
-    font-size: 11px;
-    color: #6F7071;
+  font-family: "Noto Serif JP", serif;
+  font-size: 14px;
+  color: #6f7071;
 }
 
 .cat-details-breadcrumb a:hover {
-    color: #5a5959;
-    background: #dedfe0;
-    padding: 2px;
+  color: #5a5959;
+  background: #dedfe0;
+  padding: 2px;
 }
 
 /* Product Page Styles */
 .product-details-section {
-    background: #FFFFFF;
-    padding: 40px 20px;
+  background: #ffffff;
+  padding: 40px 20px;
 }
 
 .product-image-container {
-    text-align: center;
+  text-align: center;
 }
 
 .main-product-image {
-    max-width: 100%;
-    height: auto;
+  max-width: 100%;
+  height: auto;
 }
 
 .product-thumbnails {
-    max-width: 300px;
-    margin: 0 auto;
+  max-width: 300px;
+  margin: 0 auto;
 }
 
 .thumbnail-image {
-    border-radius: 4px;
-    cursor: pointer;
-    transition: all 0.3s ease;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s ease;
 }
 
 .thumbnail-image:hover,
 .thumbnail-image.active {
-    border-color: #925C10;
-    transform: scale(1.05);
+  border-color: #925c10;
+  transform: scale(1.05);
 }
 
 .product-info {
-    padding: 0 20px;
+  padding: 0 20px;
 }
 
 .product-title {
-    font-size: 24px;
-    font-weight: 600;
-    color: #2E2E2E;
-    line-height: 1.4;
-    margin-bottom: 20px;
-    font-family: 'Noto Sans JP', sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  color: #2e2e2e;
+  line-height: 1.4;
+  margin-bottom: 20px;
+  font-family: "Noto Serif JP", serif;
+  text-align: left;
 }
 
 .product-price-section {
-    border-bottom: 1px solid #e0e0e0;
-    padding-bottom: 20px;
+  padding-bottom: 20px;
 }
 
 .price-container {
-    display: flex;
-    align-items: baseline;
-    gap: 10px;
-    flex-wrap: wrap;
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+  flex-wrap: wrap;
 }
 
 .current-price {
-    font-size: 32px;
-    font-weight: bold;
-    color: #2E2E2E;
+  font-size: 32px;
+  font-weight: bold;
+  color: #2e2e2e;
 }
 
 .shipping-info {
-    font-size: 14px;
-    color: #666;
+  font-family: "Noto Serif JP", serif;
+  font-size: 14px;
+  color: #666;
 }
 
 .points-info {
-    font-size: 14px;
-    color: #925C10;
-    font-weight: 500;
+  font-family: "Noto Serif JP", serif;
+  font-size: 14px;
+  color: #000;
+  font-weight: 500;
 }
 
 .product-code {
-    font-size: 12px;
-    color: #666;
+  font-family: "Noto Serif JP", serif;
+  font-size: 12px;
+  color: #666;
 }
 
 .quantity-section {
-    border-bottom: 1px solid #e0e0e0;
-    padding-bottom: 20px;
+  padding-bottom: 20px;
 }
 
 .quantity-label {
-    font-size: 16px;
-    font-weight: 500;
-    color: #2E2E2E;
+  font-family: "Noto Serif JP", serif;
+  font-size: 16px;
+  font-weight: 500;
+  color: #2e2e2e;
 }
 
 .quantity-input-group {
-    display: flex;
-    align-items: center;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    overflow: hidden;
+  display: flex;
+  align-items: center;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  overflow: hidden;
 }
 
 .quantity-btn {
-    background: #f8f9fa;
-    border: none;
-    width: 40px;
-    height: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    font-size: 18px;
-    color: #666;
+  background: #f8f9fa;
+  border: none;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-size: 18px;
+  color: #666;
 }
 
 .quantity-btn:hover {
-    background: #e9ecef;
+  background: #e9ecef;
 }
 
 .quantity-input {
-    border: none;
-    width: 60px;
-    height: 40px;
-    text-align: center;
-    font-size: 16px;
-    outline: none;
+  border: none;
+  width: 60px;
+  height: 40px;
+  text-align: center;
+  font-size: 16px;
+  outline: none;
 }
 
 .stock-info {
-    display: flex;
-    align-items: center;
-    gap: 5px;
-    font-size: 14px;
-    color: #666;
+  font-family: "Noto Serif JP", serif;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 14px;
+  color: #666;
 }
 
 .stock-indicator {
-    color: #28a745;
-    font-weight: bold;
+  color: #28a745;
+  font-weight: bold;
 }
 
 .action-buttons {
-    margin-bottom: 30px;
+  margin-bottom: 30px;
 }
 
 .add-to-cart-btn {
-    border: 1px solid #6c757d;
-    color: #6c757d;
-    background: white;
-    padding: 12px 20px;
-    font-size: 16px;
-    font-weight: 500;
-    transition: all 0.3s ease;
+  font-family: "Noto Serif JP", serif;
+  border: 1px solid #6c757d;
+  color: #6c757d;
+  background: white;
+  padding: 12px 20px;
+  font-size: 16px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  height: 55px;
 }
 
 .add-to-cart-btn:hover {
-    background: #6c757d;
-    color: white;
+  background: #6c757d;
+  color: white;
 }
 
 .buy-now-btn {
-    background: #2E2E2E;
-    border: 1px solid #2E2E2E;
-    color: white;
-    padding: 12px 20px;
-    font-size: 16px;
-    font-weight: 500;
-    transition: all 0.3s ease;
+  font-family: "Noto Serif JP", serif;
+  background: #2e2e2e;
+  border: 1px solid #2e2e2e;
+  color: white;
+  padding: 12px 20px;
+  font-size: 16px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  height: 55px;
 }
 
 .buy-now-btn:hover {
-    background: #925C10;
-    border-color: #925C10;
+  background: #925c10;
+  border-color: #925c10;
 }
 
 .product-accordion .accordion-button {
-    background: #f8f9fa;
-    color: #2E2E2E;
-    font-weight: 500;
-    border: none;
-    padding: 15px 20px;
+  color: #2e2e2e;
+  font-weight: 500;
+  padding: 15px 20px;
 }
 
 .product-accordion .accordion-button:not(.collapsed) {
-    background: #925C10;
-    color: white;
-    box-shadow: none;
+  background: #925c10;
+  color: white;
+  box-shadow: none;
 }
 
 .product-accordion .accordion-button:focus {
-    box-shadow: none;
-    border: none;
+  box-shadow: none;
+  border: none;
 }
 
 .product-accordion .accordion-item {
-    border: 1px solid #e0e0e0;
-    margin-bottom: 5px;
-    border-radius: 4px;
+  border: 1px solid #e0e0e0;
+  margin-bottom: 5px;
+  border-radius: 4px;
 }
 
 .product-accordion .accordion-body {
-    padding: 20px;
-    font-size: 14px;
-    line-height: 1.6;
+  padding: 20px;
+  font-size: 14px;
+  line-height: 1.6;
 }
 
 /* Product Details Table Styles */
 .product-specifications-section {
-    background: #f8f9fa;
+  /* background: #f8f9fa; */
 }
 
 .details-title {
-    font-family: 'Hina Mincho', serif;
-    font-size: 20px;
-    font-weight: 600;
-    color: #2E2E2E;
-    border-bottom: 1px solid #925C10;
-    padding-bottom: 8px;
-    margin-bottom: 20px;
+  font-family: "Noto Serif JP", serif;
+  font-size: 20px;
+  font-weight: 600;
+  color: #2e2e2e;
+  border-bottom: 1px solid #9a9a9a;
+  padding-bottom: 8px;
+  margin-bottom: 20px;
 }
 
 .product-info-table {
-    background: white;
-    border: 1px solid #dee2e6;
-    border-radius: 8px;
-    overflow: hidden;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  background: white;
+  border: 1px solid #dee2e6;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
 }
 
 .product-info-table td {
-    border: 1px solid #e9ecef;
-    padding: 12px 16px;
-    vertical-align: middle;
+  border: 1px solid #e9ecef;
+  padding: 12px 16px;
+  vertical-align: middle;
 }
 
 .detail-label {
-    background-color: #f1f3f4;
-    font-weight: 500;
-    color: #495057;
-    width: 35%;
-    font-size: 15px;
+  font-family: "Noto Serif JP", serif;
+  background-color: #f1f3f4;
+  font-weight: 500;
+  color: #495057;
+  width: 35%;
+  font-size: 15px;
 }
 
 .detail-value {
-    background-color: white;
-    color: #2E2E2E;
-    font-size: 11px;
-    font-weight: 400;
+  font-family: "Noto Serif JP", serif;
+  background-color: white;
+  color: #2e2e2e;
+  font-size: 15px;
+  font-weight: 400;
 }
 
 /* Wine Information Sections Styles */
 .product-details-title {
-    font-family: 'Hina Mincho', serif;
-    font-size: 20px;
-    font-weight: 600;
-    color: #2E2E2E;
+  font-family: "Noto Serif JP", serif;
+  font-size: 20px;
+  font-weight: 600;
+  color: #2e2e2e;
 }
 
 .winery-info-section,
 .grape-variety-section,
 .winemaker-philosophy-section {
-    background: #fff;
+  background: #fff;
 }
 
 .winery-title,
 .grape-title,
 .philosophy-title {
-    font-family: 'Hina Mincho', serif;
-    font-size: 24px;
-    font-weight: 600;
-    color: #2E2E2E;
-    margin-bottom: 20px;
-    line-height: 1.4;
-    border-bottom: 1px solid #925C10;
-    padding-bottom: 8px;
+  font-family: "Noto Serif JP", serif;
+  font-size: 24px;
+  font-weight: 600;
+  color: #2e2e2e;
+  margin-bottom: 20px;
+  line-height: 1.4;
+  border-bottom: 1px solid #9a9a9a;
+  padding-bottom: 8px;
 }
 
 .winery-content,
 .grape-content,
 .philosophy-content {
-    margin-top: -5px;
+  margin-top: -5px;
 }
 
 .grape-content {
-    font-size: 15px;
+  font-size: 15px;
 }
 
 .philosophy-content {
-    font-size: 15px;
+  font-size: 15px;
 }
 
 .winery-description,
 .grape-description,
 .philosophy-description {
-    font-family: 'Hina Mincho', serif;
-    font-size: 18px;
-    line-height: 30px;
-    color: #4a4a4a;
-    text-align: justify;
+  font-family: "Noto Serif JP", serif;
+  font-size: 18px;
+  line-height: 30px;
+  color: #4a4a4a;
+  text-align: justify;
 }
 
 .winery-image-container img,
 .vineyard-image-container img,
 .philosophy-image-container img {
-    width: 100%;
-    height: auto;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
+  width: 100%;
+  height: auto;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
 }
 
 .winery-image-container img:hover,
 .vineyard-image-container img:hover,
 .philosophy-image-container img:hover {
-    transform: scale(1.02);
+  transform: scale(1.02);
 }
 
 /* Brand Page */
 .brand-page p {
-    font-size: 16px;
-    font-weight: normal;
-    padding: 100px;
+  font-size: 16px;
+  font-weight: normal;
+  padding: 100px;
 }
 
 .field-structure {
-    text-align: center;
-    margin-bottom: 40px;
+  text-align: center;
+  margin-bottom: 40px;
 }
 
 .showcase-title {
-    font-family: 'Hina Mincho', serif;
-    color: #925C10;
-    font-size: 45px;
-    font-weight: normal;
-    margin-bottom: 5px;
+  font-family: "Marcellus", serif;
+  color: #925c10;
+  font-size: 45px;
+  font-weight: normal;
+  margin-bottom: 5px;
 }
 
 .showcase-subtitle {
-    font-family: 'Hina Mincho', serif;
-    font-size: 20px;
-    color: #666;
-    margin-bottom: 25px;
+  font-family: "Noto Serif JP", serif;
+  font-size: 20px;
+  color: #666;
+  margin-bottom: 25px;
 }
 
 .wine-bottles-img {
-    width: 100%;
-    transition: transform 0.3s ease;
+  width: 100%;
+  transition: transform 0.3s ease;
 }
 
 .wine-bottles-img:hover {
-    transform: scale(1.02);
+  transform: scale(1.02);
 }
 
 .commitment-section {
-    padding: 50px 0;
+  padding: 50px 0;
 }
 
 .commitment-text {
-    font-family: 'Hina Mincho', serif;
-    font-size: 16px;
-    line-height: 30px;
-    text-align: center;
-    max-width: 800px;
-    margin: 0 auto 30px;
-    color: #333;
-
+  font-family: "Noto Serif JP", serif;
+  font-size: 14px;
+  line-height: 30px;
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto 30px;
+  color: #333;
 }
 
-.feature-item:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+.business-content {
+  width: 50%;
 }
 
-.feature-image img {
-    height: 300px;
-    object-fit: cover;
-    transition: transform 0.5s ease;
+.company-info h3 {
+  font-family: "Marcellus", serif;
 }
-
-.feature-item:hover .feature-image img {
-    transform: scale(1.05);
+.company-info h4 {
+  font-family: "Noto Serif JP", serif;
+  border-bottom: 1px solid #bfbfbf;
 }
-
 .feature-title {
-    font-family: 'Hina Mincho', serif;
-    text-align: left;
-    font-size: 25px;
-    font-weight: 600;
-    color: #2E2E2E;
-    padding: 15px 15px 5px;
-    margin: 0 0 10px;
+  font-family: "Noto Serif JP", serif;
+  text-align: left;
+  font-size: 25px;
+  font-weight: 600;
+  color: #2e2e2e;
+  padding: 20px 0 0px;
+  margin-bottom: -15px;
 }
 
 .feature-description {
-    font-family: 'Hina Mincho', serif;
-    font-size: 15px;
-    color: #323334;
-    padding: 0 15px 15px;
-    margin: 0;
-    line-height: 1.6;
+  font-family: "Noto Serif JP", serif;
+  font-size: 15px;
+  color: #323334;
+  padding: 15px 0 5px;
+  margin: 0;
+  line-height: 1.6;
 }
 
 .wine-showcase {
-    background: #EBDBCB;
-    padding: 30px;
-    border-top: 1px solid #cfb38d;
+  background: #ebdbcb;
+  padding: 30px;
+  border-top: 1px solid #cfb38d;
 }
 
 .wine-features {
-    margin-top: 30px;
+  margin-top: 30px;
 }
 
 .philosophy-text {
-    font-family: 'Hina Mincho', serif;
-    width: 400px;
-    font-size: 24px;
-    font-weight: 600;
-    color: #2E2E2E;
-    line-height: 1.6;
+  font-family: "Noto Serif JP", serif;
+  width: 400px;
+  font-size: 24px;
+  font-weight: 600;
+  color: #2e2e2e;
+  line-height: 1.6;
 }
 
 .philosophy-detail {
-    font-family: 'Hina Mincho', serif;
-    width: 500px;
-    font-size: 15px;
-    color: #323334;
-    line-height: 30px;
+  font-family: "Noto Serif JP", serif;
+  width: 500px;
+  font-size: 15px;
+  color: #323334;
+  line-height: 30px;
 }
 
 .taste-section {
-    padding: 40px 0;
-    border-top: 1px solid #cfb38d;
-    background: #fff;
+  padding: 40px 0;
+  border-top: 1px solid #cfb38d;
+  background: #fff;
 }
 
 .taste-image-container {
-    width: 100%;
-    margin: 30px 0;
-    overflow: hidden;
+  width: 100%;
+  margin: 30px 0;
+  overflow: hidden;
 }
 
 .taste-banner-img {
-    width: 100%;
-    transition: transform 0.5s ease;
+  width: 100%;
+  transition: transform 0.5s ease;
 }
 
 .taste-banner-img:hover {
-    transform: scale(1.02);
-}
-
-.taste-content {
-    padding: 0 15px;
-    max-width: 1200px;
-    margin: 0 auto;
+  transform: scale(1.02);
 }
 
 .taste-heading {
-    font-family: 'Hina Mincho', serif;
-    font-size: 20px;
-    font-weight: 500;
-    line-height: 1.6;
-    color: #333;
-    margin-bottom: 20px;
+  font-family: "Noto Serif JP", serif;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.6;
+  color: #333;
+  margin-bottom: 20px;
 }
 
 .taste-description {
-    font-family: 'Hina Mincho', serif;
-    font-size: 15px;
-    line-height: 30px;
-    color: #555;
+  font-family: "Noto Serif JP", serif;
+  font-size: 15px;
+  line-height: 30px;
+  color: #555;
 }
 
 .features-section {
-    background: #EBDBCB;
-    padding: 30px;
-    border-top: 1px solid #cfb38d;
+  background: #ebdbcb;
+  padding: 30px;
+  border-top: 1px solid #cfb38d;
 }
 
 /* About Page */
 .shop-showcase {
-    background: #E6E2DC;
-    padding: 30px;
-    border-bottom: 1px solid #b0adad;
+  background: #e6e2dc;
+  padding: 30px;
+  border-bottom: 1px solid #6f7071;
 }
 
 .operating-company-section {
-    padding: 20px 0;
-    border-bottom: 1px solid #909090;
+  padding: 80px 0;
+  border-bottom: 1px solid #6f7071;
 }
 
 .operating-company-section .showcase-title {
-    font-family: 'Hina Mincho', serif;
-    color: #925C10;
-    font-size: 38px;
-    font-weight: normal;
+  font-family: "Marcellus", serif;
+  color: #925c10;
+  font-size: 38px;
+  font-weight: normal;
 }
 
 .operating-company-section .showcase-subtitle {
-    font-size: 16px;
-    margin-bottom: 20px;
+  font-size: 16px;
+  margin-bottom: 20px;
 }
 
 .company-name {
-    font-size: 28px;
-    font-weight: 500;
-    color: #333;
+  font-size: 28px;
+  font-weight: 500;
+  color: #333;
 }
 
 .company-website-btn {
-    display: inline-block;
-    padding: 10px 40px;
-    background-color: #f5f5f5;
-    color: #333;
-    text-decoration: none;
-    border-bottom: 1px solid #e0e0e0;
-    border-radius: 4px;
-    font-size: 16px;
-    transition: all 0.3s ease;
+  font-family: "Noto Serif JP", serif;
+  display: inline-block;
+  padding: 10px 40px;
+  background-color: #f5f5f5;
+  color: #333;
+  text-decoration: none;
+  border: 1px solid #2e2e2e;
+  font-size: 16px;
+  transition: all 0.3s ease;
+  margin-bottom: 25px;
 }
 
 .company-website-btn:hover {
-    background-color: #e9e9e9;
-    color: #333;
+  background-color: #e9e9e9;
+  color: #333;
 }
 
 .business-title {
-    font-size: 22px;
-    color: #333;
-    position: relative;
-    padding-bottom: 15px;
+  font-size: 22px;
+  color: #333;
+  padding-bottom: 15px;
 }
 
 .business-title:after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 50px;
-    height: 1px;
-    background-color: #e0e0e0;
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 50px;
+  height: 1px;
+  background-color: #e0e0e0;
 }
 
 .business-category {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px 20px;
-    background-color: #fff;
-    border-bottom: 1px solid #e0e0e0;
-    border-radius: 4px;
-    transition: all 0.3s ease;
-    height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  background-color: #fff;
+  border-bottom: 1px solid #e0e0e0;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+  height: 100%;
 }
 
 .business-category:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-    border-color: #925C10;
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  border-color: #925c10;
 }
 
 .category-name {
-    font-size: 16px;
-    color: #333;
+  font-family: "Noto Serif JP", serif;
+  font-size: 16px;
+  color: #333;
 }
 
 .category-arrow {
-    color: #bab9b8;
+  color: #bab9b8;
 }
 
 /* Scroll Buttons Styles */
 .scroll-buttons {
-    position: fixed;
-    bottom: 30px;
-    right: 30px;
-    z-index: 99;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  z-index: 99;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
 #scrollTopBtn,
 #scrollDownBtn {
-    width: 30px;
-    height: 30px;
-    background-color: #925C10;
-    color: white;
-    border: none;
-    border-radius: 50%;
-    font-size: 20px;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    opacity: 0;
-    visibility: hidden;
-    transition: all 0.3s ease;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  width: 30px;
+  height: 30px;
+  background-color: #925c10;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  font-size: 20px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
 }
 
 #scrollTopBtn:hover,
 #scrollDownBtn:hover {
-    background-color: #7a4c0d;
-    transform: translateY(-3px);
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  background-color: #7a4c0d;
+  transform: translateY(-3px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
 }
 
 #scrollTopBtn.show,
 #scrollDownBtn.show {
-    opacity: 1;
-    visibility: visible;
+  opacity: 1;
+  visibility: visible;
 }
 
 /* Responsive adjustments for all section */
 /* Responsive Navbar Styles */
 @media (max-width: 991px) {
-    .main-navbar {
-        padding: 15px !important;
-    }
+  .main-navbar {
+    padding: 15px !important;
+  }
 
-    .navbar-collapse {
-        background: #f3f2f2;
-        padding: 20px;
-        border-radius: 8px;
-        margin-top: 10px;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    }
+  .navbar-collapse {
+    background: #f3f2f2;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
 
-    .navbar-nav {
-        gap: 10px;
-    }
+  .navbar-nav {
+    gap: 10px;
+  }
 
-    .nav-item {
-        width: 100%;
-    }
+  .nav-item {
+    width: 100%;
+  }
 
-    .dropdown-menu {
-        width: 100%;
-        height: auto;
-        padding: 10px;
-        position: static !important;
-        transform: none !important;
-        flex-direction: column;
-    }
+  .dropdown-menu {
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    position: static !important;
+    transform: none !important;
+    flex-direction: column;
+  }
 
-    .nav-right-part {
-        margin: 15px 0 0 0 !important;
-        padding: 15px 0 0 0 !important;
-        border-left: none !important;
-    }
+  .nav-right-part {
+    margin: 15px 0 0 0 !important;
+    padding: 15px 0 0 0 !important;
+    border-left: none !important;
+  }
 
-    .nav-search-input {
-        width: 100%;
-    }
+  .nav-search-input {
+    width: 100%;
+  }
 
-    .under-search-btn {
-        width: 48%;
-        margin-top: 10px;
-    }
+  .under-search-btn {
+    width: 48%;
+    margin-top: 10px;
+  }
 }
 
 @media (max-width: 991.98px) {
-    .navbar-collapse {
-        background: #f8f9fa;
-        padding: 1rem;
-        border-radius: 8px;
-        margin-top: 0.5rem;
-        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    }
+  .navbar-collapse {
+    background: #f8f9fa;
+    padding: 1rem;
+    border-radius: 8px;
+    margin-top: 0.5rem;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
 
-    .navbar-collapse.collapsing {
-        height: 0;
-        overflow: hidden;
-        transition: height 0.3s ease;
-    }
+  .navbar-collapse.collapsing {
+    height: 0;
+    overflow: hidden;
+    transition: height 0.3s ease;
+  }
 
-    .navbar-collapse.show {
-        height: auto;
-        z-index: 999999;
-    }
+  .navbar-collapse.show {
+    height: auto;
+    z-index: 999999;
+  }
 
-    .nav-item {
-        padding: 0.5rem 0;
-    }
+  .nav-item {
+    margin-bottom: -5px;
+  }
 
-    .dropdown-menu {
-        border: none;
-        background: transparent;
-        padding-left: 1rem;
-    }
+  .dropdown-menu {
+    border: none;
+    background: transparent;
+    padding-left: 1rem;
+  }
 }
 
 @media all and (max-width: 1200px) {
-    .nav-link {
-        font-size: 11px !important;
-        margin-left: 0px !important;
-    }
+  .nav-link {
+    font-size: 11px !important;
+    margin-left: 0px !important;
+  }
 
-    .vintage_brands_featured h2 {
-        font-size: 30px;
-    }
+  .vintage_brands_featured h2 {
+    font-size: 30px;
+  }
 
-    .bourogne h2,
-    .bordeaux h2 {
-        font-size: 40px;
-    }
+  .bourogne h2,
+  .bordeaux h2 {
+    font-size: 40px;
+  }
 
-    .cat_page_part_one,
-    .cat_page_part_two,
-    .cat_page_part_three,
-    .cat_page_part_four,
-    .cat_page_part_five,
-    .cat_page_part_six {
-        padding: 50px 40px;
-    }
+  .cat_page_part_one,
+  .cat_page_part_two,
+  .cat_page_part_three,
+  .cat_page_part_four,
+  .cat_page_part_five,
+  .cat_page_part_six {
+    padding: 50px 40px;
+  }
 
-    .cat_title h2 {
-        font-size: 30px;
-    }
+  .cat_title h2 {
+    font-size: 30px;
+  }
 
-    .cat_six_title {
-        font-size: 40px;
-    }
+  .cat_six_title {
+    font-size: 40px;
+  }
 }
 
 @media all and (max-width: 1024px) {
-    .navbar-brand img {
-        width: 180px;
-        margin-left: -10px;
-    }
+  .navbar-brand img {
+    width: 180px;
+    margin-left: -10px;
+  }
 
-    .nav-link {
-        font-size: 11px !important;
-        margin-left: 0px !important;
-    }
+  .nav-link {
+    font-size: 14px !important;
+    margin-left: 0px !important;
+  }
 
-    .common_name {
-        font-size: 14px;
-    }
+  .common_name {
+    font-size: 14px;
+  }
 
-    .vintage_brands_featured h2 {
-        font-size: 28px;
-    }
+  .vintage_brands_featured h2 {
+    font-size: 28px;
+  }
 
-    .bourogne h2,
-    .bordeaux h2 {
-        font-size: 35px;
-    }
+  .bourogne h2,
+  .bordeaux h2 {
+    font-size: 35px;
+  }
 
-    .cat_page_part_one,
-    .cat_page_part_two,
-    .cat_page_part_three,
-    .cat_page_part_four,
-    .cat_page_part_five,
-    .cat_page_part_six {
-        padding: 40px 30px;
-    }
+  .cat_page_part_one,
+  .cat_page_part_two,
+  .cat_page_part_three,
+  .cat_page_part_four,
+  .cat_page_part_five,
+  .cat_page_part_six {
+    padding: 40px 30px;
+  }
 
-    .cat_title h2 {
-        font-size: 28px;
-    }
+  .cat_title h2 {
+    font-size: 28px;
+  }
 
-    .cat_six_title {
-        font-size: 35px;
-    }
+  .cat_six_title {
+    font-size: 35px;
+  }
 
-    .cat_subtitle {
-        font-size: 18px;
-    }
+  .cat_subtitle {
+    font-size: 18px;
+  }
 }
 
 @media all and (max-width: 992px) {
-    .navbar-brand img {
-        width: 210px;
-        margin-left: -10px;
-    }
+  .navbar-brand img {
+    width: 210px;
+    margin-left: -10px;
+  }
 
-    .bourogne p {
-        max-width: 90%;
-        font-size: 15px;
-    }
+  .bourogne p {
+    max-width: 90%;
+    font-size: 15px;
+  }
 
-    .bourgogne_products .card-title {
-        font-size: 15px;
-    }
+  .bourgogne_products .card-title {
+    font-size: 15px;
+  }
 
-    .cat_page_part_one,
-    .cat_page_part_two,
-    .cat_page_part_three,
-    .cat_page_part_four,
-    .cat_page_part_five,
-    .cat_page_part_six {
-        padding: 35px 25px;
-    }
+  .cat_page_part_one,
+  .cat_page_part_two,
+  .cat_page_part_three,
+  .cat_page_part_four,
+  .cat_page_part_five,
+  .cat_page_part_six {
+    padding: 35px 25px;
+  }
 
-    .cat_title {
-        flex-direction: column;
-        align-items: flex-start !important;
-        text-align: left;
-    }
+  .cat_title {
+    flex-direction: column;
+    align-items: flex-start !important;
+    text-align: left;
+  }
 
-    .cat_title h2 {
-        font-size: 26px;
-        margin-bottom: 5px;
-    }
+  .cat_title h2 {
+    font-size: 26px;
+    margin-bottom: 5px;
+  }
 
-    .cat_six_title {
-        font-size: 32px;
-    }
+  .cat_six_title {
+    font-size: 32px;
+  }
 
-    .cat_subtitle {
-        font-size: 16px;
-        margin-left: 0 !important;
-    }
+  .cat_subtitle {
+    font-size: 16px;
+    margin-left: 0 !important;
+  }
 
-    .cat_desc {
-        font-size: 15px;
-    }
+  .cat_desc {
+    font-size: 15px;
+  }
 
-    .cat_products .card-title {
-        font-size: 15px;
-    }
+  .cat_products .card-title {
+    font-size: 15px;
+  }
 
-    .product-details-section {
-        padding: 30px 15px;
-    }
+  .product-details-section {
+    padding: 30px 15px;
+  }
 
-    .product-title {
-        font-size: 22px;
-    }
+  .product-title {
+    font-size: 22px;
+  }
 
-    .current-price {
-        font-size: 28px;
-    }
+  .current-price {
+    font-size: 28px;
+  }
 
-    .winery-title,
-    .grape-title,
-    .philosophy-title {
-        font-size: 22px;
-        text-align: center;
-        margin-bottom: 15px;
-    }
+  .winery-title,
+  .grape-title,
+  .philosophy-title {
+    font-size: 22px;
+    text-align: center;
+    margin-bottom: 15px;
+  }
 
-    .winery-description,
-    .grape-description,
-    .philosophy-description {
-        font-size: 15px;
-        text-align: center;
-        margin-bottom: 20px;
-    }
+  .winery-description,
+  .grape-description,
+  .philosophy-description {
+    font-size: 15px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
 
-    .producer-wines-btn-container {
-        text-align: center;
-    }
+  .producer-wines-btn-container {
+    text-align: center;
+  }
 
-    .winery-info-section,
-    .grape-variety-section,
-    .winemaker-philosophy-section {
-        padding: 40px 0;
-    }
+  .winery-info-section,
+  .grape-variety-section,
+  .winemaker-philosophy-section {
+    padding: 40px 0;
+  }
 
-    .showcase-title {
-        font-size: 28px;
-    }
+  .showcase-title {
+    font-size: 28px;
+  }
 
-    .commitment-text {
-        font-size: 15px;
-        padding: 0 15px;
-    }
+  .commitment-text {
+    font-size: 15px;
+    padding: 0 15px;
+  }
 
-    .feature-title {
-        font-size: 16px;
-    }
+  .feature-title {
+    font-size: 16px;
+  }
 
-    .feature-description {
-        font-size: 13px;
-    }
+  .feature-description {
+    font-size: 13px;
+  }
 
-    .philosophy-text {
-        font-size: 18px;
-    }
+  .philosophy-text {
+    font-size: 18px;
+  }
 }
 
 @media all and (max-width: 768px) {
-    .navbar-brand img {
-        width: 210px;
-        margin-left: -10px;
-    }
-
-    .hero_section {
-        min-height: 30vh;
-    }
-
-    .rating-container {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 10px;
-    }
-
-    .search-container {
-        margin: 20px auto 0;
-    }
-
-    .category-title {
-        font-size: 1.8rem;
-    }
-
-    .category-subtitle {
-        font-size: 0.9rem;
-    }
-
-    .category-item img {
-        height: 200px;
-    }
-
-    .common_item {
-        padding: 10px !important;
-    }
-
-    .common_name {
-        font-size: 14px;
-    }
-
-    .common_title {
-        font-size: 32px;
-    }
-
-    .vintage_brands_featured h2 {
-        font-size: 24px;
-        margin-bottom: 20px;
-    }
-
-    .vintage_brands_featured p {
-        font-size: 14px;
-        padding: 0 10px;
-    }
-
-    .bourogne h2,
-    .bordeaux h2 {
-        font-size: 30px;
-    }
-
-    .bourogne span,
-    .bordeaux span {
-        font-size: 18px;
-    }
-
-    .bourogne p,
-    .bordeaux p {
-        font-size: 14px;
-        padding: 0 10px;
-    }
-
-    .bourgogne_products .card-title,
-    .bordeaux_products .card-title {
-        font-size: 14px;
-    }
-
-    .bourgogne_products .price,
-    .bordeaux_products .price {
-        font-size: 18px;
-    }
-
-    .special_title {
-        font-size: 35px;
-    }
-
-    .special_product_title {
-        font-size: 16px;
-    }
-
-    .category-filter-section {
-        padding: 25px 20px;
-        margin: 20px 0;
-    }
-
-    .filter-title {
-        font-size: 20px;
-    }
-
-    .filter-subtitle {
-        font-size: 14px;
-    }
-
-    .filter-btn {
-        font-size: 12px;
-        padding: 10px 6px;
-        min-height: 40px;
-    }
-
-    .cat_page_part_one,
-    .cat_page_part_two,
-    .cat_page_part_three,
-    .cat_page_part_four,
-    .cat_page_part_five,
-    .cat_page_part_six {
-        padding: 30px 20px;
-    }
-
-    .cat_title h2 {
-        font-size: 24px;
-    }
-
-    .cat_six_title {
-        font-size: 28px;
-    }
-
-    .cat_subtitle {
-        font-size: 14px;
-    }
-
-    .cat_desc {
-        font-size: 14px;
-        text-align: center !important;
-    }
-
-    .cat_products .card-title {
-        font-size: 14px;
-        line-height: 1.3;
-    }
-
-    .cat_products .price {
-        font-size: 18px;
-    }
-
-    .cat_button,
-    .cat_button_six {
-        font-size: 14px;
-        padding: 10px 25px !important;
-    }
-
-    .product-details-section {
-        padding: 20px 10px;
-    }
-
-    .product-info {
-        padding: 0 10px;
-        margin-top: 20px;
-    }
-
-    .product-title {
-        font-size: 20px;
-        text-align: center;
-    }
-
-    .current-price {
-        font-size: 24px;
-    }
-
-    .price-container {
-        justify-content: center;
-        text-align: center;
-    }
-
-    .points-info,
-    .product-code {
-        text-align: center;
-    }
-
-    .quantity-controls {
-        justify-content: center;
-        flex-wrap: wrap;
-        gap: 15px;
-    }
-
-    .stock-info {
-        justify-content: center;
-    }
-
-    .product-specifications-section {
-        padding: 20px 10px;
-    }
-
-    .details-title {
-        font-size: 16px;
-        text-align: center;
-    }
-
-    .product-info-table {
-        font-size: 13px;
-    }
-
-    .detail-label {
-        width: 40%;
-        font-size: 12px;
-        padding: 10px 12px;
-    }
-
-    .detail-value {
-        font-size: 12px;
-        padding: 10px 12px;
-    }
-
-    .winery-title,
-    .grape-title,
-    .philosophy-title {
-        font-size: 20px;
-        margin-bottom: 12px;
-    }
-
-    .winery-description,
-    .grape-description,
-    .philosophy-description {
-        font-size: 14px;
-        line-height: 1.6;
-    }
-
-    .producer-wines-btn {
-        padding: 10px 25px;
-        font-size: 14px;
-        width: 100%;
-        max-width: 280px;
-    }
-
-    .winery-info-section,
-    .grape-variety-section,
-    .winemaker-philosophy-section {
-        padding: 30px 0;
-    }
-
-    .wine-showcase {
-        padding: 20px 10px;
-    }
-
-    .showcase-title {
-        font-size: 24px;
-    }
-
-    .showcase-subtitle {
-        font-size: 14px;
-    }
-
-    .brand-page p {
-        font-size: 12px;
-        padding: 10px;
-    }
-
-    .commitment-text {
-        font-size: 14px;
-    }
-
-    .feature-image img {
-        height: 180px;
-    }
-
-    .philosophy-text {
-        font-size: 16px;
-    }
-
-    .philosophy-detail {
-        font-size: 13px;
-    }
-
-    .taste-heading {
-        font-size: 18px;
-        margin-bottom: 15px;
-    }
-
-    .taste-description {
-        font-size: 14px;
-    }
-
-    .taste-content .row {
-        flex-direction: column;
-    }
-
-    .taste-content .col-md-5,
-    .taste-content .col-md-7 {
-        width: 100%;
-    }
-
-    .operating-company-section .showcase-title {
-        font-size: 30px;
-    }
-
-    .company-name {
-        font-size: 24px;
-    }
-
-    .business-title {
-        font-size: 20px;
-    }
-
-    .business-category {
-        padding: 12px 15px;
-    }
-
-    .category-name {
-        font-size: 14px;
-    }
-
-    .scroll-buttons {
-        bottom: 20px;
-        right: 20px;
-    }
-
-    #scrollTopBtn,
-    #scrollDownBtn {
-        width: 40px;
-        height: 40px;
-        font-size: 16px;
-    }
+  .navbar-brand img {
+    width: 210px;
+    margin-left: -10px;
+  }
+
+  .hero_section {
+    min-height: 30vh;
+  }
+
+  .rating-container {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .search-container {
+    margin: 20px auto 0;
+  }
+
+  .category-title {
+    font-size: 1.8rem;
+  }
+
+  .category-subtitle {
+    font-size: 0.9rem;
+  }
+
+  .category-item img {
+    height: 200px;
+  }
+
+  .common_item {
+    padding: 10px !important;
+  }
+
+  .common_name {
+    font-size: 14px;
+  }
+
+  .common_title {
+    font-size: 32px;
+  }
+
+  .vintage_brands_featured h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+
+  .vintage_brands_featured p {
+    font-size: 14px;
+    padding: 0 10px;
+  }
+
+  .bourogne h2,
+  .bordeaux h2 {
+    font-size: 30px;
+  }
+
+  .bourogne span,
+  .bordeaux span {
+    font-size: 18px;
+  }
+
+  .bourogne p,
+  .bordeaux p {
+    font-size: 14px;
+    padding: 0 10px;
+  }
+
+  .bourgogne_products .card-title,
+  .bordeaux_products .card-title {
+    font-size: 14px;
+  }
+
+  .bourgogne_products .price,
+  .bordeaux_products .price {
+    font-size: 18px;
+  }
+
+  .special_title {
+    font-size: 35px;
+  }
+
+  .special_product_title {
+    font-size: 16px;
+  }
+
+  .category-filter-section {
+    padding: 25px 20px;
+    margin: 20px 0;
+  }
+
+  .filter-title {
+    font-size: 20px;
+  }
+
+  .filter-subtitle {
+    font-size: 14px;
+  }
+
+  .filter-btn {
+    font-size: 12px;
+    padding: 10px 6px;
+    min-height: 40px;
+  }
+
+  .cat_page_part_one,
+  .cat_page_part_two,
+  .cat_page_part_three,
+  .cat_page_part_four,
+  .cat_page_part_five,
+  .cat_page_part_six {
+    padding: 30px 20px;
+  }
+
+  .cat_title h2 {
+    font-size: 24px;
+  }
+
+  .cat_six_title {
+    font-size: 28px;
+  }
+
+  .cat_subtitle {
+    font-size: 14px;
+  }
+
+  .cat_desc {
+    font-size: 14px;
+    text-align: center !important;
+  }
+
+  .cat_products .card-title {
+    font-size: 14px;
+    line-height: 1.3;
+  }
+
+  .cat_products .price {
+    font-size: 18px;
+  }
+
+  .cat_button,
+  .cat_button_six {
+    font-size: 14px;
+    padding: 10px 25px !important;
+  }
+
+  .product-details-section {
+    padding: 20px 10px;
+  }
+
+  .product-info {
+    padding: 0 10px;
+    margin-top: 20px;
+  }
+
+  .product-title {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .current-price {
+    font-size: 24px;
+  }
+
+  .price-container {
+    justify-content: center;
+    text-align: center;
+  }
+
+  .points-info,
+  .product-code {
+    text-align: center;
+  }
+
+  .quantity-controls {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+
+  .stock-info {
+    justify-content: center;
+  }
+
+  .product-specifications-section {
+    padding: 20px 10px;
+  }
+
+  .details-title {
+    font-size: 16px;
+    text-align: center;
+  }
+
+  .product-info-table {
+    font-size: 13px;
+  }
+
+  .detail-label {
+    width: 40%;
+    font-size: 12px;
+    padding: 10px 12px;
+  }
+
+  .detail-value {
+    font-size: 12px;
+    padding: 10px 12px;
+  }
+
+  .winery-title,
+  .grape-title,
+  .philosophy-title {
+    font-size: 20px;
+    margin-bottom: 12px;
+  }
+
+  .winery-description,
+  .grape-description,
+  .philosophy-description {
+    font-size: 14px;
+    line-height: 1.6;
+  }
+
+  .producer-wines-btn {
+    padding: 10px 25px;
+    font-size: 14px;
+    width: 100%;
+    max-width: 280px;
+  }
+
+  .winery-info-section,
+  .grape-variety-section,
+  .winemaker-philosophy-section {
+    padding: 30px 0;
+  }
+
+  .wine-showcase {
+    padding: 20px 10px;
+  }
+
+  .showcase-title {
+    font-size: 24px;
+  }
+
+  .showcase-subtitle {
+    font-size: 14px;
+  }
+
+  .brand-page p {
+    font-size: 12px;
+    padding: 10px;
+  }
+
+  .commitment-text {
+    font-size: 14px;
+  }
+
+  .feature-image img {
+    height: 180px;
+  }
+
+  .philosophy-text {
+    font-size: 16px;
+  }
+
+  .philosophy-detail {
+    font-size: 13px;
+  }
+
+  .taste-heading {
+    font-size: 18px;
+    margin-bottom: 15px;
+  }
+
+  .taste-description {
+    font-size: 14px;
+  }
+
+  .taste-content .row {
+    flex-direction: column;
+  }
+
+  .taste-content .col-md-5,
+  .taste-content .col-md-7 {
+    width: 100%;
+  }
+
+  .operating-company-section .showcase-title {
+    font-size: 30px;
+  }
+
+  .company-name {
+    font-size: 24px;
+  }
+
+  .business-title {
+    font-size: 20px;
+  }
+
+  .business-category {
+    padding: 12px 15px;
+  }
+
+  .category-name {
+    font-size: 14px;
+  }
+
+  .scroll-buttons {
+    bottom: 20px;
+    right: 20px;
+  }
+
+  #scrollTopBtn,
+  #scrollDownBtn {
+    width: 40px;
+    height: 40px;
+    font-size: 16px;
+  }
 }
 
 @media all and (max-width: 576px) {
-    .navbar-brand img {
-        width: 210px;
-        margin-left: -10px;
-    }
-
-    .common_name {
-        font-size: 12px;
-    }
-
-    .common_item {
-        padding: 8px !important;
-    }
-
-    .common_title {
-        font-size: 28px;
-    }
-
-    .vintage_brands_featured {
-        padding: 3%;
-    }
-
-    .vintage_brands_featured h2 {
-        font-size: 20px;
-        margin-bottom: 15px;
-    }
-
-    .vintage_brands_featured p {
-        font-size: 13px;
-        padding: 0 5px;
-    }
-
-    .cat_page_part_one,
-    .cat_page_part_two,
-    .cat_page_part_three,
-    .cat_page_part_four,
-    .cat_page_part_five,
-    .cat_page_part_six {
-        padding: 25px 15px;
-    }
-
-    .cat_title h2 {
-        font-size: 20px;
-    }
-
-    .cat_six_title {
-        font-size: 24px;
-    }
-
-    .cat_subtitle {
-        font-size: 12px;
-    }
-
-    .cat_desc {
-        font-size: 13px;
-    }
-
-    .cat_products .card-title {
-        font-size: 13px;
-        line-height: 1.2;
-    }
-
-    .cat_products span {
-        font-size: 11px;
-    }
-
-    .cat_quantity {
-        font-size: 13px !important;
-    }
-
-    .cat_products .price {
-        font-size: 16px;
-    }
-
-    .cat_button,
-    .cat_button_six {
-        font-size: 13px;
-        padding: 8px 20px !important;
-    }
-
-    .bourogne,
-    .bordeaux {
-        padding: 3%;
-    }
-
-    .bourogne h2,
-    .bordeaux h2 {
-        font-size: 24px;
-    }
-
-    .bourogne span,
-    .bordeaux span {
-        font-size: 16px;
-    }
-
-    .bourogne p,
-    .bordeaux p {
-        font-size: 13px;
-        padding: 0 5px;
-        line-height: 1.6;
-    }
-
-    .bourgogne_products .card-title,
-    .bordeaux_products .card-title {
-        font-size: 13px;
-    }
-
-    .bourgogne_products .card-text,
-    .bordeaux_products .card-text {
-        font-size: 12px;
-    }
-
-    .bourgogne_products .price,
-    .bordeaux_products .price {
-        font-size: 16px;
-    }
-
-    .special_feature {
-        padding: 3%;
-    }
-
-    .special_title {
-        font-size: 28px;
-    }
-
-    .special_product_title {
-        font-size: 14px;
-        margin-top: 15px !important;
-    }
-
-    .category-filter-section {
-        padding: 20px 15px;
-    }
-
-    .cat-details-breadcrumb {
-        margin-left: 0px;
-    }
-
-    .filter-title {
-        font-size: 18px;
-        margin-bottom: 15px;
-    }
-
-    .filter-subtitle {
-        font-size: 12px;
-        display: block;
-        margin-left: 0;
-        margin-top: 5px;
-    }
-
-    .filter-btn {
-        font-size: 11px;
-        padding: 8px 4px;
-        min-height: 35px;
-    }
-
-    .product-title {
-        font-size: 18px;
-        line-height: 1.3;
-    }
-
-    .current-price {
-        font-size: 22px;
-    }
-
-    .shipping-info {
-        font-size: 12px;
-    }
-
-    .points-info {
-        font-size: 12px;
-    }
-
-    .product-code {
-        font-size: 11px;
-    }
-
-    .quantity-btn {
-        width: 35px;
-        height: 35px;
-        font-size: 16px;
-    }
-
-    .quantity-input {
-        width: 50px;
-        height: 35px;
-        font-size: 14px;
-    }
-
-    .add-to-cart-btn,
-    .buy-now-btn {
-        padding: 10px 15px;
-        font-size: 14px;
-    }
-
-    .product-accordion .accordion-button {
-        padding: 12px 15px;
-        font-size: 14px;
-    }
-
-    .product-accordion .accordion-body {
-        padding: 15px;
-        font-size: 13px;
-    }
-
-    .product-specifications-section {
-        padding: 15px 5px;
-    }
-
-    .details-title {
-        font-size: 14px;
-        margin-bottom: 15px;
-    }
-
-    .product-info-table {
-        font-size: 12px;
-        margin: 0;
-    }
-
-    .detail-label {
-        width: 45%;
-        font-size: 11px;
-        padding: 8px 10px;
-        word-break: break-word;
-    }
-
-    .detail-value {
-        font-size: 14px;
-        padding: 8px 10px;
-        word-break: break-word;
-    }
-
-    .product-info-table tr {
-        display: block;
-        border: 1px solid #dee2e6;
-        margin-bottom: 10px;
-        border-radius: 6px;
-        overflow: hidden;
-    }
-
-    .product-info-table td {
-        display: block;
-        width: 100% !important;
-        border: none;
-        border-bottom: 1px solid #e9ecef;
-    }
-
-    .detail-label {
-        background-color: #925C10;
-        color: white;
-        font-weight: 600;
-        text-align: center;
-        /* border-bottom: 1px solid #7a4c0d !important; */
-    }
-
-    .detail-value {
-        text-align: center;
-        border-bottom: none !important;
-    }
-
-    .winery-title,
-    .grape-title,
-    .philosophy-title {
-        font-size: 18px;
-    }
-
-    .winery-description,
-    .grape-description,
-    .philosophy-description {
-        font-size: 13px;
-        padding: 0 10px;
-    }
-
-    .producer-wines-btn {
-        font-size: 13px;
-        padding: 8px 20px;
-    }
-
-    .winery-info-section,
-    .grape-variety-section,
-    .winemaker-philosophy-section {
-        padding: 25px 0;
-    }
-
-    .brand-page p {
-        font-size: 11px;
-        padding: 10px;
-    }
-
-    .showcase-title {
-        font-size: 22px;
-    }
-
-    .showcase-subtitle {
-        font-size: 13px;
-        margin-bottom: 15px;
-    }
-
-    .commitment-text {
-        font-size: 13px;
-        line-height: 1.6;
-    }
-
-    .feature-title {
-        font-size: 15px;
-        padding: 10px 10px 5px;
-    }
-
-    .feature-description {
-        font-size: 12px;
-        padding: 0 10px 10px;
-    }
-
-    .feature-image img {
-        height: 300px;
-    }
-
-    .philosophy-text {
-        font-size: 15px;
-    }
-
-    .philosophy-detail {
-        font-size: 12px;
-    }
-
-    .philosophy-text {
-        width: auto;
-    }
-
-    .philosophy-detail {
-        width: auto;
-    }
-
-    .taste-section {
-        padding: 30px 0;
-    }
-
-    .showcase-title {
-        font-size: 28px;
-    }
-
-    .showcase-subtitle {
-        font-size: 14px;
-    }
-
-    .taste-heading {
-        font-size: 16px;
-    }
-
-    .taste-description {
-        font-size: 13px;
-    }
-
-    .operating-company-section .showcase-title {
-        font-size: 26px;
-    }
-
-    .company-name {
-        font-size: 20px;
-    }
-
-    .company-website-btn {
-        padding: 8px 30px;
-        font-size: 14px;
-    }
+  .navbar-brand img {
+    width: 210px;
+    margin-left: -10px;
+  }
+
+  .common_name {
+    font-size: 12px;
+  }
+
+  .common_item {
+    padding: 8px !important;
+  }
+
+  .common_title {
+    font-size: 28px;
+  }
+
+  .vintage_brands_featured {
+    padding: 3%;
+  }
+
+  .vintage_brands_featured h2 {
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+
+  .vintage_brands_featured p {
+    font-size: 13px;
+    padding: 0 5px;
+  }
+
+  .cat_page_part_one,
+  .cat_page_part_two,
+  .cat_page_part_three,
+  .cat_page_part_four,
+  .cat_page_part_five,
+  .cat_page_part_six {
+    padding: 25px 15px;
+  }
+
+  .cat_title h2 {
+    font-size: 20px;
+  }
+
+  .cat_six_title {
+    font-size: 24px;
+  }
+
+  .cat_subtitle {
+    font-size: 12px;
+  }
+
+  .cat_desc {
+    font-size: 13px;
+  }
+
+  .cat_products .card-title {
+    font-size: 13px;
+    line-height: 1.2;
+  }
+
+  .cat_products span {
+    font-size: 11px;
+  }
+
+  .cat_quantity {
+    font-size: 13px !important;
+  }
+
+  .cat_products .price {
+    font-size: 16px;
+  }
+
+  .cat_button,
+  .cat_button_six {
+    font-size: 13px;
+    padding: 8px 20px !important;
+  }
+
+  .bourogne,
+  .bordeaux {
+    padding: 3%;
+  }
+
+  .bourogne h2,
+  .bordeaux h2 {
+    font-size: 24px;
+  }
+
+  .bourogne span,
+  .bordeaux span {
+    font-size: 16px;
+  }
+
+  .bourogne p,
+  .bordeaux p {
+    font-size: 13px;
+    padding: 0 5px;
+    line-height: 1.6;
+  }
+
+  .bourgogne_products .card-title,
+  .bordeaux_products .card-title {
+    font-size: 13px;
+  }
+
+  .bourgogne_products .card-text,
+  .bordeaux_products .card-text {
+    font-size: 12px;
+  }
+
+  .bourgogne_products .price,
+  .bordeaux_products .price {
+    font-size: 16px;
+  }
+
+  .special_feature {
+    padding: 3%;
+  }
+
+  .special_title {
+    font-size: 28px;
+  }
+
+  .special_product_title {
+    font-size: 14px;
+    margin-top: 15px !important;
+  }
+
+  .category-filter-section {
+    padding: 20px 15px;
+  }
+
+  .cat-details-breadcrumb {
+    margin-left: 0px;
+  }
+
+  .filter-title {
+    font-size: 18px;
+    margin-bottom: 15px;
+  }
+
+  .filter-subtitle {
+    font-size: 12px;
+    display: block;
+    margin-left: 0;
+    margin-top: 5px;
+  }
+
+  .filter-btn {
+    font-size: 11px;
+    padding: 8px 4px;
+    min-height: 35px;
+  }
+
+  .product-title {
+    font-size: 18px;
+    line-height: 1.3;
+  }
+
+  .current-price {
+    font-size: 22px;
+  }
+
+  .shipping-info {
+    font-size: 12px;
+  }
+
+  .points-info {
+    font-size: 12px;
+  }
+
+  .product-code {
+    font-size: 11px;
+  }
+
+  .quantity-btn {
+    width: 35px;
+    height: 35px;
+    font-size: 16px;
+  }
+
+  .quantity-input {
+    width: 50px;
+    height: 35px;
+    font-size: 14px;
+  }
+
+  .add-to-cart-btn,
+  .buy-now-btn {
+    padding: 10px 15px;
+    font-size: 14px;
+  }
+
+  .product-accordion .accordion-button {
+    padding: 12px 15px;
+    font-size: 14px;
+  }
+
+  .product-accordion .accordion-body {
+    padding: 15px;
+    font-size: 13px;
+  }
+
+  .product-specifications-section {
+    padding: 15px 5px;
+  }
+
+  .details-title {
+    font-size: 14px;
+    margin-bottom: 15px;
+  }
+
+  .product-info-table {
+    font-size: 12px;
+    margin: 0;
+  }
+
+  .detail-label {
+    width: 45%;
+    font-size: 11px;
+    padding: 8px 10px;
+    word-break: break-word;
+  }
+
+  .detail-value {
+    font-size: 14px;
+    padding: 8px 10px;
+    word-break: break-word;
+  }
+
+  .product-info-table tr {
+    display: block;
+    border: 1px solid #dee2e6;
+    margin-bottom: 10px;
+    border-radius: 6px;
+    overflow: hidden;
+  }
+
+  .product-info-table td {
+    display: block;
+    width: 100% !important;
+    border: none;
+    border-bottom: 1px solid #e9ecef;
+  }
+
+  .detail-label {
+    background-color: #925c10;
+    color: white;
+    font-weight: 600;
+    text-align: center;
+    /* border-bottom: 1px solid #7a4c0d !important; */
+  }
+
+  .detail-value {
+    text-align: center;
+    border-bottom: none !important;
+  }
+
+  .winery-title,
+  .grape-title,
+  .philosophy-title {
+    font-size: 16px;
+  }
+  .sproductabtn {
+    font-size: 14px;
+  }
+  .winery-description,
+  .grape-description,
+  .philosophy-description {
+    font-size: 13px;
+    padding: 0 10px;
+  }
+
+  .producer-wines-btn {
+    font-size: 13px;
+    padding: 8px 20px;
+  }
+
+  .winery-info-section,
+  .grape-variety-section,
+  .winemaker-philosophy-section {
+    padding: 25px 0;
+  }
+
+  .brand-page p {
+    font-size: 11px;
+    padding: 10px;
+  }
+
+  .showcase-title {
+    font-size: 22px;
+  }
+
+  .showcase-subtitle {
+    font-size: 13px;
+    margin-bottom: 15px;
+  }
+
+  .commitment-text {
+    font-size: 13px;
+    line-height: 1.6;
+  }
+
+  .feature-title {
+    font-size: 15px;
+    padding: 10px 10px 5px;
+  }
+
+  .feature-description {
+    font-size: 12px;
+    padding: 0 10px 10px;
+  }
+
+  .feature-image img {
+    height: 300px;
+  }
+
+  .philosophy-text {
+    font-size: 15px;
+  }
+
+  .philosophy-detail {
+    font-size: 12px;
+  }
+
+  .philosophy-text {
+    width: auto;
+  }
+
+  .philosophy-detail {
+    width: auto;
+  }
+
+  .taste-section {
+    padding: 30px 0;
+  }
+
+  .showcase-title {
+    font-size: 28px;
+  }
+
+  .showcase-subtitle {
+    font-size: 14px;
+  }
+
+  .taste-heading {
+    font-size: 16px;
+  }
+
+  .taste-description {
+    font-size: 13px;
+  }
+
+  .operating-company-section .showcase-title {
+    font-size: 26px;
+  }
+
+  .company-name {
+    font-size: 20px;
+  }
+
+  .company-website-btn {
+    padding: 8px 30px;
+    font-size: 14px;
+  }
+
+  .price-symbol {
+    font-size: 13px !important;
+  }
+
+  .bourgogne_quantity,
+  .bordeaux_quantity,
+  .cat_quantity {
+    margin-top: -1px !important;
+  }
+  .business-content {
+    width: 100%;
+  }
 }
 
 @media all and (max-width: 480px) {
-    .navbar-brand img {
-        width: 180px;
-        margin-left: -10px;
-    }
+  .dropdown-item {
+    margin-left: -60px;
+    margin-bottom: 10px;
+    font-size: 14px !important;
+  }
 
-    .main_logo_img {
-        width: 80px;
-        max-width: 80px;
-        position: absolute;
-        top: 100px;
-        left: auto;
-        z-index: 100;
-        margin-top: 0px;
+  .navbar-brand img {
+    width: 180px;
+    margin-left: -10px;
+  }
+  .product-details-title {
+    font-size: 15px;
+  }
+  .main_logo_img {
+    width: 80px;
+    max-width: 80px;
+    position: absolute;
+    top: 100px;
+    left: auto;
+    z-index: 100;
+    margin-top: 0px;
+  }
 
-    }
+  .cat-details-breadcrumb a {
+    font-size: 10px;
+  }
 
-    .category-filter-section {
-        margin-top: -10px;
-    }
+  .category-filter-section {
+    margin-top: 0px;
+    padding-top: 50px !important;
+  }
 
-    .main_content_wrapper {
-        margin-top: -12% !important;
-    }
+  .main_content_wrapper {
+    margin-top: -12% !important;
+  }
 
-    .hero_section {
-        min-height: 11vh;
-    }
+  .hero_section {
+    min-height: 11vh;
+  }
 
-    .hero_section img {
-        min-height: 120px;
-    }
+  .hero_section img {
+    min-height: 120px;
+  }
 
-    .shop-title {
-        font-size: 20px;
-    }
+  .shop-title {
+    font-size: 20px;
+  }
 
-    .rating-container {
-        font-size: 15px;
-    }
+  .rating-container {
+    font-size: 15px;
+  }
 
-    .banner_img {
-        height: 120px;
-    }
+  .banner_img {
+    height: 120px;
+  }
 
-    .best_sell_cat_title {
-        font-size: 14px;
-    }
+  .best_sell_cat_title {
+    font-size: 14px;
+  }
 
-    .common_name {
-        font-size: 11px;
-    }
+  .common_name {
+    font-size: 11px;
+  }
 
-    .common_item {
-        padding: 5px !important;
-    }
+  .common_item {
+    padding: 5px !important;
+  }
 
-    .common_arrow i {
-        font-size: 12px;
-    }
+  .common_arrow i {
+    font-size: 12px;
+  }
 
-    .common_title {
-        font-size: 18px;
-    }
+  .common_title {
+    font-size: 18px;
+  }
 
-    .common_subtitle {
-        font-size: 12px;
-    }
+  .common_subtitle {
+    font-size: 12px;
+  }
 
-    .filter-title {
-        font-size: 16px;
-    }
+  .filter-title {
+    font-size: 16px;
+  }
 
-    .filter-btn {
-        font-size: 10px;
-        padding: 6px 3px;
-        min-height: 32px;
-    }
+  .filter-btn {
+    font-size: 10px;
+    padding: 6px 3px;
+    min-height: 32px;
+  }
 
-    .form-control {
-        font-size: 10px !important;
-    }
+  .form-control {
+    font-size: 10px !important;
+  }
 
-    .list-group a {
-        font-size: 10px;
-    }
+  .list-group a {
+    font-size: 10px;
+  }
 
-    .cat_list_select {
-        width: 55% !important;
-    }
+  .cat_list_select {
+    width: 55% !important;
+  }
 
-    .cat_list_select selected {
-        font-size: 12px !important;
-    }
+  .cat_list_select selected {
+    font-size: 12px !important;
+  }
 
-    .cat_list_select option {
-        font-size: 12px !important;
-    }
+  .cat_list_select option {
+    font-size: 12px !important;
+  }
 
-    .vintage_brands_featured h2 {
-        font-size: 18px;
-    }
+  .vintage_brands_featured h2 {
+    font-size: 18px;
+  }
 
-    .vintage_brands_featured p {
-        font-size: 12px;
-    }
+  .vintage_brands_featured p {
+    font-size: 12px;
+  }
 
-    .bourogne h2,
-    .bordeaux h2 {
-        font-size: 20px;
-    }
+  .bourogne h2,
+  .bordeaux h2 {
+    font-size: 20px;
+  }
 
-    .bourogne span,
-    .bordeaux span {
-        font-size: 14px;
-    }
+  .bourogne span,
+  .bordeaux span {
+    font-size: 14px;
+  }
 
-    .bourogne p,
-    .bordeaux p {
-        font-size: 12px;
-    }
+  .bourogne p,
+  .bordeaux p {
+    font-size: 12px;
+  }
 
-    .bourgogne_products .card-title,
-    .bordeaux_products .card-title {
-        font-size: 12px;
-    }
+  .bourgogne_products .card-title,
+  .bordeaux_products .card-title {
+    font-size: 12px;
+  }
 
-    .bourgogne_quantity,
-    .bordeaux_quantity {
-        margin-top: -2px;
-    }
+  .bourgogne_quantity,
+  .bordeaux_quantity {
+    margin-top: -2px;
+  }
 
-    .bourgogne_products .price,
-    .bordeaux_products .price {
-        font-size: 14px;
-    }
+  .bourgogne_products .price,
+  .bordeaux_products .price {
+    font-size: 14px;
+  }
 
-    .bourgogne_button,
-    .bordeaux_button {
-        font-size: 14px;
-        padding: 8px 20px !important;
-    }
+  .bourgogne_button,
+  .bordeaux_button {
+    font-size: 14px;
+    padding: 8px 20px !important;
+  }
 
-    .special_title {
-        font-size: 24px;
-    }
+  .special_title {
+    font-size: 24px;
+  }
 
-    .special_product_title {
-        font-size: 12px;
-        margin-top: 10px !important;
-    }
+  .special_product_title {
+    font-size: 12px;
+    margin-top: 10px !important;
+  }
 
-    .btn-outline-secondary {
-        font-size: 14px;
-        padding: 5px 15px !important;
-    }
+  .btn-outline-secondary {
+    font-size: 14px;
+    padding: 5px 15px !important;
+  }
 
-    .cat_page_part_one,
-    .cat_page_part_two,
-    .cat_page_part_three,
-    .cat_page_part_four,
-    .cat_page_part_five,
-    .cat_page_part_six {
-        padding: 20px 10px;
-    }
+  .cat_page_part_one,
+  .cat_page_part_two,
+  .cat_page_part_three,
+  .cat_page_part_four,
+  .cat_page_part_five,
+  .cat_page_part_six {
+    padding: 20px 10px;
+  }
 
-    .cat_title h2 {
-        font-size: 18px;
-    }
+  .cat_title h2 {
+    font-size: 18px;
+  }
 
-    .cat_six_title {
-        font-size: 20px;
-    }
+  .cat_six_title {
+    font-size: 20px;
+  }
 
-    .cat_subtitle {
-        font-size: 11px;
-    }
+  .cat_subtitle {
+    font-size: 11px;
+  }
 
-    .cat_desc {
-        font-size: 12px;
-    }
+  .cat_desc {
+    font-size: 12px;
+  }
 
-    .cat_products .card-title {
-        font-size: 12px;
-        line-height: 1.1;
-    }
+  .cat_products .card-title {
+    font-size: 12px;
+    line-height: 1.1;
+  }
 
-    .cat_products span {
-        font-size: 10px;
-    }
+  .cat_products span {
+    font-size: 10px;
+  }
 
-    .cat_quantity {
-        font-size: 12px !important;
-        margin-top: 2px;
+  .cat_quantity {
+    font-size: 12px !important;
+  }
 
-    }
+  .cat_products .price {
+    font-size: 14px;
+    margin-top: -3px;
+  }
 
-    .cat_products .price {
-        font-size: 14px;
-    }
+  .cat_button,
+  .cat_button_six {
+    font-size: 12px;
+    padding: 6px 15px !important;
+  }
 
-    .cat_button,
-    .cat_button_six {
-        font-size: 12px;
-        padding: 6px 15px !important;
-    }
+  .cat_page_details {
+    margin-top: -85px;
+    padding: 50px 0;
+  }
 
-    .cat_page_details {
-        margin-top: -85px;
-        padding: 50px 0;
-    }
+  .product-details-section {
+    padding: 15px 5px;
+  }
 
-    .product-details-section {
-        padding: 15px 5px;
-    }
+  .product-title {
+    font-size: 16px;
+  }
 
-    .product-title {
-        font-size: 16px;
-    }
+  .current-price {
+    font-size: 20px;
+  }
 
-    .current-price {
-        font-size: 20px;
-    }
+  .quantity-controls {
+    flex-direction: column;
+    align-items: center;
+  }
 
-    .quantity-controls {
-        flex-direction: column;
-        align-items: center;
-    }
+  .action-buttons .row {
+    --bs-gutter-x: 0.5rem;
+  }
 
-    .action-buttons .row {
-        --bs-gutter-x: 0.5rem;
-    }
+  .add-to-cart-btn,
+  .buy-now-btn {
+    padding: 8px 12px;
+    font-size: 13px;
+  }
 
-    .add-to-cart-btn,
-    .buy-now-btn {
-        padding: 8px 12px;
-        font-size: 13px;
-    }
+  .product-specifications-section {
+    padding: 10px 0;
+  }
 
-    .product-specifications-section {
-        padding: 10px 0;
-    }
+  .container {
+    padding: 0 10px;
+  }
 
-    .container {
-        padding: 0 10px;
-    }
+  .details-title {
+    font-size: 13px;
+    margin-bottom: 12px;
+  }
 
-    .details-title {
-        font-size: 13px;
-        margin-bottom: 12px;
-    }
+  .product-details-section {
+    margin-top: -15px;
+  }
 
-    .product-details-section {
-        margin-top: -15px;
-    }
+  .brand-page p {
+    font-size: 11px;
+    padding: 10px;
+  }
 
-    .brand-page p {
-        font-size: 11px;
-        padding: 10px;
-    }
+  .feature-image img {
+    height: 200px;
+  }
 
-    .feature-image img {
-        height: 200px;
-    }
+  .philosophy-text {
+    width: auto;
+  }
 
-    .philosophy-text {
-        width: auto;
-    }
+  .philosophy-detail {
+    width: auto;
+  }
 
-    .philosophy-detail {
-        width: auto;
-    }
+  .scroll-buttons {
+    bottom: 15px;
+    right: 15px;
+  }
 
-    .scroll-buttons {
-        bottom: 15px;
-        right: 15px;
-    }
-
-    #scrollTopBtn,
-    #scrollDownBtn {
-        width: 35px;
-        height: 35px;
-        font-size: 14px;
-    }
+  #scrollTopBtn,
+  #scrollDownBtn {
+    width: 35px;
+    height: 35px;
+    font-size: 14px;
+  }
+  .business-content {
+    width: 100%;
+  }
 }
 
 @media all and (max-width: 320px) {
-    .navbar-brand img {
-        width: 210px;
-        margin-left: -10px;
-    }
+  .navbar-brand img {
+    width: 210px;
+    margin-left: -10px;
+  }
 
-    .main_content_wrapper {
-        margin-top: -35% !important;
-    }
+  .main_content_wrapper {
+    margin-top: -35% !important;
+  }
 
-    .add_to_fav {
-        width: 100px;
-    }
+  .add_to_fav {
+    width: 100px;
+  }
 
-    .cat_list_select {
-        width: 55% !important;
-    }
+  .cat_list_select {
+    width: 55% !important;
+  }
 
-    .cat_list_select selected {
-        font-size: 12px !important;
-    }
+  .cat_list_select selected {
+    font-size: 12px !important;
+  }
 
-    .cat_list_select option {
-        font-size: 12px !important;
-    }
+  .cat_list_select option {
+    font-size: 12px !important;
+  }
 
-    .vintage_brands_featured {
-        padding: 2%;
-    }
+  .vintage_brands_featured {
+    padding: 2%;
+  }
 
-    .vintage_brands_featured h2 {
-        font-size: 16px;
-    }
+  .vintage_brands_featured h2 {
+    font-size: 16px;
+  }
 
-    .vintage_brands_featured p {
-        font-size: 11px;
-    }
+  .vintage_brands_featured p {
+    font-size: 11px;
+  }
 
-    .bourogne,
-    .bordeaux {
-        padding: 2%;
-    }
+  .bourogne,
+  .bordeaux {
+    padding: 2%;
+  }
 
-    .bourogne h2,
-    .bordeaux h2 {
-        font-size: 18px;
-    }
+  .bourogne h2,
+  .bordeaux h2 {
+    font-size: 18px;
+  }
 
-    .bourogne span,
-    .bordeaux span {
-        font-size: 12px;
-    }
+  .bourogne span,
+  .bordeaux span {
+    font-size: 12px;
+  }
 
-    .bourogne p,
-    .bordeaux p {
-        font-size: 11px;
-    }
+  .bourogne p,
+  .bordeaux p {
+    font-size: 11px;
+  }
 
-    .bourgogne_products .card-title,
-    .bordeaux_products .card-title {
-        font-size: 11px;
-    }
+  .bourgogne_products .card-title,
+  .bordeaux_products .card-title {
+    font-size: 11px;
+  }
 
-    .bourgogne_quantity,
-    .bordeaux_quantity {
-        margin-top: -2px;
-    }
+  .bourgogne_quantity,
+  .bordeaux_quantity {
+    margin-top: -2px;
+  }
 
-    .bourgogne_products .price,
-    .bordeaux_products .price {
-        font-size: 13px;
-    }
+  .bourgogne_products .price,
+  .bordeaux_products .price {
+    font-size: 13px;
+  }
 
-    .special_feature {
-        padding: 2%;
-    }
+  .special_feature {
+    padding: 2%;
+  }
 
-    .special_title {
-        font-size: 20px;
-    }
+  .special_title {
+    font-size: 20px;
+  }
 
-    .special_product_title {
-        font-size: 11px;
-    }
+  .special_product_title {
+    font-size: 11px;
+  }
 
-    .cat-details-breadcrumb {
-        margin-left: 0px;
-    }
+  .cat-details-breadcrumb {
+    margin-left: 0px;
+  }
 
-    .cat_page_part_one,
-    .cat_page_part_two,
-    .cat_page_part_three,
-    .cat_page_part_four,
-    .cat_page_part_five,
-    .cat_page_part_six {
-        padding: 15px 8px;
-    }
+  .cat_page_part_one,
+  .cat_page_part_two,
+  .cat_page_part_three,
+  .cat_page_part_four,
+  .cat_page_part_five,
+  .cat_page_part_six {
+    padding: 15px 8px;
+  }
 
-    .cat_title h2 {
-        font-size: 16px;
-    }
+  .cat_title h2 {
+    font-size: 16px;
+  }
 
-    .cat_six_title {
-        font-size: 18px;
-    }
+  .cat_six_title {
+    font-size: 18px;
+  }
 
-    .cat_subtitle {
-        font-size: 10px;
-    }
+  .cat_subtitle {
+    font-size: 10px;
+  }
 
-    .cat_desc {
-        font-size: 11px;
-    }
+  .cat_desc {
+    font-size: 11px;
+  }
 
-    .cat_products .card-title {
-        font-size: 11px;
-        line-height: 1.0;
-    }
+  .cat_products .card-title {
+    font-size: 11px;
+    line-height: 1;
+  }
 
-    .cat_products span {
-        font-size: 9px;
-    }
+  .cat_products span {
+    font-size: 9px;
+  }
 
-    .cat_quantity {
-        font-size: 11px !important;
-    }
+  .cat_quantity {
+    font-size: 11px !important;
+  }
 
-    .cat_products .price {
-        font-size: 13px;
-    }
+  .cat_products .price {
+    font-size: 13px;
+  }
 
-    .cat_button,
-    .cat_button_six {
-        font-size: 11px;
-        padding: 5px 12px !important;
-    }
+  .cat_button,
+  .cat_button_six {
+    font-size: 11px;
+    padding: 5px 12px !important;
+  }
 
+  .product-details-section {
+    margin-top: -15px;
+  }
 
-    .product-details-section {
-        margin-top: -15px;
-    }
+  .brand-page p {
+    font-size: 11px;
+    padding: 10px;
+  }
 
-    .brand-page p {
-        font-size: 11px;
-        padding: 10px;
-    }
+  .showcase-title {
+    font-size: 20px;
+  }
 
-    .showcase-title {
-        font-size: 20px;
-    }
+  .showcase-subtitle {
+    font-size: 12px;
+    margin-bottom: 10px;
+  }
 
-    .showcase-subtitle {
-        font-size: 12px;
-        margin-bottom: 10px;
-    }
+  .commitment-text {
+    font-size: 12px;
+  }
 
-    .commitment-text {
-        font-size: 12px;
-    }
+  .feature-title {
+    font-size: 14px;
+  }
 
-    .feature-title {
-        font-size: 14px;
-    }
+  .feature-description {
+    font-size: 11px;
+  }
 
-    .feature-description {
-        font-size: 11px;
-    }
+  .feature-image img {
+    height: 200px;
+  }
 
-    .feature-image img {
-        height: 200px;
-    }
+  .philosophy-text {
+    width: auto;
+    font-size: 14px;
+  }
 
-    .philosophy-text {
-        width: auto;
-        font-size: 14px;
-    }
+  .philosophy-detail {
+    width: auto;
+    font-size: 11px;
+  }
 
-    .philosophy-detail {
-        width: auto;
-        font-size: 11px;
-    }
+  .cat-details-breadcrumb a {
+    font-size: 10px;
+  }
+  .business-content {
+    width: 100%;
+  }
 }

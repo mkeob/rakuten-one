@@ -24,11 +24,11 @@
 <body>
     <!-- Header -->
     <header>
-        <div class="container">
+        <div class="container-fluid">
             <div class="row">
                 <div class="col-12">
                     <nav class="navbar navbar-expand-lg main-navbar header-main-logo">
-                        <a class="navbar-brand" href="#"><img src="img/selead-shop.png" alt="SELEAD SHOP"
+                        <a class="navbar-brand" href="#"><img src="img/logo.png" alt="SELEAD SHOP"
                                 class="img-fluid"></a>
                         <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarScroll">
                             <i class="bi bi-list"></i>
@@ -96,7 +96,7 @@
                                     </form>
                                 </div>
                                 <div>
-                                    <form class="d-flex justify-content-between">
+                                    <form class="d-flex justify-content-evenly menusrcbtn">
                                         <button class="under-search-btn me-1" type="submit">SELEAD SHOPとは</button>
                                         <button class="under-search-btn" type="submit">ご利用ガイド</button>
                                     </form>
@@ -108,14 +108,14 @@
             </div>
         </div>
     </header>
-    <div class="container ">
+    <div class="container-fluid" style="padding:0;">
         <div class="row">
-          <div class="col-12">
-            <!-- Category Banner -->
-            <img src="img/about-banner.png" alt="Feature Banner" class="d-block mx-auto img-fluid w-100" />
-          </div>
+            <!-- Brand Page -->
+            <div class="brand-page col-12">
+                <img src="img/about-banner.png" alt="Brand" class="img-fluid w-100" />
+            </div>
         </div>
-      </div>
+    </div>
     <div class="container-fluid shop-showcase">
         <!-- Main Container section -->
         <div class="container">
@@ -163,46 +163,46 @@
         <div class="container">
             <!-- Operating Company -->
         <div class="col-12">
-            <div class="p-4">
+            <div class="p-5">
                 <h2 class="showcase-title text-center">Operating company</h2>
                 <p class="showcase-subtitle text-center">運営会社</p>
                 <div class="company-info mt-5">
-                    <h3 class="company-name text-center mb-4">selead group株式会社</h3>
+                    <h3 class="company-name text-center mb-4">selead group <span style="font-family: 'Noto Serif JP', serif;">株式会社</span></h3>
                     <div class="text-center mb-5">
                         <a href="#" class="company-website-btn">企業サイト</a>
                     </div>
                     
-                    <div class="business-content">
+                    <div class="business-content mx-sm-auto">
                         <h4 class="business-title text-center mb-4">事業内容</h4>
-                        <div class="row business-categories p-md-5">
+                        <div class="row business-categories">
                             <div class="col-md-4 col-sm-6 col-12 mb-3">
                                 <div class="business-category">
                                     <span class="category-name">酒類事業</span>
-                                    <span class="category-arrow"><i class="bi bi-chevron-right"></i></span>
+                                    <span class="category-arrow"><img src="icon/right-arrow.png" alt="right-arrow" class="img-fluid"></span>
                                 </div>
                             </div>
                             <div class="col-md-4 col-sm-6 col-12 mb-3">
                                 <div class="business-category">
                                     <span class="category-name">テーブルウェア事業</span>
-                                    <span class="category-arrow"><i class="bi bi-chevron-right"></i></span>
+                                    <span class="category-arrow"><img src="icon/right-arrow.png" alt="right-arrow" class="img-fluid"></span>
                                 </div>
                             </div>
                             <div class="col-md-4 col-sm-6 col-12 mb-3">
                                 <div class="business-category">
                                     <span class="category-name">飲食コンサル</span>
-                                    <span class="category-arrow"><i class="bi bi-chevron-right"></i></span>
+                                    <span class="category-arrow"><img src="icon/right-arrow.png" alt="right-arrow" class="img-fluid"></span>
                                 </div>
                             </div>
                             <div class="col-md-4 col-sm-6 col-12 mb-3">
                                 <div class="business-category">
                                     <span class="category-name">店舗経営</span>
-                                    <span class="category-arrow"><i class="bi bi-chevron-right"></i></span>
+                                    <span class="category-arrow"><img src="icon/right-arrow.png" alt="right-arrow" class="img-fluid"></span>
                                 </div>
                             </div>
                             <div class="col-md-4 col-sm-6 col-12 mb-3">
                                 <div class="business-category">
                                     <span class="category-name">国際貿易</span>
-                                    <span class="category-arrow"><i class="bi bi-chevron-right"></i></span>
+                                        <span class="category-arrow"><img src="icon/right-arrow.png" alt="right-arrow" class="img-fluid"></span>
                                 </div>
                             </div>
                         </div>
@@ -249,7 +249,7 @@
     <script src="js/script.js" type="text/javascript"></script>
     <!-- Bootstrap 5 JS Bundle with Popper -->
     <script src="js/bootstrap.min.js" type="text/javascript"></script>
-    <script src="js/bootstrap.bundle.min.js" type="text/javascript"></script>
+    <!-- <script src="js/bootstrap.bundle.min.js" type="text/javascript"></script> -->
 </body>
 
 </html>
